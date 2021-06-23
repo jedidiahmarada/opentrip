@@ -1,0 +1,55 @@
+Home
+1. Header
+2. Search bar + banner A
+3. Category/Product Listing (carousel)
+4. Banner B
+5. Footer
+
+Login Page
+1. Login Page + input 
+
+Registration Page
+1. Registration page + banner + user
+2. RegisUser
+3. RegisHoster
+
+Destinasi
+1. Filter bar kiri
+2. Cards (pagination + sorting)
+
+Destinasi Detail
+1. Halaman atas destinasi
+2. Detil perjalanan
+3. Syarat & ketentuan
+4. Galeri
+
+Cart
+1. Cart
+2. Order Summary 
+
+Checkout Billing
+1. Checkout billing
+2. Checkout order details
+3. Checkout payment details
+
+Order Received
+1. Order Confirm (cut)
+
+Order Confirmed
+1. Order Confirmed
+
+Hoster Profile
+1. Mytrip 
+2. Order
+
+Hoster Create Trip
+1. Create my new trip
+2. Halaman upload foto ke gallery (modal)
+Homepage
+1. Login API (+ register API?)
+2. Destinasi dgn data jumlah visit, Tema Perjalanan, Tipe Perjalanan, budget, rating, lokasi berangkat & destinasi, periode berangkat, durasi
+3. API detil perjalanan, syarat & ketentuan, Galeri
+4. API unique code buat promo
+5. API daftar bank + payment instruction
+6. API tabel atas (API get) (order confirmed)
+7.
