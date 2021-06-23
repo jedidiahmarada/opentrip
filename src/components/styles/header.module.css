@@ -1,0 +1,23 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: white;
+  width: 100vw;
+}
+
+.header__brand {
+  grid-column: 2/5;
+  margin-bottom: -2.5vh;
+  margin-top: -2.5vh;
+}
+
+.header__container {
+  display: flex;
+  cursor: pointer;
+}
+
+.header__container h4 {
+  margin-top: 3vw;
+  font-size: 1.5rem;
+  margin-left: 1vw;
+}
