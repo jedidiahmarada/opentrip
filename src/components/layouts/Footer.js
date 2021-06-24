@@ -1,7 +1,9 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import logo from "../img/logo.png";
-import GetTheApp from "../layouts/GetTheApp";
+import logo from "../assets/picture/logo.png";
+import logoplaystore from "../assets/picture/playstore.png";
+import logoappstore from "../assets/picture/applestore.png";
+
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -16,28 +18,61 @@ const Footer = () => {
           </MDBCol>
           <MDBCol className="footer" md="6">
             <ul className="company">
-              <a href="#!">Company</a>
+              <p>Company</p>
             </ul>
             <ul className="about">
-              <a href="#!">About</a>
+              <p>About</p>
             </ul>
             <ul className="press">
-              <a href="#!">Press</a>
+              <p>Press</p>
             </ul>
             <ul className="careers">
-              <a href="#!">Careers</a>
+              <p>Careers</p>
             </ul>
             <ul className="contact">
-              <a href="#!">Contact</a>
+              <p>Contact</p>
             </ul>
-          </MDBCol>
-          <MDBCol md="6">
-            <h4 className="download">Get the App</h4>
-            <GetTheApp />
+            <ul className="support">
+              <p>Support</p>
+            </ul>
+            <ul className="helpcenter">
+              <p>Help Center</p>
+            </ul>
+            <ul className="toc">
+              <p>Term of service</p>
+            </ul>
+            <ul className="legal">
+              <p>Legal</p>
+            </ul>
+            <ul className="privacypolicy">
+              <p>Privacy Policy</p>
+            </ul>
+            <ul className="kerjasama">
+              <p>Kerja Sama</p>
+            </ul>
+            <ul className="daftarjadihoster">
+              <p>Daftar Jadi Hoster</p>
+            </ul>
+            <ul className="hosterterdaftar">
+              <p>Hoster Terdaftar</p>
+            </ul>
+            <ul className="gettheapp">
+              <p>Get The App</p>
+            </ul>
+            <img
+              className="logoplaystore"
+              src={logoplaystore}
+              alt="logoplaystore"
+            />
+            <img
+              className="logoappstore"
+              src={logoappstore}
+              alt="logoapplestore"
+            />
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div class="copyright">©2020 OPENTRIP. Allrights Reserved</div>
+      <div class="copyright">©2020 OPENTRIP. All rights Reserved</div>
     </MDBFooter>
   );
 };
