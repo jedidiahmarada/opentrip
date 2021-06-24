@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+
 .header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -5,19 +7,80 @@
   width: 100vw;
 }
 
-.header__brand {
+.header__nav {
   grid-column: 2/5;
   margin-bottom: -2.5vh;
   margin-top: -2.5vh;
 }
 
-.header__container {
+.header__nav__container {
   display: flex;
   cursor: pointer;
+  padding: 26px 5px 26px 0px;
 }
 
-.header__container h4 {
-  margin-top: 3vw;
-  font-size: 1.5rem;
-  margin-left: 1vw;
+.header__nav h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 32px;
+}
+
+.header__brand {
+  grid-column: 5/10;
+  margin-left: 100px;
+}
+
+.header__brand__container {
+  padding: 20px 5px 26px 0px;
+}
+
+.header__user {
+  grid-column: 11/12;
+}
+
+.header__user__container {
+  padding: 20px 5px 26px 0px;
+  display: flex;
+}
+
+.header__login__btn {
+  width: 78px;
+  height: 38px;
+  background: #f1e4ff;
+  border-radius: 6px;
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 14px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ff385c;
+}
+
+.header__signup__btn {
+  width: 78px;
+  height: 38px;
+  background: #ff385c;
+  border-radius: 6px;
+  border: none;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f8f8f8;
 }
