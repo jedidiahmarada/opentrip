@@ -157,3 +157,27 @@
   font-size: 13px;
   color: white;
 }
+
+.instagram {
+  position: absolute;
+  right: 320px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.twitter {
+  position: absolute;
+  right: 270px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.youtube {
+  position: absolute;
+  right: 220px;
+  bottom: 20px;
+  width: 30px;
+  height: 20px;
+}

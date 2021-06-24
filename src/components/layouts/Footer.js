@@ -3,7 +3,9 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import logo from "../assets/picture/logo.png";
 import logoplaystore from "../assets/picture/playstore.png";
 import logoappstore from "../assets/picture/applestore.png";
-
+import instagram from "../assets/picture/instagram.png";
+import twitter from "../assets/picture/tweet.png";
+import youtube from "../assets/picture/youtube.png";
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -72,7 +74,10 @@ const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div class="copyright">©2020 OPENTRIP. All rights Reserved</div>
+      <div className="copyright">©2020 OPENTRIP. All rights Reserved</div>
+      <img className="instagram" src={instagram} alt="instagram" />
+      <img className="twitter" src={twitter} alt="twitter" />
+      <img className="youtube" src={youtube} alt="youtube" />
     </MDBFooter>
   );
 };
