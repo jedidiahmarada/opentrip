@@ -1,4 +1,4 @@
-.regispage__background {
+.regisUser__background {
   width: 100%;
   height: 800px;
   background-image: linear-gradient(rgba(0, 1, 0, 0.459), rgba(0, 0, 0, 0.507)),
@@ -10,7 +10,7 @@
   display: flex;
 }
 
-.regis__card {
+.regisUser__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 500px;
@@ -27,36 +27,11 @@
   font-size: 28px;
 }
 
-.regis__card p {
+.regisUser__card p {
   margin: 63px 0 0 15px;
 }
 
 .regisUser__btn {
-  position: absolute;
-  width: 441.5px;
-  height: 60px;
-  left: 142px;
-  top: 320px;
-
-  background: #ff385c;
-  border-radius: 6px;
-  border: none;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.regisUser__btn:hover {
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.regisHoster__btn {
   position: absolute;
   width: 441.5px;
   height: 60px;
@@ -74,9 +49,4 @@
   align-items: center;
   text-align: center;
   color: white;
-}
-
-.regisHoster__btn:hover {
-  font-size: 20px;
-  cursor: pointer;
 }
