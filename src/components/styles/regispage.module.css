@@ -28,15 +28,19 @@
 }
 
 .regis__card p {
-  margin: 63px 0 0 15px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+
+  color: #4a4a4a;
+  margin: 50px 0 0 15px;
 }
 
 .regisUser__btn {
-  position: absolute;
-  width: 441.5px;
+  width: 440px;
   height: 60px;
-  left: 142px;
-  top: 320px;
+  margin: 55px 0 0 15px;
 
   background: #ff385c;
   border-radius: 6px;

@@ -15,8 +15,6 @@ const RegisPage = () => {
         <div className={styles.regis__card}>
           <div>
             <p>Choose Registration</p>
-          </div>
-          <div>
             <button className={styles.regisUser__btn} onClick={regisUserLInk}>
               Register as User
             </button>
