@@ -10,8 +10,8 @@ const HomePage = () => (
     <Header />
     <Search />
     <Category />
-    <BannerB />
-    <Footer />
+    {/* <BannerB />
+    <Footer /> */}
   </div>
 );
 export default HomePage;
