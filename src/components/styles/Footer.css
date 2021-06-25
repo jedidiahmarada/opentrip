@@ -1,7 +1,6 @@
 .Footer {
-  margin-bottom: 00px;
-  margin: 0 auto !important;
-  text-align: center !important;
+  margin: 0 auto;
+  text-align: center;
   width: 100%;
   height: 70px;
   position: absolute;
@@ -9,13 +8,8 @@
   font: white;
   left: 0;
   bottom: 0px;
+  margin-top: 500px;
 }
-
-/* .footercontainer {
-  width: 100%;
-  height: 500px;
-  background-color: blanchedalmond;
-} */
 
 .logo {
   position: absolute;
