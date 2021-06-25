@@ -1,12 +1,16 @@
 import React from "react";
-import RegisUser from "./registers/RegisUser";
-import RegisHoster from "./registers/RegisHoster";
+import styles from "../styles/regispage.module.css";
 
 const RegisPage = () => (
-  <div>
-    <h2>Registration</h2>
-    <RegisUser />
-    <RegisHoster />
+  <div className={styles.regispage}>
+    <div className={styles.regispage__background}>
+      <div className={styles.search__card}>
+        <div></div>
+        <div>
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

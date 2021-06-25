@@ -21,7 +21,7 @@
 }
 
 .header__nav__home {
-  width: 65px;
+  width: 60px;
   height: 38px;
   background: none;
   border: none;
@@ -34,7 +34,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   color: #000000;
 }
 
@@ -45,12 +45,12 @@
 }
 
 .header__nav__destination {
-  width: 115px;
+  width: 100px;
   height: 38px;
   background: none;
   border: none;
 
-  margin-left: 30px;
+  margin-left: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,7 +59,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   color: #000000;
 }
 
@@ -111,6 +111,7 @@
   font-size: 12px;
   cursor: pointer;
   border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header__signup__btn {
@@ -131,4 +132,5 @@
   font-size: 12px;
   cursor: pointer;
   border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
