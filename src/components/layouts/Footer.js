@@ -8,72 +8,74 @@ import "../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <MDBFooter color="blue" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="6">
-            <div className="Footer">
-              <img className="logo" src={logo} alt="Logo2" />
-            </div>
-          </MDBCol>
-          <MDBCol className="footer" md="6">
-            <ul className="company">
-              <p>Company</p>
-            </ul>
-            <ul className="about">
-              <p>About</p>
-            </ul>
-            <ul className="press">
-              <p>Press</p>
-            </ul>
-            <ul className="careers">
-              <p>Careers</p>
-            </ul>
-            <ul className="contact">
-              <p>Contact</p>
-            </ul>
-            <ul className="support">
-              <p>Support</p>
-            </ul>
-            <ul className="helpcenter">
-              <p>Help Center</p>
-            </ul>
-            <ul className="toc">
-              <p>Term of service</p>
-            </ul>
-            <ul className="legal">
-              <p>Legal</p>
-            </ul>
-            <ul className="privacypolicy">
-              <p>Privacy Policy</p>
-            </ul>
-            <ul className="kerjasama">
-              <p>Kerja Sama</p>
-            </ul>
-            <ul className="daftarjadihoster">
-              <p>Daftar Jadi Hoster</p>
-            </ul>
-            <ul className="hosterterdaftar">
-              <p>Hoster Terdaftar</p>
-            </ul>
-            <ul className="gettheapp">
-              <p>Get The App</p>
-            </ul>
-            <img
-              className="logoplaystore"
-              src={logoplaystore}
-              alt="logoplaystore"
-            />
-            <img
-              className="logoappstore"
-              src={logoappstore}
-              alt="logoapplestore"
-            />
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-      <div class="copyright">©2020 OPENTRIP. All rights Reserved</div>
-    </MDBFooter>
+    <div className="footercontainer">
+      <MDBFooter color="blue" className="font-small pt-4 mt-4">
+        <MDBContainer fluid className="text-center text-md-left">
+          <MDBRow>
+            <MDBCol md="6">
+              <div className="Footer">
+                <img className="logo" src={logo} alt="Logo2" />
+              </div>
+            </MDBCol>
+            <MDBCol className="footer" md="6">
+              <ul className="company">
+                <p>Company</p>
+              </ul>
+              <ul className="about">
+                <p>About</p>
+              </ul>
+              <ul className="press">
+                <p>Press</p>
+              </ul>
+              <ul className="careers">
+                <p>Careers</p>
+              </ul>
+              <ul className="contact">
+                <p>Contact</p>
+              </ul>
+              <ul className="support">
+                <p>Support</p>
+              </ul>
+              <ul className="helpcenter">
+                <p>Help Center</p>
+              </ul>
+              <ul className="toc">
+                <p>Term of service</p>
+              </ul>
+              <ul className="legal">
+                <p>Legal</p>
+              </ul>
+              <ul className="privacypolicy">
+                <p>Privacy Policy</p>
+              </ul>
+              <ul className="kerjasama">
+                <p>Kerja Sama</p>
+              </ul>
+              <ul className="daftarjadihoster">
+                <p>Daftar Jadi Hoster</p>
+              </ul>
+              <ul className="hosterterdaftar">
+                <p>Hoster Terdaftar</p>
+              </ul>
+              <ul className="gettheapp">
+                <p>Get The App</p>
+              </ul>
+              <img
+                className="logoplaystore"
+                src={logoplaystore}
+                alt="logoplaystore"
+              />
+              <img
+                className="logoappstore"
+                src={logoappstore}
+                alt="logoapplestore"
+              />
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+        <div class="copyright">©2020 OPENTRIP. All rights Reserved</div>
+      </MDBFooter>
+    </div>
   );
 };
 
