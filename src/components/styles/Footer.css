@@ -22,14 +22,14 @@
   width: 200px;
   height: 50px;
   left: 50px;
-  bottom: 180px;
+  bottom: 100px;
   padding: 120px 80px;
 }
 
 .company {
   position: absolute;
   left: 350px;
-  bottom: 290px;
+  bottom: 210px;
   font-size: 18px;
   font-style: normal;
 }
@@ -37,7 +37,7 @@
 .about {
   position: absolute;
   left: 350px;
-  bottom: 255px;
+  bottom: 185px;
   font-size: 15px;
   color: #515355;
 }
@@ -45,7 +45,7 @@
 .press {
   position: absolute;
   left: 350px;
-  bottom: 220px;
+  bottom: 150px;
   font-size: 15px;
   color: #515355;
 }
@@ -53,7 +53,7 @@
 .careers {
   position: absolute;
   left: 350px;
-  bottom: 185px;
+  bottom: 115px;
   font-size: 15px;
   color: #515355;
 }
@@ -61,7 +61,7 @@
 .contact {
   position: absolute;
   left: 350px;
-  bottom: 150px;
+  bottom: 85px;
   font-size: 15px;
   color: #515355;
 }
@@ -69,7 +69,7 @@
 .support {
   position: absolute;
   left: 530px;
-  bottom: 290px;
+  bottom: 210px;
   font-size: 18px;
   font-style: normal;
 }
@@ -77,7 +77,7 @@
 .helpcenter {
   position: absolute;
   left: 530px;
-  bottom: 255px;
+  bottom: 180px;
   font-size: 15px;
   color: #515355;
 }
@@ -85,7 +85,7 @@
 .toc {
   position: absolute;
   left: 530px;
-  bottom: 220px;
+  bottom: 150px;
   font-size: 15px;
   color: #515355;
 }
@@ -93,7 +93,7 @@
 .legal {
   position: absolute;
   left: 530px;
-  bottom: 185px;
+  bottom: 115px;
   font-size: 15px;
   color: #515355;
 }
@@ -101,7 +101,7 @@
 .privacypolicy {
   position: absolute;
   left: 530px;
-  bottom: 150px;
+  bottom: 85px;
   font-size: 15px;
   color: #515355;
 }
@@ -109,7 +109,7 @@
 .kerjasama {
   position: absolute;
   left: 710px;
-  bottom: 290px;
+  bottom: 210px;
   font-size: 18px;
   font-style: normal;
 }
@@ -117,7 +117,7 @@
 .daftarjadihoster {
   position: absolute;
   left: 710px;
-  bottom: 255px;
+  bottom: 185px;
   font-size: 15px;
   color: #515355;
 }
@@ -125,7 +125,7 @@
 .hosterterdaftar {
   position: absolute;
   left: 710px;
-  bottom: 220px;
+  bottom: 150px;
   font-size: 15px;
   color: #515355;
 }
@@ -133,7 +133,7 @@
 .gettheapp {
   position: absolute;
   left: 890px;
-  bottom: 290px;
+  bottom: 210px;
   font-size: 18px;
   font-style: normal;
 }
@@ -143,7 +143,7 @@
   height: 67px;
   position: absolute;
   left: 838px;
-  bottom: 140px;
+  bottom: 50px;
   padding: 120px 80px;
 }
 
@@ -152,7 +152,7 @@
   height: 45px;
   position: absolute;
   left: 1000px;
-  bottom: 152px;
+  bottom: 62px;
   padding: 120px 80px;
 }
 
@@ -162,4 +162,28 @@
   bottom: 28px;
   font-size: 13px;
   color: white;
+}
+
+.instagram {
+  position: absolute;
+  right: 320px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.twitter {
+  position: absolute;
+  right: 270px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.youtube {
+  position: absolute;
+  right: 220px;
+  bottom: 20px;
+  width: 30px;
+  height: 20px;
 }
