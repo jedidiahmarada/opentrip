@@ -39,8 +39,8 @@
   display: flex;
   margin-left: 200px;
   background-color: white;
-  margin-top: 360px;
-  margin-left: 200px;
+  margin: 360px 0 30px 200px;
+
   padding: 10px 0 10px 0;
 
   align-items: center;

@@ -11,8 +11,8 @@ const HomePage = () => (
   <div>
     <Search />
     <Category />
-    {/* <BannerB />
-    <Footer /> */}
+    <BannerB />
+    <Footer />
   </div>
 );
 export default HomePage;
