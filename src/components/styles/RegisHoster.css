@@ -1,3 +1,7 @@
+.regishosterbackground {
+  background-color: #f5f5f5;
+}
+
 .regishosterpage {
   max-width: 800px;
   height: 1900px;
@@ -252,20 +256,20 @@
 .form-control {
   width: 600px;
   height: 50px;
-  left: 100px;
-  top: 1280px;
   position: absolute;
   border-radius: 6px;
   border: 1px solid #cecece;
   box-sizing: border-box;
   background: #ff385c;
+
+  margin-top: 15px;
 }
 
 .NomorRekening {
   color: #8e8e8e;
   font-size: 16px;
   margin-left: 100px;
-  margin-top: 1320px;
+  margin-top: 1340px;
   position: absolute;
 }
 
@@ -284,7 +288,7 @@
   color: #8e8e8e;
   font-size: 16px;
   margin-left: 100px;
-  margin-top: 1420px;
+  margin-top: 1430px;
   position: absolute;
 }
 
@@ -352,5 +356,5 @@
   font-size: 24px;
   font-weight: bolder;
   text-align: center;
-  border-color: #ff385c;
+  border: none;
 }

@@ -5,8 +5,12 @@ import { useHistory } from "react-router-dom";
 const RegisPage = () => {
   const history = useHistory();
 
-  const regisUserLInk = () => {
+  const regisUserLink = () => {
     history.push("/regisuser");
+  };
+
+  const regisHosterLink = () => {
+    history.push("/regishoster");
   };
 
   return (
@@ -15,12 +19,15 @@ const RegisPage = () => {
         <div className={styles.regis__card}>
           <div>
             <p>Choose Registration</p>
-            <button className={styles.regisUser__btn} onClick={regisUserLInk}>
+            <button className={styles.regisUser__btn} onClick={regisUserLink}>
               Register as User
             </button>
           </div>
           <div>
-            <button className={styles.regisHoster__btn}>
+            <button
+              className={styles.regisHoster__btn}
+              onClick={regisHosterLink}
+            >
               Register as Hoster
             </button>
           </div>
