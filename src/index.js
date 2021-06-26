@@ -4,14 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import thunk from "redux-thunk";
+// import thunk from "redux-thunk";
+import loginReducer from "./components/redux/reducers/loginReducer";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
-import { applyMiddleware, createStore } from "redux";
+import { createStore } from "redux";
 import rootReducer from "./components/redux/reducers/rootReducer";
 
 // const middleware = [thunk];
-const store = createStore(rootReducer);
+const store = createStore(
+  loginReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
   <Provider store={store}>
