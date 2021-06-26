@@ -19,11 +19,16 @@ const Login = () => {
       <div className={styles.loginbg}></div>
       <div className={styles.login__card}>
         <input
+          className={styles.login__input}
           placeholder="username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         ></input>
-        <input placeholder="password"></input>
+        <input
+          className={styles.pswrd__input}
+          placeholder="password"
+          type="password"
+        ></input>
         <button onClick={handleClick}>Login</button>
       </div>
     </div>

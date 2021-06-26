@@ -2,7 +2,7 @@ import React from "react";
 
 const Destination = () => (
   <div>
-    <h4>Destination</h4>
+    <h4>All Tour</h4>
   </div>
 );
 

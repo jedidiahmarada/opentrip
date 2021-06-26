@@ -15,5 +15,18 @@
   height: 1000px;
   background-color: white;
   align-items: center;
-  padding-left: 30%;
+}
+
+.login__input {
+  width: 457px;
+  height: 60px;
+  left: 883px;
+  top: 330.25px;
+
+  border: 1px solid #cecece;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.psswrd__input {
 }
