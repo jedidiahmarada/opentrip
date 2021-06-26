@@ -1,13 +1,33 @@
 import React from "react";
-import RegisUser from "./registers/RegisUser";
-import RegisHoster from "./registers/RegisHoster";
+import styles from "../styles/regispage.module.css";
+import { useHistory } from "react-router-dom";
 
-const RegisPage = () => (
-  <div>
-    <h2>Registration</h2>
-    <RegisUser />
-    <RegisHoster />
-  </div>
-);
+const RegisPage = () => {
+  const history = useHistory();
+
+  const regisUserLInk = () => {
+    history.push("/regisuser");
+  };
+
+  return (
+    <div className={styles.regispage}>
+      <div className={styles.regispage__background}>
+        <div className={styles.regis__card}>
+          <div>
+            <p>Choose Registration</p>
+            <button className={styles.regisUser__btn} onClick={regisUserLInk}>
+              Register as User
+            </button>
+          </div>
+          <div>
+            <button className={styles.regisHoster__btn}>
+              Register as Hoster
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default RegisPage;

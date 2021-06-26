@@ -9,8 +9,10 @@ import "../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <div className="Footer">
-      <img className="logo" src={logo} alt="Logo2" />
+    <div>
+      <div className="Footer">
+        <img className="logo" src={logo} alt="Logo2" />
+      </div>
 
       <ul className="company">
         <p>Company</p>
