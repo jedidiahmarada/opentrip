@@ -2,18 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 let imgURL = "https://image.tmdb.org/t/p/w500";
 
-const MovieItem = ({ movie }) => {
+const DestinationItem = ({ destination }) => {
   return (
     <div style={{ textAlign: "center" }}>
-      <Link to={`/milan-tv/${movie.id}`}>
+      <Link to={`/milan-tv/${destination.id}`}>
         <img
           className="carousel-image"
-          src={`${imgURL}${movie.poster_path}`}
-          alt={movie.title}
+          src={`${imgURL}${destination.poster_path}`}
+          alt={destination.title}
         />
       </Link>
     </div>
   );
 };
 
-export default MovieItem;
+export default DestinationItem;

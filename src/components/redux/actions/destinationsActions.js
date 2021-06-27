@@ -1,17 +1,21 @@
 import axios from "axios";
-import movieDispatchers from "./dispatchers";
+import destinationsDispatchers from "./dispatchers";
 
 const url = "https://api.themoviedb.org/3/movie/";
 const apiKey = "26b6f99577e56d992ffe47051578e1ac";
 
-const moviesActions = {
-  getPopularMovies: () => {
+const destinationsActions = {
+  getPopularDestinations: () => {
     return async (dispatch) => {
       await axios
         .get(`${url}popular?api_key=${apiKey}&language=en-US&page=1`)
         .then((res) => {
-          let popularMovies = res.data.results;
-          dispatch(movieDispatchers.getPopularMoviesSuccess(popularMovies));
+          let popularDestinations = res.data.results;
+          dispatch(
+            destinationsDispatchers.getPopularDestinationsSuccess(
+              popularDestinations
+            )
+          );
         })
         .catch((err) => {
           console.log(err);
@@ -19,13 +23,13 @@ const moviesActions = {
     };
   },
 
-  getTopMovies: () => {
+  getVitaminSea: () => {
     return async (dispatch) => {
       await axios
         .get(`${url}top_rated?api_key=${apiKey}&language=en-US&page=1`)
         .then((res) => {
-          let topMovies = res.data.results;
-          dispatch(movieDispatchers.getTopMoviesSuccess(topMovies));
+          let vitaminSea = res.data.results;
+          dispatch(destinationsDispatchers.getVitaminSeaSuccess(vitaminSea));
         })
         .catch((err) => {
           console.log(err);
@@ -33,13 +37,13 @@ const moviesActions = {
     };
   },
 
-  getUpcomingMovies: () => {
+  getNaikGunung: () => {
     return async (dispatch) => {
       await axios
         .get(`${url}upcoming?api_key=${apiKey}&language=en-US&page=1`)
         .then((res) => {
-          let upcomingMovies = res.data.results;
-          dispatch(movieDispatchers.getUpcomingMoviesSuccess(upcomingMovies));
+          let naikGunung = res.data.results;
+          dispatch(destinationsDispatchers.getNaikGunungSuccess(naikGunung));
         })
         .catch((err) => {
           console.log(err);
@@ -47,13 +51,15 @@ const moviesActions = {
     };
   },
 
-  getMovie: (id) => {
+  getDestinations: (id) => {
     return async (dispatch) => {
       await axios
         .get(`${url}${id}?api_key=${apiKey}&language=en-US`)
         .then((res) => {
-          let movie = res.data;
-          dispatch(movieDispatchers.getMovieSuccess(movie));
+          let destinations = res.data;
+          dispatch(
+            destinationsDispatchers.getDestinationsSuccess(destinations)
+          );
         })
         .catch((err) => {
           console.log(err);
@@ -61,13 +67,13 @@ const moviesActions = {
     };
   },
 
-  getMovieReviews: (id) => {
+  getNature: (id) => {
     return async (dispatch) => {
       await axios
         .get(`${url}${id}/reviews?api_key=${apiKey}&language=en-US&page=1`)
         .then((res) => {
-          let moviesReviews = res.data.results;
-          dispatch(movieDispatchers.getMoviesReviewsSuccess(moviesReviews));
+          let nature = res.data.results;
+          dispatch(destinationsDispatchers.getNatureSuccess(nature));
         })
         .catch((err) => {
           console.log(err);
@@ -76,4 +82,4 @@ const moviesActions = {
   },
 };
 
-export default moviesActions;
+export default destinationsActions;

@@ -1,34 +1,33 @@
 import React, { useEffect } from "react";
 import styles from "../styles/category.module.css";
-
 import { Link } from "react-router-dom";
 import { mainResponsive } from "../../mainResponsive";
-import moviesActions from "../redux/actions/moviesActions";
+import destinationsActions from "../redux/actions/destinationsActions";
 import { useDispatch, useSelector } from "react-redux";
 
 //Components
-import PopularMovieList from "../layouts/PopularMoviesList";
-import TopMoviesList from "../layouts/TopMoviesList";
-import UpcomingMoviesList from "../layouts/UpcomingMoviesList";
+import PopularDestinationList from "./PopularDestinationList";
+import VitaminSeaList from "./VitaminSeaList";
+import NaikGunungList from "./NaikGunungList";
 let imgURL = "https://image.tmdb.org/t/p/original";
 
 const Category = () => {
-  const upcomingMovies = useSelector(
-    (state) => state.moviesReducer.upcomingMovies
+  const naikGunung = useSelector(
+    (state) => state.destinationsReducer.naikGunung
   );
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(moviesActions.getUpcomingMovies());
+    dispatch(destinationsActions.getNaikGunung());
   }, [dispatch]);
   return (
     <div>
       {" "}
       <div className="container main-container">
-        <PopularMovieList />
+        <PopularDestinationList />
         <br />
-        <TopMoviesList />
+        <VitaminSeaList />
         <br />
-        <UpcomingMoviesList upcomingMovies={upcomingMovies} />
+        <NaikGunungList />
       </div>
     </div>
   );

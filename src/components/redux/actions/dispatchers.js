@@ -1,56 +1,56 @@
 import {
-  GET_POPULAR_MOVIES,
-  GET_TOP_MOVIES,
-  GET_MOVIE,
-  GET_MOVIE_REVIEWS,
-  GET_UPCOMING_MOVIES,
+  GET_POPULAR_DESTINATIONS,
+  GET_VITAMIN_SEA,
+  GET_DESTINATIONS,
+  GET_NAIK_GUNUNG,
+  GET_NATURE,
 } from "./actionTypes";
 
-const movieDispatchers = {
-  getPopularMoviesSuccess: (popularMovies) => {
+const destinationsDispatchers = {
+  getPopularDestinationsSuccess: (popularDestinations) => {
     return {
-      type: GET_POPULAR_MOVIES,
+      type: GET_POPULAR_DESTINATIONS,
       payload: {
-        popularMovies,
+        popularDestinations,
       },
     };
   },
 
-  getMovieSuccess: (movie) => {
+  getDestinationsSuccess: (destinations) => {
     return {
-      type: GET_MOVIE,
+      type: GET_DESTINATIONS,
       payload: {
-        movie,
+        destinations,
       },
     };
   },
 
-  getTopMoviesSuccess: (topMovies) => {
+  getVitaminSeaSuccess: (vitaminSea) => {
     return {
-      type: GET_TOP_MOVIES,
+      type: GET_VITAMIN_SEA,
       payload: {
-        topMovies,
+        vitaminSea,
       },
     };
   },
 
-  getMoviesReviewsSuccess: (movieReviews) => {
+  getNaikGunungSuccess: (naikGunung) => {
     return {
-      type: GET_MOVIE_REVIEWS,
+      type: GET_NAIK_GUNUNG,
       payload: {
-        movieReviews,
+        naikGunung,
       },
     };
   },
 
-  getUpcomingMoviesSuccess: (upcomingMovies) => {
+  getNatureSuccess: (nature) => {
     return {
-      type: GET_UPCOMING_MOVIES,
+      type: GET_NATURE,
       payload: {
-        upcomingMovies,
+        nature,
       },
     };
   },
 };
 
-export default movieDispatchers;
+export default destinationsDispatchers;
