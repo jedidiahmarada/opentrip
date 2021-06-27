@@ -1,35 +1,95 @@
 .box {
-  display: grid;
+    display: grid;
 }
 
-.left-bg {
-  grid-column: 1;
-  grid-row: 1;
-  width: 50%;
+.left_bg {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+}
+
+.logoLogin {
+    /*position: absolute;*/
+    width: 200px;
+    height: 55px;
+    left: 50px;
+    bottom: 180px;
+    /*padding: 120px 80px;*/
+    /*outline: 2px solid red;*/
 }
 
 .login__card {
-  grid-column: 2;
-  grid-row: 1;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  width: 490px;
-  align-items: center;
-  flex-direction: column;
-  /*outline: 2px solid green;*/
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usernameTitle {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Inter;
+    color: #8e8e8e;
 }
 
 .login__input {
-  /*width: 457px;*/
-  /*height: 60px;*/
-  /*left: 883px;*/
-  /*top: 330.25px;*/
-
-  /*border: 1px solid #cecece;*/
-  /*box-sizing: border-box;*/
-  /*border-radius: 6px;*/
+    width: 357px;
+    height: 50px;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0;
+    color: #8e8e8e;
 }
 
-.psswrd__input {
+.psw__input {
+    width: 357px;
+    height: 50px;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 0;
+    color: #8e8e8e;
+}
+
+.loginButton {
+    width: 357px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: #FF385C;
+    border: 2px solid #FF385C;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter;
+    color: white;
+}
+
+.forgot_register {
+    width: 357px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    /*outline: 2px solid green;*/
+}
+
+.accountRegister {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.register_link {
+    color: #FF385C;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 600;
 }
