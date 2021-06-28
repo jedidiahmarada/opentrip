@@ -1,0 +1,49 @@
+/*!* (A) SQUARE CONTAINER *!*/
+/*.detailDestination {*/
+/*    position: relative;*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    border: dotted;*/
+/*}*/
+/*!* (B) IMAGE *!*/
+/*.left_bg {*/
+/*    !* (B1) POSITION IMAGE *!*/
+/*    position: absolute;*/
+/*    top: -50px;*/
+/*    left: -100px;*/
+
+/*    !* (B2) CROP IMAGE *!*/
+/*    !* ORIGINAL IMAGE IS 600 X 420 *!*/
+/*    !* RECT(TOP, RIGHT, BOTTOM, LEFT) *!*/
+/*    clip: rect(50px, 400px, 350px, 100px);*/
+/*    width: 400px;*/
+/*}*/
+
+.bgImgDDetails {
+    width: 600px;
+    height: 1000px;
+    background-image: url("https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border: dotted;*/
+}
+
+.destinasiAtas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bagKanan {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
+}
+
+
+
+.solidDivider {
+    border-top: 1px solid #bbb;
+}
