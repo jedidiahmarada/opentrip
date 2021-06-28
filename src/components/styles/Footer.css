@@ -7,6 +7,7 @@
   align-items: flex-start;
   height: 270px;
   padding-top: 100px;
+  height: 250px;
 }
 
 .logoFooter {
@@ -57,6 +58,7 @@
   justify-content: space-around;
   background-color: #0b0d17;
   height: 72px;
+
   /*outline: 2px solid yellow;*/
 }
 
