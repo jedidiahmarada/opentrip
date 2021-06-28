@@ -1,0 +1,22 @@
+.card__carousell {
+  width: 100%;
+  height: 500px;
+}
+
+.card__carousell img {
+  width: 500px;
+  height: 500px;
+  margin-left: 15px;
+  border-radius: 15px;
+}
+
+.carousel__btn {
+  width: 255px;
+  height: 50px;
+  left: 20.42px;
+  top: 505px;
+
+  /* Main Color */
+
+  background: #ff385c;
+}

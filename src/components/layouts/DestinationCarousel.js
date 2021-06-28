@@ -1,17 +1,19 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import styles from "../styles/destinationCarousel.module.css";
 
-const MoviesCarousel = (props) => {
+const DestinationCarousel = (props) => {
   return (
     <Carousel
       showDots={false}
       swipeable
       responsive={props.responsiveConfig}
       additionalTransfrom={0}
-      arrows
+      arrows={true}
       autoPlaySpeed={3000}
-      centerMode={false}
+      centerMode={true}
+      className={styles.card__carousell}
       containerClass="container-with-dots"
       draggable
       focusOnSelect={false}
@@ -21,11 +23,12 @@ const MoviesCarousel = (props) => {
       minimumTouchDrag={80}
       renderButtonGroupOutside={false}
       renderDotsOutside={false}
+      itemClass="carousel-item-padding-40-px"
     >
-      <button>tes</button>
       {props.children}
+      <button clasName={styles.carousel__btn}>tes</button>
     </Carousel>
   );
 };
 
-export default MoviesCarousel;
+export default DestinationCarousel;
