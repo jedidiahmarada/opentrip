@@ -2,6 +2,7 @@ import React from "react";
 import filtericon from "../assets/picture/filtericon.png";
 import filtericonbar from "../assets/picture/filtericonbar.png";
 import filtericonbar1 from "../assets/picture/filtericonbar.png";
+import filtericonbar2 from "../assets/picture/filtericonbar.png";
 import "../styles/Destination.css";
 
 const Destination = () => (
@@ -44,7 +45,7 @@ const Destination = () => (
     <p className="temaperjalanan">Tema Perjalanan</p>
     <img className="filtericonbar1" src={filtericonbar1} alt="filtericonbar1" />
     <hr className="hr3"></hr>
-    <div class="formcheck1">
+    <div class="formcheck3">
       <input
         class="form-check-input"
         type="checkbox"
@@ -55,7 +56,7 @@ const Destination = () => (
         Destinasi Popular
       </label>
     </div>
-    <div class="formcheck2">
+    <div class="formcheck4">
       <input
         class="form-check-input"
         type="checkbox"
@@ -66,6 +67,31 @@ const Destination = () => (
         Vitamin Sea
       </label>
     </div>
+    <div class="formcheck5">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+      />
+      <label class="form-check-label" for="flexCheckChecked">
+        Naik - Naik ke Puncak Gunung
+      </label>
+    </div>
+    <div class="formcheck6">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+      />
+      <label class="form-check-label" for="flexCheckChecked">
+        Menyatu Dengan Alam
+      </label>
+    </div>
+    <p className="budgetperjalanan">Budget</p>
+    <img className="filtericonbar2" src={filtericonbar2} alt="filtericonbar2" />
+    <hr className="hr4"></hr>
   </div>
 );
 
