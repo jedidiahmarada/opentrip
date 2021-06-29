@@ -3,6 +3,13 @@ import filtericon from "../assets/picture/filtericon.png";
 import filtericonbar from "../assets/picture/filtericonbar.png";
 import filtericonbar1 from "../assets/picture/filtericonbar.png";
 import filtericonbar2 from "../assets/picture/filtericonbar.png";
+import filtericonbar3 from "../assets/picture/filtericonbar.png";
+import searchicon1 from "../assets/picture/searchicon.png";
+import filtericonbar4 from "../assets/picture/filtericonbar.png";
+import searchicon2 from "../assets/picture/searchicon.png";
+import filtericonbar5 from "../assets/picture/filtericonbar.png";
+import calendericon from "../assets/picture/calendericon.png";
+import filtericonbar6 from "../assets/picture/filtericonbar.png";
 import "../styles/Destination.css";
 
 const Destination = () => (
@@ -10,6 +17,15 @@ const Destination = () => (
     <div>
       <h4 className="semuatur">Semua Tur</h4>
       <h3 className="urutkan">Urutkan</h3>
+
+      <div className="pilihurutan">
+        <div class="pilihurutan form-group col-md-4">
+          <select id="inputState" className="form-control">
+            <option selected>Pilih Urutan</option>
+          </select>
+        </div>
+      </div>
+
       <img className="filtericon" src={filtericon} alt="filtericon" />
       <p className="filterp">Filter</p>
     </div>
@@ -92,6 +108,105 @@ const Destination = () => (
     <p className="budgetperjalanan">Budget</p>
     <img className="filtericonbar2" src={filtericonbar2} alt="filtericonbar2" />
     <hr className="hr4"></hr>
+
+    <div className="budgetminimum">
+      <div class="input-group-prepend">
+        <span class="input-group-text"> {"  Rp"} </span>
+        <input
+          type="text"
+          className="budgetminimuminput"
+          placeholder="Budget Minimum"
+        />
+      </div>
+
+      <div className="budgetmaksimum">
+        <div class="input-group-prepend">
+          <span class="input-group-text"> {"  Rp"} </span>
+          <input
+            type="text"
+            className="budgetmaksimuminput"
+            placeholder="Budget Maksimum"
+          />
+        </div>
+
+        <p className="lokasikeberangkatan">Lokasi Keberangkatan</p>
+        <img
+          className="filtericonbar3"
+          src={filtericonbar3}
+          alt="filtericonbar3"
+        />
+        <hr className="hr5"></hr>
+      </div>
+
+      <div className="lokasiberangkat">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <img className="searchicon1" src={searchicon1} alt="searchicon1" />
+          </span>
+          <input
+            type="text"
+            className="lokasiberangkatinput"
+            placeholder="Cari Lokasi Keberangkatan"
+          />
+        </div>
+      </div>
+
+      <p className="destinasi">Destinasi</p>
+      <img
+        className="filtericonbar4"
+        src={filtericonbar4}
+        alt="filtericonbar4"
+      />
+      <hr className="hr6"></hr>
+    </div>
+
+    <div className="caridestinasi">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <img className="searchicon2" src={searchicon2} alt="searchicon2" />
+        </span>
+        <input
+          type="text"
+          className="caridestinasiinput"
+          placeholder="Cari Destinasi"
+        />
+      </div>
+    </div>
+
+    <p className="periodeberangkat">Periode Berangkat</p>
+    <img className="filtericonbar5" src={filtericonbar5} alt="filtericonbar5" />
+    <hr className="hr7"></hr>
+
+    <div className="pilihtanggal">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <img className="calendericon" src={calendericon} alt="calendericon" />
+        </span>
+        <input
+          type="text"
+          className="pilihtanggalinput"
+          placeholder="Pilih Tanggal Keberangkatan"
+        />
+      </div>
+    </div>
+    <p className="durasi">Durasi</p>
+    <img className="filtericonbar6" src={filtericonbar6} alt="filtericonbar6" />
+    <hr className="hr8"></hr>
+
+    <div className="durasibox1">
+      <div class="input-group-prepend">
+        <span class="input-group-text"></span>
+        <p>{"1 Hari"}</p>
+      </div>
+    </div>
+
+    <div className="durasibox2">
+      <div class="input-group-prepend">
+        <span class="input-group-text"></span>
+        <p>{"10 Hari"}</p>
+      </div>
+    </div>
+    <input type="range" className="durasirange" min="0" max="5" />
   </div>
 );
 

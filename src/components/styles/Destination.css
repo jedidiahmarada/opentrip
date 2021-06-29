@@ -4,7 +4,7 @@
 
 .filtercoloum {
   max-width: 275px;
-  height: 1140px;
+  height: 1020px;
   margin-left: 120px;
   margin-top: 250px;
   border: 1px solid white;
@@ -35,9 +35,22 @@
   color: #4a4a4a;
 }
 
+.pilihurutan form-group col-md-4,
+.form-control {
+  position: absolute;
+  max-width: 110px;
+  max-height: 20px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  top: 150px;
+  right: 120px;
+  color: #4a4a4a;
+}
+
 .rectangledestination {
   height: 12px;
-  width: 90px;
+  width: 100px;
   background-color: #ff385c;
   margin-left: 0px;
   top: 212px;
@@ -109,6 +122,7 @@
   display: flex;
   color: #4d4d4d;
   align-items: center;
+  text-indent: 8px;
 }
 
 .formcheck2 {
@@ -121,6 +135,7 @@
   display: flex;
   color: #4d4d4d;
   align-items: center;
+  text-indent: 8px;
 }
 
 .temaperjalanan {
@@ -161,6 +176,7 @@
   display: flex;
   color: #4d4d4d;
   align-items: center;
+  text-indent: 8px;
 }
 
 .formcheck4 {
@@ -173,6 +189,7 @@
   display: flex;
   color: #4d4d4d;
   align-items: center;
+  text-indent: 8px;
 }
 
 .formcheck5 {
@@ -185,6 +202,7 @@
   display: flex;
   color: #4d4d4d;
   align-items: center;
+  text-indent: 8px;
 }
 
 .formcheck6 {
@@ -197,6 +215,7 @@
   display: flex;
   color: #4d4d4d;
   align-items: center;
+  text-indent: 8px;
 }
 
 .budgetperjalanan {
@@ -225,4 +244,343 @@
   left: 350px;
   top: 639px;
   position: absolute;
+}
+
+.budgetminimum {
+  position: absolute;
+  width: 190px;
+  height: 32px;
+  left: 30px;
+  top: 700px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 7rem;
+  text-indent: 7px;
+  color: #4d4d4d;
+  background: #e4e4e4;
+}
+
+.budgetminimuminput {
+  position: absolute;
+  width: 210px;
+  height: 32px;
+  left: 30px;
+  top: -1px;
+  border: 1px solid #e0e2e4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-indent: 10px;
+  font-size: 12px;
+}
+
+.budgetmaksimum {
+  position: absolute;
+  width: 190px;
+  height: 32px;
+  left: -112px;
+  top: 40px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 7rem;
+  text-indent: 7px;
+  color: #4d4d4d;
+  background: #e4e4e4;
+}
+
+.budgetmaksimuminput {
+  position: absolute;
+  width: 210px;
+  height: 32px;
+  left: 30px;
+  top: -1px;
+  border: 1px solid #e0e2e4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-indent: 10px;
+  font-size: 12px;
+}
+
+::placeholder {
+  color: #bcbcbc;
+}
+
+.lokasikeberangkatan {
+  position: absolute;
+  left: -10px;
+  top: 55px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  color: #4d4d4d;
+}
+
+.hr5 {
+  position: absolute;
+  width: 275px;
+  left: -24px;
+  top: 100px;
+  border: 1px solid #e4e4e4;
+  height: 0px;
+}
+
+.filtericonbar3 {
+  width: 36px;
+  height: 35px;
+  left: 203px;
+  top: 63px;
+  position: absolute;
+}
+
+.lokasiberangkat {
+  position: absolute;
+  width: 190px;
+  height: 32px;
+  left: -112px;
+  top: 165px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 7rem;
+  text-indent: 7px;
+  color: #4d4d4d;
+  background: #e4e4e4;
+}
+
+.lokasiberangkatinput {
+  position: absolute;
+  width: 210px;
+  height: 32px;
+  left: 30px;
+  top: -1px;
+  border: 1px solid #e0e2e4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-indent: 10px;
+  font-size: 12px;
+}
+
+.searchicon1 {
+  width: 20px;
+  height: 20px;
+  position: flex;
+}
+
+.destinasi {
+  position: absolute;
+  left: -10px;
+  top: 210px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  color: #4d4d4d;
+}
+
+.hr6 {
+  position: absolute;
+  width: 275px;
+  left: -24px;
+  top: 255px;
+  border: 1px solid #e4e4e4;
+  height: 0px;
+}
+
+.filtericonbar4 {
+  width: 36px;
+  height: 35px;
+  left: 203px;
+  top: 220px;
+  position: absolute;
+}
+
+.caridestinasi {
+  position: absolute;
+  width: 190px;
+  height: 32px;
+  left: 31px;
+  top: 980px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 7rem;
+  text-indent: 7px;
+  color: #4d4d4d;
+  background: #e4e4e4;
+}
+
+.caridestinasiinput {
+  position: absolute;
+  width: 210px;
+  height: 32px;
+  left: 30px;
+  top: -1px;
+  border: 1px solid #e0e2e4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-indent: 10px;
+  font-size: 12px;
+}
+
+.searchicon2 {
+  width: 20px;
+  height: 20px;
+  position: flex;
+}
+
+.periodeberangkat {
+  position: absolute;
+  left: 143px;
+  top: 1030px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  color: #4d4d4d;
+}
+
+.hr7 {
+  position: absolute;
+  width: 275px;
+  left: 120px;
+  top: 1070px;
+  border: 1px solid #e4e4e4;
+  height: 0px;
+}
+
+.filtericonbar5 {
+  width: 36px;
+  height: 35px;
+  left: 345px;
+  top: 1039px;
+  position: absolute;
+}
+
+.pilihtanggal {
+  position: absolute;
+  width: 190px;
+  height: 32px;
+  left: 31px;
+  top: 1095px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 7rem;
+  text-indent: 7px;
+  color: #4d4d4d;
+  background: #e4e4e4;
+}
+
+.pilihtanggalinput {
+  position: absolute;
+  width: 210px;
+  height: 32px;
+  left: 30px;
+  top: -1px;
+  border: 1px solid #e0e2e4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-indent: 10px;
+  font-size: 12px;
+}
+
+.calendericon {
+  width: 20px;
+  height: 20px;
+  position: flex;
+}
+
+.durasi {
+  position: absolute;
+  left: 143px;
+  top: 1140px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  color: #4d4d4d;
+}
+
+.hr8 {
+  position: absolute;
+  width: 275px;
+  left: 120px;
+  top: 1178px;
+  border: 1px solid #e4e4e4;
+  height: 0px;
+}
+
+.filtericonbar6 {
+  width: 36px;
+  height: 35px;
+  left: 345px;
+  top: 1150px;
+  position: absolute;
+}
+
+.durasibox1 {
+  position: absolute;
+  width: 100px;
+  height: 32px;
+  left: 31px;
+  top: 1200px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 7rem;
+  word-spacing: 50px;
+  text-indent: 7px;
+}
+
+.durasibox2 {
+  position: absolute;
+  width: 100px;
+  height: 32px;
+  left: 165px;
+  top: 1200px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin-left: 7rem;
+  word-spacing: 45px;
+  text-indent: 5px;
+}
+
+.durasirange {
+  background-color: #ff385c;
+  width: 240px;
+  left: 140px;
+  top: 1250px;
+  position: absolute;
+  outline: none;
+  opacity: 0.7;
 }
