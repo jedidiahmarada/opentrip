@@ -5,6 +5,7 @@ import Category from "../layouts/Category";
 
 import BannerB from "../layouts/BannerB";
 import DestinationDetailAtas from '../layouts/DestinationDetailAtas'
+import TabsDDetail from '../layouts/tabsDDetail'
 
 const HomePage = () => (
   <div>
@@ -12,6 +13,7 @@ const HomePage = () => (
     {/*<Category />*/}
     {/*<BannerB />*/}
     <DestinationDetailAtas />
+    <TabsDDetail/>
   </div>
 );
 
