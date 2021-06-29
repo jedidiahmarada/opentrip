@@ -18,15 +18,16 @@ const DestinationCarousel = (props) => {
       draggable
       focusOnSelect={false}
       infinite
+      items={4}
+      // slidesToShow={1}
       slidesToSlide={1}
       keyBoardControl
       minimumTouchDrag={80}
       renderButtonGroupOutside={false}
       renderDotsOutside={false}
-      itemClass="carousel-item-padding-40-px"
+      itemClass="carousel-item-padding-100-px"
     >
       {props.children}
-      <button clasName={styles.carousel__btn}>tes</button>
     </Carousel>
   );
 };

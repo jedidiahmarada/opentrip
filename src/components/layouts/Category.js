@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 //Components
 import PopularDestinationList from "./PopularDestinationList";
 import VitaminSeaList from "./VitaminSeaList";
-import NaikGunungList from "./NaikGunungList";
+// import NaikGunungList from "./NaikGunungList";
 let imgURL = "https://image.tmdb.org/t/p/original";
 
 const Category = () => {
@@ -27,7 +27,7 @@ const Category = () => {
         <br />
         <VitaminSeaList />
         <br />
-        <NaikGunungList />
+        {/* <NaikGunungList /> */}
       </div>
     </div>
   );

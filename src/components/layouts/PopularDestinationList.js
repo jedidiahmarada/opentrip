@@ -4,6 +4,7 @@ import destinationsActions from "../redux/actions/destinationsActions";
 import DestinationItem from "./DestinationItem";
 import DestinationCarousel from "./DestinationCarousel";
 import { responsive } from "../../responsive";
+import styles from "../styles/popular.module.css";
 
 const PopularDestinationList = () => {
   const popularDestinations = useSelector(
@@ -15,7 +16,7 @@ const PopularDestinationList = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={styles.popular__comp}>
       <h2>
         <b>Destinasi Populer</b>
       </h2>
