@@ -17,7 +17,7 @@
 
 .rectangle {
   height: 10px;
-  width: 798px;
+  width: 832px;
   background-color: #ff385c;
   margin-left: -16px;
   margin-top: -24px;
@@ -260,7 +260,6 @@
   border-radius: 6px;
   border: 1px solid #cecece;
   box-sizing: border-box;
-  background: #ff385c;
 
   margin-top: 15px;
 }
