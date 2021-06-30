@@ -137,17 +137,116 @@
     /*outline: 2px solid green;*/
 }
 
-.billInp {
-    /*width: 25%;*/
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.ordDet {
+    text-align: center;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 30px;
+    color: #4a4a4a;
 }
 
+/*--------------------------*/
+.kontenIsi {
+    width: 700px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: right;*/
+}
 
+.bagJudPaket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
 
-.btnNextStep {
+.judulPaket {
+    margin-bottom: 0;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4a4a4a;
+}
+
+.tanggalTrip {
+    margin-bottom: 0;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+/*-----------------------------*/
+.bagIsiPaket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.ketPaket {
+    margin-bottom: 0;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.hargaTrip {
+    display: flex;
+    align-items: center;
+}
+
+.nominalHarga {
+    margin-bottom: 0;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 23px;
+    color: #ff385c;
+}
+
+.satuanHarga {
+    margin-bottom: 0;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.jumOrg {
+    margin-bottom: 50px;
+    text-align: right;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 23px;
+    color: #4a4a4a;
+    /*color: #ff385c;*/
+}
+
+.totalHrga {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #CCCCCC;
+    padding-top: 50px;
+}
+
+.judtot {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 30px;
+    color: #4a4a4a;
+    /*color: #ff385c;*/
+}
+
+.totHrga {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ff385c;
+}
+
+.btnNextStepO {
     width: 700px;
     margin-top: 40px;
     /*margin-left: 150px;*/

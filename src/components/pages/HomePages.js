@@ -16,8 +16,8 @@ const HomePage = () => (
     {/*<BannerB />*/}
     {/*<DestinationDetailAtas />*/}
     {/*<TabsDDetail/>*/}
-    {<BillingDet/>}
-    {/*<OrderDet/>*/}
+    {/*{<BillingDet/>}*/}
+    <OrderDet/>
   </div>
 );
 
