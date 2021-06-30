@@ -1,0 +1,30 @@
+.orderConfirm {
+  margin: 120px 0 0 0;
+  padding: 0 100px 0 100px;
+}
+
+.table__title {
+  text-align: center;
+  font-size: 35px;
+  line-height: 42px;
+
+  color: #4a4a4a;
+}
+
+.order__table {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.title__deskripsi {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #4a4a4a;
+}
+
+.deskripsi__table {
+  width: 50%;
+}
