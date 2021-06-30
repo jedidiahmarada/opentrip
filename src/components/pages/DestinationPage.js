@@ -4,17 +4,18 @@ import Search from "../layouts/Search";
 import Category from "../layouts/Category";
 
 import BannerB from "../layouts/BannerB";
-import DestinationDetailAtas from '../layouts/DestinationDetailAtas'
+import Header from "../layouts/Header";
+import Footer from "../layouts/Footer";
+import DestinationDetailAtas from "../layouts/DestinationDetailAtas";
 import TabsDDetail from '../layouts/tabsDDetail'
 
-const HomePage = () => (
+const Destination = () => (
   <div>
-    {/*<Search />*/}
-    {/*<Category />*/}
-    {/*<BannerB />*/}
+    <Header />
     <DestinationDetailAtas />
     <TabsDDetail/>
+    <Footer />
   </div>
 );
 
-export default HomePage;
+export default Destination;

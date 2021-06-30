@@ -1,0 +1,92 @@
+/*!* (A) SQUARE CONTAINER *!*/
+/*.detailDestination {*/
+/*    position: relative;*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    border: dotted;*/
+/*}*/
+/*!* (B) IMAGE *!*/
+/*.left_bg {*/
+/*    !* (B1) POSITION IMAGE *!*/
+/*    position: absolute;*/
+/*    top: -50px;*/
+/*    left: -100px;*/
+
+/*    !* (B2) CROP IMAGE *!*/
+/*    !* ORIGINAL IMAGE IS 600 X 420 *!*/
+/*    !* RECT(TOP, RIGHT, BOTTOM, LEFT) *!*/
+/*    clip: rect(50px, 400px, 350px, 100px);*/
+/*    width: 400px;*/
+/*}*/
+
+.bgImgDDetails {
+    width: 600px;
+    height: 1000px;
+    background-image: url("https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border: dotted;*/
+}
+
+.destinasiAtas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bagKanan {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    justify-content: flex-start;
+    align-items: baseline;
+    /*align-content: center;*/
+    margin-right: 4%;
+}
+
+.routerDAtas {
+    font-family: Inter;
+    font-size: 12px;
+}
+
+.solidDivider {
+    border-top: 1px solid #bbb;
+    width: 598px;
+}
+
+.namaDestinasi {
+    font-family: Inter;
+    font-size: 43px;
+    color: #4A4A4A;
+    margin-bottom: 0;
+}
+
+.ketNamaDestinasi {
+    font-family: Inter;
+    font-size: 14px;
+    color: #9F9F9F;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/*.e-date-icon {*/
+/*    border-top: 1px solid #4a4a4a;*/
+/*    margin-bottom: 0px;*/
+/*}*/
+
+.e-date-wrapper {
+    border-top: 3px solid green;
+    background: #F1F1F1;
+}
+
+.petaLokasi {
+
+}
+
+.hargaBerdasar {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 550;
+    color: #4a4a4a;
+    font-style: normal;
+}
