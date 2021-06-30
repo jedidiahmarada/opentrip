@@ -8,6 +8,8 @@ import DestinationDetailAtas from '../layouts/DestinationDetailAtas'
 import TabsDDetail from '../layouts/tabsDDetail'
 import BillingDet from '../layouts/BillingDet'
 import OrderDet from "../layouts/OrderDet";
+import PaymentDet from "../layouts/PaymentDet";
+
 
 const HomePage = () => (
   <div>
@@ -17,7 +19,8 @@ const HomePage = () => (
     {/*<DestinationDetailAtas />*/}
     {/*<TabsDDetail/>*/}
     {/*{<BillingDet/>}*/}
-    <OrderDet/>
+    {/*<OrderDet/>*/}
+    <PaymentDet/>
   </div>
 );
 
