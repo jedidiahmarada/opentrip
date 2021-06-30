@@ -8,12 +8,13 @@ import thunk from "redux-thunk";
 
 import { Provider } from "react-redux";
 // import { BrowserRouter } from "react-router-dom";
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import rootReducer from "./components/redux/reducers/rootReducer";
 // import loginReducer from "./components/redux/reducers/loginReducer";
 // import moviesReducer from "./components/redux/reducers/moviesReducer";
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const middleware = [thunk];
 const store = createStore(
   rootReducer,
