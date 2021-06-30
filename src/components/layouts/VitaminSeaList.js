@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import destinationsActions from "../redux/actions/destinationsActions";
 import DestinationItem from "./DestinationItem";
-import DestinationCarousel from "./DestinationCarousel";
+import DestinationSlider from "./DestinationSlider";
 import { responsive } from "../../responsive";
+import styles from "../styles/vitsea.module.css";
 
 const VitaminSeaList = () => {
   const vitaminSea = useSelector(
@@ -15,18 +16,16 @@ const VitaminSeaList = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <h2>
-        <b>Vitamin Sea</b>
-      </h2>
-      <DestinationCarousel responsiveConfig={responsive}>
+    <div className={styles.popular__comp}>
+      <h2 className={styles.slide__title}>Vitamin Sea</h2>
+      <DestinationSlider responsiveConfig={responsive}>
         {vitaminSea &&
           vitaminSea.map((destination) => {
             return (
               <DestinationItem key={destination.id} destination={destination} />
             );
           })}
-      </DestinationCarousel>
+      </DestinationSlider>
     </div>
   );
 };

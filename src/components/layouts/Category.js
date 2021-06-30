@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from "../styles/category.module.css";
+
 import { Link } from "react-router-dom";
 import { mainResponsive } from "../../mainResponsive";
 import destinationsActions from "../redux/actions/destinationsActions";
