@@ -14,7 +14,7 @@ const initState = {
   vitaminSea: [],
   naikGunung: [],
   nature: [],
-  destinations: {},
+  destinations: [],
 };
 
 export default function (state = initState, action) {

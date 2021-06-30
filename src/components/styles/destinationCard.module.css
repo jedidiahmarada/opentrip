@@ -1,0 +1,7 @@
+.div__card {
+  /* grid-column: 4;
+  grid-row: 2; */
+  display: flex;
+  /* position: absolute; */
+  /* outline: 2px solid blue; */
+}

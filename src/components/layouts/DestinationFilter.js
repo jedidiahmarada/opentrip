@@ -11,21 +11,11 @@ import filtericonbar5 from "../assets/picture/filtericonbar.png";
 import calendericon from "../assets/picture/calendericon.png";
 import filtericonbar6 from "../assets/picture/filtericonbar.png";
 import "../styles/Destination.css";
+import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 
-const Destination = () => (
+const DestinationFilter = () => (
   <div class="destinationbackground">
     <div>
-      <h4 className="semuatur">Semua Tur</h4>
-      <h3 className="urutkan">Urutkan</h3>
-
-      <div className="pilihurutan">
-        <div class="pilihurutan form-group col-md-4">
-          <select id="inputState" className="form-control">
-            <option selected>Pilih Urutan</option>
-          </select>
-        </div>
-      </div>
-
       <img className="filtericon" src={filtericon} alt="filtericon" />
       <p className="filterp">Filter</p>
     </div>
@@ -179,14 +169,15 @@ const Destination = () => (
 
     <div className="pilihtanggal">
       <div class="input-group-prepend">
-        <span class="input-group-text">
+        {/* <span class="input-group-text">
           <img className="calendericon" src={calendericon} alt="calendericon" />
-        </span>
-        <input
+        </span> */}
+        {/* <input
           type="text"
           className="pilihtanggalinput"
           placeholder="Pilih Tanggal Keberangkatan"
-        />
+        /> */}
+        <DatePickerComponent></DatePickerComponent>
       </div>
     </div>
     <p className="durasi">Durasi</p>
@@ -210,4 +201,4 @@ const Destination = () => (
   </div>
 );
 
-export default Destination;
+export default DestinationFilter;
