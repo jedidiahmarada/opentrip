@@ -28,3 +28,12 @@
 .deskripsi__table {
   width: 50%;
 }
+
+.alert__succes {
+  padding: 5px 0 5px 0;
+  border-radius: 20px;
+  text-align: center;
+  width: 90px;
+  height: 40px;
+  background-color: rgba(14, 255, 74, 0.425);
+}
