@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../../styles/desCard.module.css";
+import { BrowserRouter, Switch, Route, useHistory } from "react-router-dom";
+
 let imgURL = "https://image.tmdb.org/t/p/w500";
 
 const DestinationItem = ({ destination }) => {
+  const history = useHistory();
+
+  const upperDesDetail = () => {
+    history.push("/upperdesdetail");
+  };
   return (
     <div className={styles.card__category}>
       {/* <Link to={`/category/${destination.id}`}> */}
@@ -16,7 +23,9 @@ const DestinationItem = ({ destination }) => {
       <h2 className={styles.title__card}>Title</h2>
       <p className={styles.subtitle__card}>Sub title</p>
       <p className={styles.harga}>Harga/</p>
-      <button className={styles.card__btn}>Pesan Sekarang</button>
+      <button className={styles.card__btn} onClick={upperDesDetail}>
+        Pesan Sekarang
+      </button>
     </div>
   );
 };
