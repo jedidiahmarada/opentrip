@@ -6,7 +6,7 @@ import Header from "./components/layouts/Header";
 import RegisPage from "./components/layouts/RegisPage";
 import Login from "./components/layouts/Login";
 import DestinationPages from "./components/pages/DestinationPages";
-import DestinationDetailAtas from "./components/layouts/destination/DestinationDetailAtas";
+import DestinationDetailAtas from "./components/layouts/desdetail/DestinationDetailAtas";
 import RegisUser from "./components/layouts/registers/RegisUser";
 import RegisHoster from "./components/layouts/registers/RegisHoster";
 import Footer from "./components/layouts/Footer";
