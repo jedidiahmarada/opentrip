@@ -1,0 +1,39 @@
+.h6SK4 {
+  position: absolute;
+  left: 120px;
+  top: 200px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #9f9f9f;
+}
+
+.h6SK5 {
+  position: absolute;
+  left: 420px;
+  top: 200px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #9f9f9f;
+}
+
+.h6SK6 {
+  position: absolute;
+  left: 750px;
+  top: 200px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ff385c;
+}
+
+.garis2 {
+  width: 1200px;
+  margin-top: 200px;
+  margin-left: 120px;
+}
+
+.photoimage img {
+  padding: 15px 8px;
+  max-width: 22%;
+  max-height: 30%;
+  margin-left: 110px;
+}
