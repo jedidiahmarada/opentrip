@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '../styles/DPerjalanan.module.css'
+import React from "react";
+import styles from "../styles/DPerjalanan.module.css";
 
 const DPerjalanan = () => {
   return (
