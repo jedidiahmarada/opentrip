@@ -6,8 +6,8 @@ import destinationsActions from "../redux/actions/destinationsActions";
 import { useDispatch, useSelector } from "react-redux";
 
 //Components
-import PopularDestinationList from "./PopularDestinationList";
-import VitaminSeaList from "./VitaminSeaList";
+import PopularDestinationList from "./category/PopularDestinationList";
+import VitaminSeaList from "./category/VitaminSeaList";
 // import NaikGunungList from "./NaikGunungList";
 let imgURL = "https://image.tmdb.org/t/p/original";
 

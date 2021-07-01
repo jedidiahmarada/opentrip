@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import destinationsActions from "../redux/actions/destinationsActions";
-import DestinationItem from "./DestinationItem";
+import destinationsActions from "../../redux/actions/destinationsActions";
+import DestinationItem from "../destination/DestinationItem";
 
-import DestinationSlider from "./DestinationSlider";
-import { responsive } from "../../responsive";
-import styles from "../styles/popular.module.css";
+import DestinationSlider from "../destination/DestinationSlider";
+import { responsive } from "../../../responsive";
+import styles from "../../styles/popular.module.css";
 
 const PopularDestinationList = () => {
   const popularDestinations = useSelector(

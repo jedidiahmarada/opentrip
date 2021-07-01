@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import destinationsActions from "../redux/actions/destinationsActions";
+import destinationsActions from "../../redux/actions/destinationsActions";
 import DestinationItem from "./DestinationItem";
-import styles from "../styles/destinationCard.module.css";
+import styles from "../../styles/destinationCard.module.css";
 
 const DestinationCard = () => {
   //   const destinations = useSelector(

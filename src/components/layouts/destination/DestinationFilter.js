@@ -1,16 +1,16 @@
 import React from "react";
-import filtericon from "../assets/picture/filtericon.png";
-import filtericonbar from "../assets/picture/filtericonbar.png";
-import filtericonbar1 from "../assets/picture/filtericonbar.png";
-import filtericonbar2 from "../assets/picture/filtericonbar.png";
-import filtericonbar3 from "../assets/picture/filtericonbar.png";
-import searchicon1 from "../assets/picture/searchicon.png";
-import filtericonbar4 from "../assets/picture/filtericonbar.png";
-import searchicon2 from "../assets/picture/searchicon.png";
-import filtericonbar5 from "../assets/picture/filtericonbar.png";
-import calendericon from "../assets/picture/calendericon.png";
-import filtericonbar6 from "../assets/picture/filtericonbar.png";
-import "../styles/Destination.css";
+import filtericon from "../../assets/picture/filtericon.png";
+import filtericonbar from "../../assets/picture/filtericonbar.png";
+import filtericonbar1 from "../../assets/picture/filtericonbar.png";
+import filtericonbar2 from "../../assets/picture/filtericonbar.png";
+import filtericonbar3 from "../../assets/picture/filtericonbar.png";
+import searchicon1 from "../../assets/picture/searchicon.png";
+import filtericonbar4 from "../../assets/picture/filtericonbar.png";
+import searchicon2 from "../../assets/picture/searchicon.png";
+import filtericonbar5 from "../../assets/picture/filtericonbar.png";
+import calendericon from "../../assets/picture/calendericon.png";
+import filtericonbar6 from "../../assets/picture/filtericonbar.png";
+import "../../styles/Destination.css";
 import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 
 const DestinationFilter = () => (

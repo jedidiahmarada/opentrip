@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import destinationsActions from "../redux/actions/destinationsActions";
-import DestinationItem from "./DestinationItem";
-import DestinationSlider from "./DestinationSlider";
-import { responsive } from "../../responsive";
-import styles from "../styles/vitsea.module.css";
+import destinationsActions from "../../redux/actions/destinationsActions";
+import DestinationItem from "../destination/DestinationItem";
+import DestinationSlider from "../destination/DestinationSlider";
+import { responsive } from "../../../responsive";
+import styles from "../../styles/vitsea.module.css";
 
 const VitaminSeaList = () => {
   const vitaminSea = useSelector(

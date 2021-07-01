@@ -1,6 +1,6 @@
 import React from "react";
-import Filter from "../layouts/DestinationFilter";
-import DestinationCard from "../layouts/DestinationCard";
+import Filter from "../layouts/destination/DestinationFilter";
+import DestinationCard from "../layouts/destination/DestinationCard";
 import styles from "../styles/DestinationPages.module.css";
 
 const DestinationPages = () => {
