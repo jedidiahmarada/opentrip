@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import styles from "../styles/category.module.css";
+
 import { Link } from "react-router-dom";
 import { mainResponsive } from "../../mainResponsive";
 import destinationsActions from "../redux/actions/destinationsActions";
 import { useDispatch, useSelector } from "react-redux";
 
 //Components
-import PopularDestinationList from "./PopularDestinationList";
-import VitaminSeaList from "./VitaminSeaList";
-import NaikGunungList from "./NaikGunungList";
+import PopularDestinationList from "./category/PopularDestinationList";
+import VitaminSeaList from "./category/VitaminSeaList";
+// import NaikGunungList from "./NaikGunungList";
 let imgURL = "https://image.tmdb.org/t/p/original";
 
 const Category = () => {
@@ -27,7 +27,7 @@ const Category = () => {
         <br />
         <VitaminSeaList />
         <br />
-        <NaikGunungList />
+        {/* <NaikGunungList /> */}
       </div>
     </div>
   );

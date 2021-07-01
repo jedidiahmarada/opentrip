@@ -6,17 +6,17 @@
   max-width: 275px;
   height: 1020px;
   margin-left: 120px;
-  margin-top: 250px;
+  margin-top: 38px;
   border: 1px solid white;
   background-color: #ffffff;
   box-shadow: 0px 10px 20px 20px rgba(97, 97, 97, 0.07);
 }
+
 .semuatur {
-  position: absolute;
   width: 286.75px;
   height: 42px;
-  left: 120px;
-  top: 100px;
+  margin-left: 120px;
+  margin-top: 80px;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -24,11 +24,10 @@
 }
 
 .urutkan {
-  position: absolute;
   width: 39px;
   height: 12px;
-  right: 250px;
-  top: 155px;
+  margin-left: 1150px;
+  margin-top: -73px;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -37,7 +36,6 @@
 
 .pilihurutan form-group col-md-4,
 .form-control {
-  position: absolute;
   max-width: 110px;
   max-height: 20px;
   border: 1px solid #d9d9d9;
@@ -53,8 +51,7 @@
   width: 100px;
   background-color: #ff385c;
   margin-left: 0px;
-  top: 212px;
-  position: absolute;
+  margin-top: -112px;
 }
 
 .hr1 {
@@ -70,24 +67,21 @@
 .filtericon {
   width: 27px;
   height: 27px;
-  left: 122px;
-  top: 260px;
-  position: absolute;
+  margin-left: 120px;
+  margin-top: 69px;
 }
 
 .filterp {
   font-size: 22px;
   color: #ff385c;
   font-weight: bold;
-  left: 160px;
-  top: 238px;
-  position: absolute;
+  margin-left: 160px;
+  margin-top: -30px;
 }
 
 .tipeperjalanan {
-  position: absolute;
-  left: 140px;
-  top: 320px;
+  margin-left: 20px;
+  margin-top: 110px;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
@@ -98,27 +92,25 @@
 .filtericonbar {
   width: 36px;
   height: 35px;
-  left: 350px;
-  top: 331px;
+  margin-left: 230px;
+  margin-top: -40px;
   position: absolute;
 }
 
 .hr2 {
-  position: absolute;
   width: 275px;
-  left: 120px;
-  top: 360px;
+  margin-left: 0px;
+  margin-top: 10px;
   border: 1px solid #e4e4e4;
   height: 0px;
 }
 
 .formcheck1 {
-  position: absolute;
-  left: 138px;
+  margin-left: 20px;
   top: 380px;
   font-style: normal;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 40px;
   display: flex;
   color: #4d4d4d;
   align-items: center;
@@ -126,8 +118,7 @@
 }
 
 .formcheck2 {
-  position: absolute;
-  left: 138px;
+  margin-left: 20px;
   top: 410px;
   font-style: normal;
   font-size: 13px;
@@ -140,7 +131,7 @@
 
 .temaperjalanan {
   position: absolute;
-  left: 140px;
+  margin-left: 140px;
   top: 450px;
   font-style: normal;
   font-size: 16px;
@@ -153,8 +144,8 @@
   width: 36px;
   height: 35px;
   left: 350px;
-  top: 460px;
-  position: absolute;
+  top: -887px;
+  position: relative;
 }
 
 .hr3 {
@@ -219,13 +210,12 @@
 }
 
 .budgetperjalanan {
-  position: absolute;
-  left: 140px;
-  top: 630px;
+  margin-left: 140px;
+  top: -755px;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
-  display: flex;
+  position: relative;
   color: #4d4d4d;
 }
 
@@ -242,8 +232,8 @@
   width: 36px;
   height: 35px;
   left: 350px;
-  top: 639px;
-  position: absolute;
+  top: -800px;
+  position: relative;
 }
 
 .budgetminimum {
@@ -337,9 +327,9 @@
 .filtericonbar3 {
   width: 36px;
   height: 35px;
-  left: 203px;
-  top: 63px;
-  position: absolute;
+  left: 180px;
+  top: 70px;
+  position: relative;
 }
 
 .lokasiberangkat {
@@ -403,9 +393,9 @@
 .filtericonbar4 {
   width: 36px;
   height: 35px;
-  left: 203px;
+  left: 180px;
   top: 220px;
-  position: absolute;
+  position: relative;
 }
 
 .caridestinasi {
@@ -447,9 +437,9 @@
 }
 
 .periodeberangkat {
-  position: absolute;
+  position: relative;
   left: 143px;
-  top: 1030px;
+  top: -435px;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
@@ -469,9 +459,9 @@
 .filtericonbar5 {
   width: 36px;
   height: 35px;
-  left: 345px;
-  top: 1039px;
-  position: absolute;
+  left: 350px;
+  top: -478px;
+  position: relative;
 }
 
 .pilihtanggal {
@@ -513,9 +503,9 @@
 }
 
 .durasi {
-  position: absolute;
+  position: relative;
   left: 143px;
-  top: 1140px;
+  top: -420px;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
@@ -535,9 +525,9 @@
 .filtericonbar6 {
   width: 36px;
   height: 35px;
-  left: 345px;
-  top: 1150px;
-  position: absolute;
+  left: 350px;
+  top: -460px;
+  position: relative;
 }
 
 .durasibox1 {
