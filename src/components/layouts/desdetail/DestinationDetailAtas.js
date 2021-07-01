@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/DestinationDetailAtas.css";
 import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
+import Dperjalanan from "./DPerjalanan";
+import Galeri from "./Galeri";
+import Sdk from "./Sdk";
 
 import {
   Switch,
@@ -12,25 +15,31 @@ import {
   useParams,
 } from "react-router-dom";
 
-import Dperjalanan from "./DPerjalanan";
-
 const DestinationDetailAtas = () => {
-  let { path, url } = useRouteMatch();
-  let { topicId } = useParams();
+  const [active, setActive] = useState({
+    dperjalanan: true,
+    sdk: false,
+    galeri: false,
+  });
 
-  const history = useHistory();
-
-  const dPerjalanan = () => {
-    history.push("/dperjalanan");
+  const handleDperjalanan = () => {
+    setActive({ dperjalanan: true, sdk: false, galeri: false });
   };
 
-  const sdk = () => {
-    history.push("/s&k");
+  const handleSdk = () => {
+    setActive({ dperjalanan: false, sdk: true, galeri: false });
   };
 
-  const galeri = () => {
-    history.push("/galeri");
+  const handleGaleri = () => {
+    setActive({ dperjalanan: false, sdk: false, galeri: true });
   };
+
+  const showDperjalanan = active.dperjalanan ? <Dperjalanan /> : null;
+  const showSdk = active.sdk ? <Sdk /> : null;
+  const showGaleri = active.galeri ? <Galeri /> : null;
+
+  // const history = useHistory();
+
   return (
     <div>
       <div className="destinasiAtas">
@@ -55,26 +64,42 @@ const DestinationDetailAtas = () => {
         </div>
       </div>
 
-      <BrowserRouter>
-        <div className="nav">
-          <ul className="nav-ul">
-            <li className="nav-li">
-              <a href={`${url}/dperjalanan`}>Detail Perjalanan</a>
-            </li>
-            <li className="nav-li">
-              <a href="">Syarat & Ketentuan</a>
-            </li>
-            <li className="nav-li">
-              <a href="#">Galeri</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <Switch>
-            <Route exact path={path} component={Dperjalanan} />
-          </Switch>
-        </div>
-      </BrowserRouter>
+      <div className="nav">
+        <ul className="nav-ul">
+          <li className="nav-li">
+            <a
+              // href="#"
+              className={`msg-${active.deperjalnan ? "active" : null}`}
+              onClick={handleDperjalanan}
+            >
+              Detail Perjalanan
+            </a>
+          </li>
+          <li className="nav-li">
+            <a
+              // href=""
+              className={`msg-${active.sdk ? "active" : null}`}
+              onClick={handleSdk}
+            >
+              Syarat & Ketentuan
+            </a>
+          </li>
+          <li className="nav-li">
+            <a
+              // href=""
+              className={`msg-${active.galeri ? "active" : null}`}
+              onClick={handleGaleri}
+            >
+              Galeri
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        {showDperjalanan}
+        {showSdk}
+        {showGaleri}
+      </div>
     </div>
   );
 };
