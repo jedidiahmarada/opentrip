@@ -30,20 +30,18 @@
 
 .garis1 {
   width: 1200px;
-  margin-top: 200px;
-  margin-left: 120px;
+  margin-top: -30px;
+  margin-left: 105px;
 }
 
 .h2SK1 {
   position: absolute;
   width: 201px;
   height: 29px;
-  left: 120px;
-  top: 300px;
-
+  margin-left: 105px;
+  margin-top: 30px;
   font-weight: 500;
   font-size: 24px;
-
   color: #4a4a4a;
 }
 
@@ -58,7 +56,7 @@
 .li-sdk {
   position: relative;
   top: 80px;
-  left: 95px;
+  left: 90px;
   color: #4a4a4a;
   font-style: normal;
   font-weight: 500;
@@ -69,12 +67,13 @@
 .li-sdk-second {
   position: relative;
   top: 175px;
-  left: 95px;
+  left: 90px;
   color: #4a4a4a;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 35px;
+  bottom: 50px;
 }
 
 .li-sdk:before {
@@ -89,10 +88,22 @@
   content: "";
 }
 
+.li-sdk-second:before {
+  position: absolute;
+  top: 6px;
+  margin: 8px 0 0 -12px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #ff385c;
+  content: "";
+}
+
 .h2SK2 {
   position: absolute;
-  left: 120px;
-  top: 730px;
+  margin-left: 105px;
+  top: 1640px;
   font-weight: 500;
   font-size: 24px;
   color: #4a4a4a;

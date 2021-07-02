@@ -1,42 +1,42 @@
 .detilPerjalanan {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 100px;
 }
 
 .rencanaWaktu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FF385C;
-    padding: 15px 25px;
-    margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff385c;
+  padding: 15px 25px;
+  margin-right: 50px;
 }
 
 .waktuHari {
-    margin-bottom: 0;
-    margin-top: 0;
-    color: white;
-    font-family: Inter;
-    font-weight: normal;
-    font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: white;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 .waktuAngka {
-    margin-bottom: 0;
-    margin-top: 0;
-    font-family: Inter;
-    font-weight: bold;
-    font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .pukul {
-    margin-right: 50px;
-    margin-bottom: 0px;
+  margin-right: 50px;
+  margin-bottom: 0px;
 }
 
 .ketPerjalanan {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
