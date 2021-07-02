@@ -9,6 +9,7 @@ import TabsDDetail from '../layouts/tabsDDetail'
 import BillingDet from '../layouts/BillingDet'
 import OrderDet from "../layouts/OrderDet";
 import PaymentDet from "../layouts/PaymentDet";
+import HosterNav from "../layouts/HosterNav";
 
 
 const HomePage = () => (
@@ -20,7 +21,8 @@ const HomePage = () => (
     {/*<TabsDDetail/>*/}
     {/*{<BillingDet/>}*/}
     {/*<OrderDet/>*/}
-    <PaymentDet/>
+    {/*<PaymentDet/>*/}
+    <HosterNav/>
   </div>
 );
 

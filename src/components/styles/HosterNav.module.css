@@ -1,0 +1,68 @@
+.hNavContainer {
+    margin-top: 50px;
+    background-color: #ff385c;
+    width: 255px;
+    height: 403px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoFooter {
+    height: 20px;
+    margin-bottom: 35px;
+}
+/*-------------------------------------*/
+.btnMy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*outline: 2px solid green;*/
+    width: 255px;
+    padding-left: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left: 4px solid white;
+    background-color: #ff586a;
+}
+
+.mYicon {
+    width: 20px;
+    margin-right: 25px;
+}
+
+.myTripbtn {
+    font-family: Inter;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+/*-------------------------------------*/
+.btnOrd {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*outline: 2px solid green;*/
+    width: 255px;
+    padding-left: 34px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /*border-left: 4px solid white;*/
+    /*background-color: #ff586a;*/
+}
+
+.Ordicon {
+    width: 20px;
+    margin-right: 25px;
+}
+
+.orderbtn {
+    font-family: Inter;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0;
+    font-weight: 600;
+}

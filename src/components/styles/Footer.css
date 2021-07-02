@@ -10,13 +10,10 @@
 }
 
 .logoFooter {
-  /*position: absolute;*/
-  width: 200px;
-  height: 55px;
+  height: 25px;
   left: 50px;
   bottom: 180px;
-  /*padding: 120px 80px;*/
-  /*outline: 2px solid red;*/
+
 }
 .footer-company {
   margin: 0;
@@ -25,6 +22,7 @@
 .h5-company {
   font-size: 20px;
   font-family: Inter;
+  font-weight: 600;
   margin: 0 0 20px 0;
 }
 
