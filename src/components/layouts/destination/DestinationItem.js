@@ -8,8 +8,8 @@ let imgURL = "https://image.tmdb.org/t/p/w500";
 const DestinationItem = ({ destination }) => {
   const history = useHistory();
 
-  const upperDesDetail = () => {
-    history.push("/upperdesdetail");
+  const DesDetail = () => {
+    history.push("/desdetail");
   };
   return (
     <div className={styles.card__category}>
@@ -23,7 +23,7 @@ const DestinationItem = ({ destination }) => {
       <h2 className={styles.title__card}>Title</h2>
       <p className={styles.subtitle__card}>Sub title</p>
       <p className={styles.harga}>Harga/</p>
-      <button className={styles.card__btn} onClick={upperDesDetail}>
+      <button className={styles.card__btn} onClick={DesDetail}>
         Pesan Sekarang
       </button>
     </div>

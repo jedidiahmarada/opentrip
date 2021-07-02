@@ -6,7 +6,7 @@ import Header from "./components/layouts/Header";
 import RegisPage from "./components/layouts/RegisPage";
 import Login from "./components/layouts/Login";
 import DestinationPages from "./components/pages/DestinationPages";
-import DestinationDetailAtas from "./components/layouts/desdetail/DestinationDetailAtas";
+import DestinationDetail from "./components/layouts/desdetail/DestinationDetail";
 import RegisUser from "./components/layouts/registers/RegisUser";
 import RegisHoster from "./components/layouts/registers/RegisHoster";
 import Footer from "./components/layouts/Footer";
@@ -18,7 +18,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/destination" component={DestinationPages} />
-        <Route exact path="/upperdesdetail" component={DestinationDetailAtas} />
+        <Route exact path="/desdetail" component={DestinationDetail} />
         <Route exact path="/registration" component={RegisPage} />
         <Route exact path="/regisuser" component={RegisUser} />
         <Route exact path="/regishoster" component={RegisHoster} />
