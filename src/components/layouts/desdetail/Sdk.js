@@ -4,6 +4,7 @@ import "../../styles/TabSdk.css";
 const Sdk = () => {
   return (
     <div clasName="sdk">
+      <hr className="garis1"></hr>
       <h2 className="h2SK1"> Harga Termasuk :</h2>
       <ul className="ul-first">
         <li className="li-sdk">Transport PP (Toll, Parkir, BBM)</li>
