@@ -10,6 +10,9 @@ import DestinationDetail from "./components/layouts/desdetail/DestinationDetail"
 import RegisUser from "./components/layouts/registers/RegisUser";
 import RegisHoster from "./components/layouts/registers/RegisHoster";
 import Footer from "./components/layouts/Footer";
+import BillingDet from "./components/layouts/checkout/BillingDet";
+import Order from "./components/layouts/checkout/Order";
+import Payment from "./components/layouts/checkout/Payment";
 
 const App = () => (
   <BrowserRouter>
@@ -23,6 +26,9 @@ const App = () => (
         <Route exact path="/regisuser" component={RegisUser} />
         <Route exact path="/regishoster" component={RegisHoster} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/checkout" component={BillingDet} />
+        <Route exact path="/checkout/order" component={Order} />
+        <Route exact path="/checkout/order/payment" component={Payment} />
       </Switch>
       <Footer />
     </div>

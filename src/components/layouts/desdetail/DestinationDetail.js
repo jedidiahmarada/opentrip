@@ -1,27 +1,23 @@
 import React, { useState } from "react";
-import styles from "../../styles/DestinationDetailAtas.css";
+import "../../styles/DestinationDetailAtas.css";
 import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 import Dperjalanan from "./DPerjalanan";
 import Galeri from "./Galeri";
 import Sdk from "./Sdk";
 
-import {
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useHistory,
-  BrowserRouter,
-  useParams,
-} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const DestinationDetailAtas = () => {
+  const history = useHistory();
   const [active, setActive] = useState({
     dperjalanan: true,
     sdk: false,
     galeri: false,
   });
 
+  const checkout = () => {
+    history.push("/checkout");
+  };
   const handleDperjalanan = () => {
     setActive({ dperjalanan: true, sdk: false, galeri: false });
   };
@@ -61,6 +57,9 @@ const DestinationDetailAtas = () => {
           <div className="petaLokasi"></div>
           <h4 className="hargaBerdasar">Harga berdasarkan jumlah orang</h4>
           {/*<div className={styles.kalender}></div>*/}
+          <button className={"desdet-btn"} onClick={checkout}>
+            Pesan Sekarang
+          </button>
         </div>
       </div>
 

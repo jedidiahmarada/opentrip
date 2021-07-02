@@ -90,6 +90,29 @@
   font-style: normal;
 }
 
+.desdet-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 15px;
+
+  position: absolute;
+  width: 154px;
+  height: 59px;
+  left: 825.49px;
+  top: 992.5px;
+
+  background: #ff385c;
+  border: none;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
 .nav {
   margin: 50px;
 }
