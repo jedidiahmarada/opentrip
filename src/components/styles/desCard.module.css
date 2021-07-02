@@ -1,14 +1,15 @@
 .card__category {
-  width: 295px;
+  width: 290px;
   height: 580px;
 
-  background: #ffffff;
+  background: transparent;
   box-shadow: 0px 10px 60px rgba(100, 100, 100, 0.15);
-  padding: 10px 5px 10px 15px;
+  padding: 10px 0px 10px 0px;
   margin: 0 15px 0 15px;
 }
 
 .title__card {
+  margin-top: 30px;
   margin-left: 15px;
 }
 
@@ -19,7 +20,7 @@
   line-height: 17px;
 
   color: #4a4a4a;
-  margin-left: 7px;
+  margin-left: 16px;
 }
 
 .harga {
@@ -30,13 +31,11 @@
   line-height: 22px;
 
   color: #ff385c;
-  margin-left: 7px;
+  margin-left: 16px;
 }
 .card__category img {
-  width: 250px;
+  width: 100%;
   height: 350px;
-  border-radius: 5px;
-  margin-left: 7px;
 }
 
 .card__btn {
@@ -53,7 +52,7 @@
   line-height: 19px;
 
   color: #ffffff;
-  margin-left: 7px;
+  margin-left: 16px;
   border: none;
 }
 

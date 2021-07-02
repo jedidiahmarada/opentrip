@@ -1,0 +1,39 @@
+.orderConfirm {
+  margin: 120px 0 80px 0;
+  padding: 0 100px 0 100px;
+}
+
+.table__title {
+  text-align: center;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 80px;
+  color: #4a4a4a;
+}
+
+.order__table {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.title__deskripsi {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #4a4a4a;
+}
+
+.deskripsi__table {
+  width: 50%;
+}
+
+.alert__succes {
+  padding: 5px 0 5px 0;
+  border-radius: 20px;
+  text-align: center;
+  width: 90px;
+  height: 40px;
+  background-color: rgba(14, 255, 74, 0.425);
+}

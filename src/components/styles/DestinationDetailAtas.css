@@ -155,10 +155,10 @@
   color: #ff385c;
 }
 
-/* .msg-active {
-  background-color: red;
+.msg-active {
+  text-decoration: none;
 }
 
 .msg-null {
-  background-color: black;
-} */
+  text-decoration: none;
+}

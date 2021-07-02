@@ -3,6 +3,10 @@ import styles from "../../styles/Payment.module.css";
 import { useHistory } from "react-router";
 
 const Payment = () => {
+  const history = useHistory();
+  const oreceived = () => {
+    history.push("/oreceived");
+  };
   return (
     <div className={styles.containerCheckout}>
       <h1 className={styles.judulPage}>Checkout</h1>
@@ -37,7 +41,9 @@ const Payment = () => {
         <h3 className={styles.billDet}>Payment Details</h3>
         <div className={styles.billInp}></div>
         <div className={styles.cekbok}></div>
-        <button className={styles.btnNextStep}>Next Step</button>
+        <button className={styles.btnNextStep} onClick={oreceived}>
+          Next Step
+        </button>
       </div>
     </div>
   );

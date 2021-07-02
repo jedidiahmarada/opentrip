@@ -13,6 +13,7 @@ import Footer from "./components/layouts/Footer";
 import BillingDet from "./components/layouts/checkout/BillingDet";
 import Order from "./components/layouts/checkout/Order";
 import Payment from "./components/layouts/checkout/Payment";
+import OrderReceived from "./components/layouts/order/OrderReceived";
 
 const App = () => (
   <BrowserRouter>
@@ -29,6 +30,7 @@ const App = () => (
         <Route exact path="/checkout" component={BillingDet} />
         <Route exact path="/checkout/order" component={Order} />
         <Route exact path="/checkout/order/payment" component={Payment} />
+        <Route exact path="/oreceived" component={OrderReceived} />
       </Switch>
       <Footer />
     </div>
