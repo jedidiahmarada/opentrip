@@ -9,7 +9,8 @@
   background-color: white;
   width: 100vw;
   height: 70px;
-  outline: 2px solid green;
+  outline: 2px solid rgb(88, 88, 88);
+
 }
 
 .header__nav {
@@ -131,7 +132,6 @@
   background: #ff385c;
   border: none;
   border-radius: 3px;
-
 
   font-family: Inter;
   font-style: normal;

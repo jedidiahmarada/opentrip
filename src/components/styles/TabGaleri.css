@@ -1,0 +1,11 @@
+.garis2 {
+  width: 1200px;
+  margin-left: 120px;
+}
+
+.photoimage img {
+  padding: 15px 8px;
+  max-width: 22%;
+  max-height: 30%;
+  margin-left: 110px;
+}

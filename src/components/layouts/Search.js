@@ -4,7 +4,8 @@ import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 
 const Search = () => (
   <div className={styles.search}>
-    <div className={styles.search__background}>
+    <div>
+      <div className={styles.search__background}></div>
       <div className={styles.bannerA__text}>
         <h1>NEVER STOP</h1>
         <h1>EXPLORING THE WORLD</h1>

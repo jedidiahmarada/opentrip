@@ -20,53 +20,54 @@
 /*}*/
 
 .bgImgDDetails {
-    width: 600px;
-    height: 1000px;
-    background-image: url("https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig");
-    background-repeat: no-repeat;
-    background-position: center;
-    /*border: dotted;*/
+  width: 600px;
+  height: 1000px;
+  background-image: url("https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig");
+  background-repeat: no-repeat;
+  background-position: center;
+  /*border: dotted;*/
 }
 
 .destinasiAtas {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bagKanan {
-    display: flex;
-    flex-direction: column;
-    width: 46%;
-    justify-content: flex-start;
-    align-items: baseline;
-    /*align-content: center;*/
-    margin-right: 4%;
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  justify-content: flex-start;
+  align-items: baseline;
+  /*align-content: center;*/
+  margin-right: 4%;
 }
 
 .routerDAtas {
-    font-family: Inter;
-    font-size: 12px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ff385c;
+  font-weight: normal;
 }
 
 .solidDivider {
-    border-top: 1px solid #bbb;
-    width: 598px;
+  border-top: 1px solid #bbb;
+  width: 598px;
 }
 
 .namaDestinasi {
-    font-family: Inter;
-    font-size: 43px;
-    color: #4A4A4A;
-    margin-bottom: 0;
+  font-family: Inter;
+  font-size: 43px;
+  color: #4a4a4a;
+  margin-bottom: 0;
 }
 
 .ketNamaDestinasi {
-    font-family: Inter;
-    font-size: 14px;
-    color: #9F9F9F;
-    font-weight: normal;
-    margin-top: 5px;
-    margin-bottom: 30px;
+  font-size: 14px;
+  color: #9f9f9f;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 /*.e-date-icon {*/
@@ -75,18 +76,66 @@
 /*}*/
 
 .e-date-wrapper {
-    border-top: 3px solid green;
-    background: #F1F1F1;
+  border-top: 3px solid green;
+  background: #f1f1f1;
 }
 
 .petaLokasi {
-
 }
 
 .hargaBerdasar {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 550;
-    color: #4a4a4a;
-    font-style: normal;
+  font-size: 16px;
+  font-weight: 550;
+  color: #4a4a4a;
+  font-style: normal;
 }
+
+.nav {
+  margin: 50px;
+}
+
+.nav-ul {
+  list-style-type: none;
+}
+
+.nav-li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+.nav-li:last-child {
+  border-right: none;
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav-li a:hover {
+  color: #ff385c;
+  cursor: pointer;
+}
+
+.nav-li-active a {
+  font-weight: bold;
+  color: #ff385c;
+}
+
+/* .msg-active {
+  background-color: red;
+}
+
+.msg-null {
+  background-color: black;
+} */

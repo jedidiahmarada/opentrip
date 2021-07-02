@@ -17,6 +17,12 @@
   background-size: cover;
   position: relative;
   display: flex;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.search__background:hover {
+  transform: scale(1.1);
 }
 
 .bannerA__text {
@@ -25,7 +31,7 @@
   font-style: normal;
   font-weight: bold;
   position: absolute;
-  margin-top: 210px;
+  margin-top: -200px;
   left: 33%;
   transform: translate(-50%, -50%);
   color: white;
@@ -37,12 +43,12 @@
   width: 70%;
   height: 20%;
   display: flex;
+  position: static;
   margin-left: 200px;
   background-color: white;
-  margin: 360px 0 30px 200px;
+  margin: -30px 0 30px 200px;
 
   padding: 10px 0 10px 0;
-
   align-items: center;
 }
 
@@ -68,4 +74,42 @@
 
   font-weight: 400;
   color: white;
+}
+
+.hover-2 .hover-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+}
+
+.hover-2-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s;
+}
+
+.hover-2-description {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  text-align: center;
+  z-index: 99;
+  transition: all 0.3s;
+}
+
+.hover-2:hover .hover-2-title {
+  transform: translateY(-1.5rem);
+}
+
+.hover-2:hover .hover-2-description {
+  bottom: 0.5rem;
+  opacity: 1;
+}
+
+.hover-2:hover .hover-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
 }
