@@ -42,11 +42,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={styles.header__brand}>
-        <div className={styles.header__brand__container}>
-          <img src={logo} alt="logo" width="220px" height="50px" />
-        </div>
-      </div>
+      <img className={styles.logoHeader} src={logo} alt="logo" />
       <div className={styles.header__user}>
         <div className={styles.header__user__container}>
           <div>
