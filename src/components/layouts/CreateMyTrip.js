@@ -31,7 +31,7 @@ const CreateMyTrip = () => {
       </div>
       <div id={styles.kumpContInp} className={styles.kumpContInpRow3}>
         <div className={styles.containerInputAn}>
-          <p className={styles.inputJdl}>Trip Date 1</p>
+          <p className={styles.inputJdl}>Quota</p>
           <input className={styles.inputCreateMyTrip2}/>
         </div>
       </div>
