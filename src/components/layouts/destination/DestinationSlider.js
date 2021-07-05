@@ -8,7 +8,7 @@ const DestinationSlider = (props) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     // responsive: { props: { responsiveConfig } },
     slidesToScroll: 3,
     accessibility: true,

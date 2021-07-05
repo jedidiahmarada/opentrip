@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
 
 .header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*display: grid;*/
+  /*grid-template-columns: repeat(12, 1fr);*/
   background-color: white;
-  width: 100%;
+  width: 100vw;
   height: 70px;
+  outline: 2px solid rgb(88, 88, 88);
 }
 
 .header__nav {
@@ -34,7 +38,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   color: #000000;
 }
 
@@ -59,7 +63,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   color: #000000;
 }
 
@@ -75,7 +79,11 @@
 }
 
 .header__brand__container {
-  padding: 16px 5px 20px 0px;
+  /*padding: 16px 5px 20px 0px;*/
+}
+
+.logoHeader {
+  height: 25px;
 }
 
 .header__user {
@@ -92,6 +100,7 @@
   height: 38px;
   background: #f1e4ff;
   border: none;
+  border-radius: 3px;
 
   display: flex;
   flex-direction: row;
@@ -108,9 +117,11 @@
 }
 
 .header__login__btn:hover {
-  font-size: 12px;
+  background-color: #ff385c;
+  font-size: 14px;
+  color: #f1e4ff;
   cursor: pointer;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -119,18 +130,21 @@
   height: 38px;
   background: #ff385c;
   border: none;
+  border-radius: 3px;
 
   font-family: Inter;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #f8f8f8;
 }
 
 .header__signup__btn:hover {
-  font-size: 12px;
+  background-color: #f1e4ff;
+  color: #ff385c;
+  font-size: 14px;
   cursor: pointer;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

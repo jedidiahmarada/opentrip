@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../../styles/desCard.module.css";
-import { BrowserRouter, Switch, Route, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 let imgURL = "https://image.tmdb.org/t/p/w500";
 
