@@ -1,28 +1,65 @@
 import React from "react";
-import {useState} from "react";
-import {useDispatch} from "react-redux";
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styles from "../styles/login.module.css";
 import logo from "../assets/picture/logo.png";
-import {loginAction} from "../redux/actions/loginAction";
+import { loginAction } from "../redux/actions/loginAction";
+import { login } from "../redux/actions/userActions/auth";
 
-const Login = () => {
-  const [username, setUsername] = useState("");
-  const dispatch = useDispatch();
+const Login = (props) => {
+  const [email, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+
   console.log(username, "wkwkwkwk");
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    dispatch(loginAction(username));
+  const { isLoggedIn } = useSelector((state) => state.authReducer);
+  const { message } = useSelector((state) => state.messageReducer);
+
+  const dispatch = useDispatch();
+
+  const onChangeEmail = (e) => {
+    const email = e.target.value;
+    setEmail(email);
   };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    console.log("Success");
+    form.current.validateAll();
+
+    //checkBtn -> <button>
+    if (checkBtn.current.context._errors.length === 0) {
+      console.log("check");
+      dispatch(login(email, password))
+        .then(() => {
+          props.history.push("/milan-tv");
+          // window.location.reload();
+        })
+        .catch(() => {
+          setLoading(false);
+        });
+    } else {
+      setLoading(false);
+    }
+  };
+
+  // if (isLoggedIn) {
+  //   return <Redirect to="/profile" />;
+  // }
 
   return (
     <div className={styles.box}>
-      <img className={styles.left_bg} src='https://pbs.twimg.com/media/E43NfC5VkAESHn0?format=jpg&name=orig'/>
+      <img
+        className={styles.left_bg}
+        src="https://pbs.twimg.com/media/E43NfC5VkAESHn0?format=jpg&name=orig"
+      />
       {/*<div className={styles.loginbg}></div>*/}
       <div className={styles.login__card}>
         <img className={styles.logoLogin} src={logo} />
         <div className={styles.alignalign}>
-          <p className={styles.usernameTitle}>Username</p>
+          <p className={styles.usernameTitle}>Email</p>
           <input
             className={styles.login__input}
             // placeholder="username"
@@ -38,7 +75,9 @@ const Login = () => {
             type="password"
           ></input>
         </div>
-        <button className={styles.loginButton} onClick={handleClick}>Login</button>
+        <button className={styles.loginButton} onClick={handleClick}>
+          Login
+        </button>
         <div className={styles.forgot_register}>
           <p className={styles.usernameTitle}>Forgot Password</p>
           <div className={styles.accountRegister}>
