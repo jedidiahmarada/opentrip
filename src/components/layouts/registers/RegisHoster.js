@@ -74,20 +74,18 @@ function RegisHoster() {
               <div className="bankpembayaran">
                 <label>Bank Pembayaran</label>
                 <div class="form-group col-md-4">
-                  {/* <label for="inputState">Bank Pembayaran</label> */}
-
-                  <select id="inputState" className="form-control">
-                    <option selected>BTN</option>
-                    <option selected>BTPN</option>
-                    <option selected>BTN Syariah</option>
-                    <option selected>BTPN Syariah</option>
+                  <select name="wgtmsr" id="wgtmsr">
+                    <option value="btn">BTN</option>
+                    <option value="btpn">BTPN</option>
+                    <option value="btnsyah">BTN Syariah</option>
+                    <option value="btpnsyah">BTPN Syariah</option>
                   </select>
                 </div>
               </div>
 
               <div className="NomorRekening">
                 <label>Nomor Rekening</label>
-                <input type="number" className="NoRekinput" />
+                <input type="text" className="NoRekinput" />
               </div>
 
               <div className="fotobukutabungan">
