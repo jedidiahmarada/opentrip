@@ -12,17 +12,19 @@ const Search = () => (
       </div>
       <div className={styles.search__card}>
         <div className={styles.search__destination}>
+          <p className={styles.inputTitle}>Tempat</p>
           <input
             className={styles.search__input}
             type="text"
-            placeholder="Anywhere"
+            placeholder="Semua Tempat"
           ></input>
         </div>
         <div>
+          <p className={styles.dateTitle}>Tanggal</p>
           <DatePickerComponent></DatePickerComponent>
         </div>
         <div>
-          <button className={styles.search__btn}>Search</button>
+          <button className={styles.search__btn}>Cari</button>
         </div>
       </div>
     </div>

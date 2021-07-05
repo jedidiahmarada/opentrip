@@ -17,7 +17,7 @@ const DestinationPages = () => {
         </div>
       </div>
       <div className={styles.tampunganNya}>
-        {/* <Filter /> */}
+        <Filter />
         <DestinationCard />
       </div>
     </div>

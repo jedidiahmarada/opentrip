@@ -80,9 +80,6 @@
   background: #f1f1f1;
 }
 
-.petaLokasi {
-}
-
 .hargaBerdasar {
   font-size: 16px;
   font-weight: 550;
@@ -122,6 +119,7 @@
 }
 
 .nav-li {
+  text-decoration: none;
   height: 25px;
   float: left;
   margin-right: 0px;
@@ -148,6 +146,7 @@
 .nav-li a:hover {
   color: #ff385c;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-li-active a {
