@@ -15,26 +15,35 @@ import Order from "./components/layouts/checkout/Order";
 import Payment from "./components/layouts/checkout/Payment";
 import OrderReceived from "./components/layouts/order/OrderReceived";
 
-const App = () => (
-  <BrowserRouter>
-    <div className="App">
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/destination" component={DestinationPages} />
-        <Route exact path="/desdetail" component={DestinationDetail} />
-        <Route exact path="/registration" component={RegisPage} />
-        <Route exact path="/regisuser" component={RegisUser} />
-        <Route exact path="/regishoster" component={RegisHoster} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/checkout" component={BillingDet} />
-        <Route exact path="/checkout/order" component={Order} />
-        <Route exact path="/checkout/order/payment" component={Payment} />
-        <Route exact path="/oreceived" component={OrderReceived} />
-      </Switch>
-      <Footer />
-    </div>
-  </BrowserRouter>
-);
+import PHMyTripOrder from "./components/layouts/hoster/PHMyTripOrder";
 
+const App = () => {
+  const pathname = window.location.pathname;
+  console.log(pathname, "path");
+  const currentURL = window.location.href;
+  console.log(currentURL, "url");
+  return (
+    <>
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/destination" component={DestinationPages} />
+            <Route exact path="/desdetail" component={DestinationDetail} />
+            <Route exact path="/registration" component={RegisPage} />
+            <Route exact path="/regisuser" component={RegisUser} />
+            <Route exact path="/regishoster" component={RegisHoster} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/checkout" component={BillingDet} />
+            <Route exact path="/checkout/order" component={Order} />
+            <Route exact path="/checkout/order/payment" component={Payment} />
+            <Route exact path="/oreceived" component={OrderReceived} />
+            <Route exact path="/phorder" component={PHMyTripOrder} />
+          </Switch>
+          
+        </div>
+      </BrowserRouter>
+    </>
+  );
+};
 export default App;

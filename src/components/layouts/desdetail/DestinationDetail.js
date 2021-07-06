@@ -4,7 +4,8 @@ import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 import Dperjalanan from "./DPerjalanan";
 import Galeri from "./Galeri";
 import Sdk from "./Sdk";
-
+import Header from "../Header";
+import Footer from "../Footer";
 import { useHistory } from "react-router-dom";
 
 const DestinationDetailAtas = () => {
@@ -38,6 +39,7 @@ const DestinationDetailAtas = () => {
 
   return (
     <div>
+      <Header />
       <div className="destinasiAtas">
         <div className="bgImgDDetails" />
         <div className="bagKanan">
@@ -99,6 +101,7 @@ const DestinationDetailAtas = () => {
         {showSdk}
         {showGaleri}
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "../../styles/regisUser.module.css";
+import Header from "../Header";
+import Footer from "../Footer";
 
 const RegisUser = () => {
   return (
     <div>
+      <Header />
       <div className={styles.regisUser__background}>
         <div className={styles.regisUser__card}>
           <div className={styles.regisUser__input}>
@@ -22,6 +25,7 @@ const RegisUser = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

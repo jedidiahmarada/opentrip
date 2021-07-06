@@ -1,15 +1,25 @@
 import React from "react";
 import uploadicon from "../../assets/picture/uploadicon.png";
 import "../../styles/RegisHoster.css";
+import { useHistory } from "react-router-dom";
+import Header from "../Header";
+import Footer from "../Footer";
 
-function RegisHoster() {
+const RegisHoster = () => {
+  const history = useHistory();
+
+  const phOrder = () => {
+    history.push("/phorder");
+  };
   return (
-    <div class="regishosterbackground">
-      <div class="regishosterpage">
-        <br />
-        <div class="rectangle">
+    <>
+      <Header />
+      <div class="regishosterbackground">
+        <div class="regishosterpage">
           <br />
-          <form>
+          <div class="rectangle">
+            <br />
+
             <div>
               <h4 className="h4">Register as Hoster</h4>
               <div className="username">
@@ -110,14 +120,19 @@ function RegisHoster() {
                 </button>
               </div>
 
-              <button type="submit" className="submitregister">
+              <button
+                type="submit"
+                className="submitregister"
+                onClick={phOrder}
+              >
                 Register
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
-}
+};
 export default RegisHoster;
