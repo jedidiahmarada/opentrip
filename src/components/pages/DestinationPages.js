@@ -9,13 +9,9 @@ const DestinationPages = () => {
       <h4 className="semuatur">Semua Tur</h4>
       <h3 className="urutkan">Urutkan</h3>
 
-      <div className="pilihurutan">
-        <div class="pilihurutan form-group col-md-4">
-          <select id="inputState" className="form-control">
-            <option selected>Pilih Urutan</option>
-          </select>
-        </div>
-      </div>
+      <select className="pilihurutan">
+        <option>Pilih Urutan</option>
+      </select>
       <div className={styles.tampunganNya}>
         <Filter />
         <DestinationCard />
