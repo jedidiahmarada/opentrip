@@ -1,6 +1,6 @@
 const initialState = {
-  username: null,
-  token: null,
+  email: "",
+  password: "",
 };
 
 const loginReducer = (state = initialState, action) => {
@@ -8,9 +8,11 @@ const loginReducer = (state = initialState, action) => {
     case "LOGIN":
       return {
         ...state,
-        username: action.payload.username,
-        token: action.payload.token,
+        email: action.payload.email,
+        password: action.payload.password,
       };
+    default:
+      return { ...state };
   }
 };
 

@@ -14,7 +14,7 @@
   margin-bottom: 0px;
   border-bottom: 5px solid #ff385c;
   width: 10%;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .solidDivider {
@@ -38,7 +38,7 @@
 .recta1 {
   height: 60px;
   width: 250px;
-  background-color: #ccc;
+  background-color: #ff385c;
   /*border-radius: 5px;*/
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -49,7 +49,7 @@
   margin-left: 228px;
   height: 46px;
   width: 45px;
-  background-color: #ccc;
+  background-color: #ff385c;
   transform: rotate(45deg);
   border-radius: 5px;
   /*border-top-left-radius: 5px;*/
@@ -67,7 +67,7 @@
 .recta2 {
   height: 60px;
   width: 250px;
-  background-color: #ff385c;
+  background-color: #ccc;
   border-radius: 5px;
   /*border-top-left-radius: 5px;*/
   /*border-top-right-radius: 5px;*/
@@ -80,38 +80,11 @@
   margin-left: 223px;
   height: 45px;
   width: 45px;
-  background-color: #ff385c;
+  background-color: #ccc;
   transform: rotate(45deg);
   border-radius: 5px;
   /*border-top: 3px solid #ccc;*/
   /*border-right: 3px solid #ccc;*/
-  /*border-top-left-radius: 5px;*/
-  /*border-bottom-left-radius: 5px;*/
-}
-
-.shapes3 {
-  /*outline: 3px solid green;*/
-  display: flex;
-  align-items: center;
-}
-
-.recta3 {
-  height: 60px;
-  width: 250px;
-  background-color: #ccc;
-  /*border-radius: 5px;*/
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.triaD3 {
-  position: absolute;
-  margin-left: 228px;
-  height: 46px;
-  width: 45px;
-  background-color: #ccc;
-  transform: rotate(45deg);
-  border-radius: 5px;
   /*border-top-left-radius: 5px;*/
   /*border-bottom-left-radius: 5px;*/
 }
@@ -121,26 +94,26 @@
   /*outline: 2px solid green;*/
 }
 
-.shapeTit {
+.shapeTit1 {
   font-weight: 700;
   font-family: Inter;
   font-size: 16px;
-  color: black;
+  color: white;
   margin-bottom: 0px;
 }
 
-.shapeKet {
+.shapeKet1 {
   margin-bottom: 0px;
   font-family: Inter;
   font-size: 13px;
-  color: black;
+  color: white;
 }
 
 .shapeTit2 {
   font-weight: 700;
   font-family: Inter;
   font-size: 16px;
-  color: white;
+  color: black;
   margin-bottom: 0px;
 }
 
@@ -148,28 +121,9 @@
   margin-bottom: 0px;
   font-family: Inter;
   font-size: 13px;
-  color: white;
+  color: #4a4a4a;
 }
 
-.shapeFonts3 {
-  margin-left: -225px;
-  /*outline: 2px solid green;*/
-}
-
-.shapeTit3 {
-  font-weight: 700;
-  font-family: Inter;
-  font-size: 16px;
-  color: black;
-  margin-bottom: 0px;
-}
-
-.shapeKet3 {
-  margin-bottom: 0px;
-  font-family: Inter;
-  font-size: 13px;
-  color: black;
-}
 /*=================================================*/
 
 .billCard {
@@ -183,50 +137,116 @@
   /*outline: 2px solid green;*/
 }
 
-.billInp {
-  /*width: 25%;*/
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.billDet {
+.ordDet {
   text-align: center;
   font-family: Inter;
   font-weight: 600;
   font-size: 30px;
-}
-
-.judInp {
-  margin-bottom: 0;
   color: #4a4a4a;
 }
 
-.inputanNya {
+/*--------------------------*/
+.kontenIsi {
   width: 700px;
-  padding: 10px 10px;
-  margin-bottom: 25px;
-  border: 1px solid #cccccc;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: right;*/
 }
 
-.cekbok {
+.bagJudPaket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.judulPaket {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 18px;
+  color: #4a4a4a;
+}
+
+.tanggalTrip {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 15px;
+  color: #4a4a4a;
+}
+/*-----------------------------*/
+.bagIsiPaket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.ketPaket {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 15px;
+  color: #4a4a4a;
+}
+
+.hargaTrip {
   display: flex;
   align-items: center;
 }
 
-.cekbokPromo {
-  margin-right: 10px;
-  /*margin-left: 150px;*/
+.nominalHarga {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 23px;
+  color: #ff385c;
 }
 
-.cekbokTul {
+.satuanHarga {
+  margin-bottom: 0;
   font-family: Inter;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 15px;
   color: #4a4a4a;
 }
 
-.btnNextStep {
+.jumOrg {
+  margin-bottom: 50px;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 23px;
+  color: #4a4a4a;
+  /*color: #ff385c;*/
+}
+
+.totalHrga {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #cccccc;
+  padding-top: 50px;
+}
+
+.judtot {
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 30px;
+  color: #4a4a4a;
+  /*color: #ff385c;*/
+}
+
+.totHrga {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ff385c;
+}
+
+.btnNextStepO {
   width: 700px;
   margin-top: 40px;
   /*margin-left: 150px;*/

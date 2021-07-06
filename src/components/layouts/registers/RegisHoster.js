@@ -72,7 +72,9 @@ function RegisHoster() {
               </div>
 
               <div className="bankpembayaran">
-                <label>Bank Pembayaran</label>
+                <div className="labelbank">
+                  <label>Bank Pembayaran</label>
+                </div>
                 <div class="form-group col-md-4">
                   <select name="wgtmsr" id="wgtmsr">
                     <option value="btn">BTN</option>
