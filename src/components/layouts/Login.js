@@ -1,6 +1,7 @@
 import React from "react";
 
 import { login } from "../redux/services/userService";
+import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import styles from "../styles/login.module.css";
@@ -11,7 +12,12 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const dispatch = useDispatch();
+  const history = useHistory();
   console.log(email, "wkwkwkwk");
+
+  const regisLink = () => {
+    history.push("/registration");
+  };
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -62,7 +68,9 @@ const Login = () => {
           <p className={styles.usernameTitle}>Forgot Password</p>
           <div className={styles.accountRegister}>
             <p className={styles.usernameTitle}>Don't have an account?</p>
-            <p className={styles.register_link}>Register</p>
+            <p className={styles.register_link} onClick={regisLink}>
+              Register
+            </p>
           </div>
         </div>
       </div>

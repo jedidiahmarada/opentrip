@@ -19,6 +19,7 @@
 }
 
 .login__card {
+  margin-top: -100px;
   grid-column: 2;
   grid-row: 1;
   display: flex;
@@ -75,6 +76,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  margin-right: -20px;
   /*outline: 2px solid green;*/
 }
 
@@ -83,13 +85,17 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
+  margin-right: 18px;
 }
 
 .register_link {
   color: #ff385c;
-  margin-top: 0px;
-  margin-bottom: 0px;
+
   font-size: 14px;
   font-family: Inter;
   font-weight: 600;
+}
+
+.register_link:hover {
+  cursor: pointer;
 }

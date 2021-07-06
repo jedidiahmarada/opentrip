@@ -10,6 +10,13 @@
   display: flex;
 }
 
+.line {
+  margin-left: -15px;
+  margin-top: 65px;
+  width: 490px;
+  border: 1px solid #d8d8d8;
+}
+
 .regis__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -65,7 +72,7 @@
   width: 441.5px;
   height: 60px;
   left: 142px;
-  top: 480px;
+  top: 460px;
 
   background: #ff385c;
   border-radius: 6px;

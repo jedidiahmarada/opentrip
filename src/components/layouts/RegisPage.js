@@ -22,6 +22,7 @@ const RegisPage = () => {
             <button className={styles.regisUser__btn} onClick={regisUserLink}>
               Register as User
             </button>
+            <hr className={styles.line}></hr>
           </div>
           <div>
             <button
