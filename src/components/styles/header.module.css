@@ -21,7 +21,7 @@
 .header__nav__container {
   display: flex;
 
-  padding: 38px 5px 35px 0px;
+  /*padding: 38px 5px 35px 0px;*/
 }
 
 .header__nav__home {
@@ -91,7 +91,7 @@
 }
 
 .header__user__container {
-  padding: 20px 5px 26px 0px;
+  /*padding: 20px 5px 26px 0px;*/
   display: flex;
 }
 
@@ -106,7 +106,7 @@
   flex-direction: row;
   align-items: center;
   padding: 10px 20px;
-  margin: 0px 14px;
+  margin: 0 14px;
 
   font-family: Inter;
   font-style: normal;
