@@ -1,5 +1,9 @@
 export const login = async (email, password) => {
   const url = "https://fp-open-trip.herokuapp.com/api/ot/user/login";
+  const formData = new FormData();
+  formData.append("email", email);
+  formData.append("password", password);
+
   const data = {
     email,
     password,
@@ -10,7 +14,7 @@ export const login = async (email, password) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: formData,
     });
     return response.json();
   } catch (error) {

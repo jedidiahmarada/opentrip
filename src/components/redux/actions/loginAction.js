@@ -1,5 +1,11 @@
 import { login as loginService } from "../services/userService";
 
+export const loginStart = () => {
+  return {
+    type: "LOGIN_START",
+  };
+};
+
 export const loginAction = (email, password) => {
   return {
     type: "LOGIN",
@@ -10,15 +16,16 @@ export const loginAction = (email, password) => {
   };
 };
 
-export const loginError = (error) => ({
+export const loginError = (errorMessage) => ({
   type: "LOGIN_ERROR",
   payload: {
-    error,
+    errorMessage,
   },
 });
 
 export const loginAsync = (email, password) => {
-  return (dispatch, getState) => {
+  return (dispatch) => {
+    dispatch(loginStart());
     // const username = getState().user.username;
     // ^^ misal mau ambil username dari state di redux
     loginService(email, password)
@@ -27,8 +34,8 @@ export const loginAsync = (email, password) => {
         dispatch(loginService(email, password));
       })
       .catch((error) => {
-        console.log(error);
-        dispatch(loginError(error.message));
+        console.log(error, "error~");
+        dispatch(loginError("3 PERIODE!!!"));
       });
   };
 };

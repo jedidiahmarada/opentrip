@@ -6,6 +6,7 @@
   grid-column: 1;
   grid-row: 1;
   width: 100%;
+  height: 695px;
 }
 
 .logoLogin {
@@ -16,6 +17,9 @@
   bottom: 180px;
   /*padding: 120px 80px;*/
   /*outline: 2px solid red;*/
+}
+.logoLogin:hover {
+  cursor: pointer;
 }
 
 .login__card {

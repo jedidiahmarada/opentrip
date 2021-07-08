@@ -34,13 +34,12 @@ const App = () => {
             <Route exact path="/regisuser" component={RegisUser} />
             <Route exact path="/regishoster" component={RegisHoster} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/phorder" component={PHMyTripOrder} />
             <Route exact path="/checkout" component={BillingDet} />
             <Route exact path="/checkout/order" component={Order} />
             <Route exact path="/checkout/order/payment" component={Payment} />
             <Route exact path="/oreceived" component={OrderReceived} />
-            <Route exact path="/phorder" component={PHMyTripOrder} />
           </Switch>
-          
         </div>
       </BrowserRouter>
     </>
