@@ -1,15 +1,25 @@
 import React from "react";
 import uploadicon from "../../assets/picture/uploadicon.png";
 import "../../styles/RegisHoster.css";
+import { useHistory } from "react-router-dom";
+import Header from "../Header";
+import Footer from "../Footer";
 
-function RegisHoster() {
+const RegisHoster = () => {
+  const history = useHistory();
+
+  const phOrder = () => {
+    history.push("/phorder");
+  };
   return (
-    <div class="regishosterbackground">
-      <div class="regishosterpage">
-        <br />
-        <div class="rectangle">
+    <>
+      <Header />
+      <div class="regishosterbackground">
+        <div class="regishosterpage">
           <br />
-          <form>
+          <div class="rectangle">
+            <br />
+
             <div>
               <h4 className="h4">Register as Hoster</h4>
               <div className="username">
@@ -72,22 +82,22 @@ function RegisHoster() {
               </div>
 
               <div className="bankpembayaran">
-                <label>Bank Pembayaran</label>
+                <div className="labelbank">
+                  <label>Bank Pembayaran</label>
+                </div>
                 <div class="form-group col-md-4">
-                  {/* <label for="inputState">Bank Pembayaran</label> */}
-
-                  <select id="inputState" className="form-control">
-                    <option selected>BTN</option>
-                    <option selected>BTPN</option>
-                    <option selected>BTN Syariah</option>
-                    <option selected>BTPN Syariah</option>
+                  <select name="wgtmsr" id="wgtmsr">
+                    <option value="btn">BTN</option>
+                    <option value="btpn">BTPN</option>
+                    <option value="btnsyah">BTN Syariah</option>
+                    <option value="btpnsyah">BTPN Syariah</option>
                   </select>
                 </div>
               </div>
 
               <div className="NomorRekening">
                 <label>Nomor Rekening</label>
-                <input type="number" className="NoRekinput" />
+                <input type="text" className="NoRekinput" />
               </div>
 
               <div className="fotobukutabungan">
@@ -110,14 +120,19 @@ function RegisHoster() {
                 </button>
               </div>
 
-              <button type="submit" className="submitregister">
+              <button
+                type="submit"
+                className="submitregister"
+                onClick={phOrder}
+              >
                 Register
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
-}
+};
 export default RegisHoster;

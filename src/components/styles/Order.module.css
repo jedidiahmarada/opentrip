@@ -1,0 +1,261 @@
+.containerCheckout {
+  /*outline: 3px solid magenta;*/
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  flex-direction: column;
+  margin: 0 150px;
+  margin-top: 50px;
+}
+
+.judulPage {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+  border-bottom: 5px solid #ff385c;
+  width: 10%;
+  padding-bottom: 10px;
+}
+
+.solidDivider {
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.shapesCheckout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 150px;
+}
+
+.shapes1 {
+  /*outline: 3px solid green;*/
+  display: flex;
+  align-items: center;
+}
+
+.recta1 {
+  height: 60px;
+  width: 250px;
+  background-color: #ff385c;
+  /*border-radius: 5px;*/
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.triaD1 {
+  position: absolute;
+  margin-left: 228px;
+  height: 46px;
+  width: 45px;
+  background-color: #ff385c;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  /*border-top-left-radius: 5px;*/
+  /*border-bottom-left-radius: 5px;*/
+}
+
+.shapes2 {
+  /*outline: 3px solid green;*/
+  display: flex;
+  align-items: center;
+  /*box-shadow: 0px 0px 5px grey;*/
+  /*outline: 2px solid green;*/
+}
+
+.recta2 {
+  height: 60px;
+  width: 250px;
+  background-color: #ccc;
+  border-radius: 5px;
+  /*border-top-left-radius: 5px;*/
+  /*border-top-right-radius: 5px;*/
+  /*border-bottom-left-radius: 5px;*/
+  /*border: 2px solid #ccc;*/
+}
+
+.triaD2 {
+  position: absolute;
+  margin-left: 223px;
+  height: 45px;
+  width: 45px;
+  background-color: #ccc;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  /*border-top: 3px solid #ccc;*/
+  /*border-right: 3px solid #ccc;*/
+  /*border-top-left-radius: 5px;*/
+  /*border-bottom-left-radius: 5px;*/
+}
+
+.shapeFonts {
+  margin-left: -225px;
+  /*outline: 2px solid green;*/
+}
+
+.shapeTit1 {
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.shapeKet1 {
+  margin-bottom: 0px;
+  font-family: Inter;
+  font-size: 13px;
+  color: white;
+}
+
+.shapeTit2 {
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.shapeKet2 {
+  margin-bottom: 0px;
+  font-family: Inter;
+  font-size: 13px;
+  color: #4a4a4a;
+}
+
+/*=================================================*/
+
+.billCard {
+  margin-top: 100px;
+  padding: 100px 0;
+  border-top: 7px solid #ff385c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 15px #ccc;
+  /*outline: 2px solid green;*/
+}
+
+.ordDet {
+  text-align: center;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 30px;
+  color: #4a4a4a;
+}
+
+/*--------------------------*/
+.kontenIsi {
+  width: 700px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: right;*/
+}
+
+.bagJudPaket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.judulPaket {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 18px;
+  color: #4a4a4a;
+}
+
+.tanggalTrip {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 15px;
+  color: #4a4a4a;
+}
+/*-----------------------------*/
+.bagIsiPaket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.ketPaket {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 15px;
+  color: #4a4a4a;
+}
+
+.hargaTrip {
+  display: flex;
+  align-items: center;
+}
+
+.nominalHarga {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 23px;
+  color: #ff385c;
+}
+
+.satuanHarga {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 15px;
+  color: #4a4a4a;
+}
+
+.jumOrg {
+  margin-bottom: 50px;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 23px;
+  color: #4a4a4a;
+  /*color: #ff385c;*/
+}
+
+.totalHrga {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #cccccc;
+  padding-top: 50px;
+}
+
+.judtot {
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 30px;
+  color: #4a4a4a;
+  /*color: #ff385c;*/
+}
+
+.totHrga {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ff385c;
+}
+
+.btnNextStepO {
+  width: 700px;
+  margin-top: 40px;
+  /*margin-left: 150px;*/
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: #ff385c;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}

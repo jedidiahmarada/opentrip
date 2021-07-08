@@ -1,16 +1,38 @@
 const initialState = {
-  username: null,
-  token: null,
+  email: "",
+  password: "",
+  loading: false,
+  error: false,
+  errorMessage: "",
 };
 
 const loginReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "LOGIN":
+    case "LOGIN_START": {
       return {
         ...state,
-        username: action.payload.username,
-        token: action.payload.token,
+        loading: true,
+        error: false,
+        errorMessage: "",
       };
+    }
+    case "LOGIN_SUCCES":
+      return {
+        ...state,
+        email: action.payload.email,
+        password: action.payload.password,
+        loading: false,
+      };
+    case "LOGIN_ERROR": {
+      return {
+        ...state,
+        loading: false,
+        error: true,
+        errorMessage: action.payload.errorMessage,
+      };
+    }
+    default:
+      return { ...state };
   }
 };
 

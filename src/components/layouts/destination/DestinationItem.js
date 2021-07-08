@@ -12,20 +12,24 @@ const DestinationItem = ({ destination }) => {
     history.push("/desdetail");
   };
   return (
-    <div className={styles.card__category}>
-      {/* <Link to={`/category/${destination.id}`}> */}
-      <img
-        // src={`${imgURL}${destination.poster_path}`}
-        src="https://th.bing.com/th/id/R199a3b217f47c915ddbb59dabdc8149c?rik=oNrgRbhOOK3Smw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-bUTz-VYcgYs%2fUQZ4VFhxyVI%2fAAAAAAAAAO4%2fVYFd7bKcZlQ%2fs1600%2fGambar%2bgambar%2bpemandangan%2bindah%2b5.jpg&ehk=f0hH2wCR%2bOtFjO2Fnw8BZ0kJGsxlXZix3tcilBzZNKs%3d&risl=&pid=ImgRaw"
-        alt={destination.title}
-      />
-      {/* </Link> */}
-      <h2 className={styles.title__card}>Title</h2>
-      <p className={styles.subtitle__card}>Sub title</p>
-      <p className={styles.harga}>Harga/</p>
-      <button className={styles.card__btn} onClick={DesDetail}>
-        Pesan Sekarang
-      </button>
+    <div className={styles.card__container}>
+      <div className={styles.card__category}>
+        <div className={styles.card}>
+          {/* <Link to={`/category/${destination.id}`}> */}
+          <img
+            // src={`${imgURL}${destination.poster_path}`}
+            src="https://th.bing.com/th/id/R199a3b217f47c915ddbb59dabdc8149c?rik=oNrgRbhOOK3Smw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-bUTz-VYcgYs%2fUQZ4VFhxyVI%2fAAAAAAAAAO4%2fVYFd7bKcZlQ%2fs1600%2fGambar%2bgambar%2bpemandangan%2bindah%2b5.jpg&ehk=f0hH2wCR%2bOtFjO2Fnw8BZ0kJGsxlXZix3tcilBzZNKs%3d&risl=&pid=ImgRaw"
+            alt={destination.title}
+          />
+          {/* </Link> */}
+          <h2 className={styles.title__card}>Title</h2>
+          <p className={styles.subtitle__card}>Sub title</p>
+          <p className={styles.harga}>Harga/</p>
+          <button className={styles.card__btn} onClick={DesDetail}>
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

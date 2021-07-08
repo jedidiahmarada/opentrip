@@ -80,9 +80,6 @@
   background: #f1f1f1;
 }
 
-.petaLokasi {
-}
-
 .hargaBerdasar {
   font-size: 16px;
   font-weight: 550;
@@ -90,6 +87,29 @@
   font-style: normal;
 }
 
+.desdet-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 15px;
+
+  position: absolute;
+  width: 154px;
+  height: 59px;
+  left: 825.49px;
+  top: 992.5px;
+
+  background: #ff385c;
+  border: none;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
 .nav {
   margin: 50px;
 }
@@ -99,6 +119,7 @@
 }
 
 .nav-li {
+  text-decoration: none;
   height: 25px;
   float: left;
   margin-right: 0px;
@@ -125,6 +146,7 @@
 .nav-li a:hover {
   color: #ff385c;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-li-active a {
@@ -132,10 +154,10 @@
   color: #ff385c;
 }
 
-/* .msg-active {
-  background-color: red;
+.msg-active {
+  text-decoration: none;
 }
 
 .msg-null {
-  background-color: black;
-} */
+  text-decoration: none;
+}

@@ -1,7 +1,7 @@
 import React from "react";
-// import logo from "../assets/picture/logoWhite.png";
+import logo from "../../assets/picture/logoWhite.png";
 import styles from "../../styles/HosterNav.module.css";
-// import logoMytrip from "../assets/picture/myTripPaperPlane.png";
+import logoMytrip from "../../assets/picture/myTripPaperPlane.png";
 
 const HosterNav = () => {
   return (

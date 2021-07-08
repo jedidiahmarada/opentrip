@@ -17,7 +17,7 @@
 
 .rectangle {
   height: 10px;
-  width: 832px;
+  width: 798px;
   background-color: #ff385c;
   margin-left: -16px;
   margin-top: -24px;
@@ -29,7 +29,7 @@
   color: #4a4a4a;
   font-size: 26px;
   margin-left: 100px;
-  margin-top: 40px;
+  top: 200px;
   position: absolute;
 }
 
@@ -244,24 +244,31 @@
   left: 280px;
 }
 
+.labelbank {
+  font-size: 16px;
+  margin-left: 15px;
+}
+
 .bankpembayaran {
   color: #8e8e8e;
-  font-size: 16px;
-  margin-left: 100px;
+
+  margin-left: 85px;
   margin-top: 1250px;
   position: absolute;
 }
 
-.form-group col-md-4,
-.form-control {
+#wgtmsr {
   width: 600px;
   height: 50px;
   position: absolute;
   border-radius: 6px;
   border: 1px solid #cecece;
   box-sizing: border-box;
+}
 
-  margin-top: 15px;
+#wgtmsr option {
+  width: 600px;
+  height: 50px;
 }
 
 .NomorRekening {

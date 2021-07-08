@@ -1,15 +1,24 @@
-.card__category {
-  width: 295px;
-  height: 580px;
+.card__container {
+  width: 290px;
+  height: 550px;
 
-  background: #ffffff;
-  box-shadow: 0px 10px 60px rgba(100, 100, 100, 0.15);
-  padding: 10px 15px 10px 15px;
-  margin: 0 15px 0 15px;
+  background: white;
+
+  padding: 10px 0px 10px 0px;
+}
+
+.card__category {
+  box-shadow: 0px 5px 25px rgba(78, 78, 78, 0.233);
+  width: 280px;
+  height: 520px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
 }
 
 .title__card {
-  margin-left: 15px;
+  margin-top: 20px;
+  margin-left: 22px;
+  font-size: 22px;
 }
 
 .subtitle__card {
@@ -19,7 +28,7 @@
   line-height: 17px;
 
   color: #4a4a4a;
-  margin-left: 15px;
+  margin-left: 22px;
 }
 
 .harga {
@@ -30,18 +39,16 @@
   line-height: 22px;
 
   color: #ff385c;
-  margin-left: 15px;
+  margin-left: 22px;
 }
 .card__category img {
-  width: 250px;
-  height: 350px;
-  border-radius: 5px;
-  margin-left: 15px;
+  width: 100%;
+  height: 300px;
 }
 
 .card__btn {
-  width: 255px;
-  height: 50px;
+  width: 235px;
+  height: 40px;
   background: #ff385c;
 
   text-align: center;
@@ -53,7 +60,8 @@
   line-height: 19px;
 
   color: #ffffff;
-  margin-left: 15px;
+  margin-top: 25px;
+  margin-left: 22px;
   border: none;
 }
 

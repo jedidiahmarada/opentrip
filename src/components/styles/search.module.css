@@ -31,8 +31,8 @@
   font-style: normal;
   font-weight: bold;
   position: absolute;
-  margin-top: -200px;
-  left: 33%;
+  margin-top: -150px;
+  left: 35%;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -40,13 +40,13 @@
 .search__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 70%;
+  width: 65%;
   height: 20%;
   display: flex;
   position: static;
   margin-left: 200px;
   background-color: white;
-  margin: -30px 0 30px 200px;
+  margin: -30px 0 30px 220px;
 
   padding: 10px 0 10px 0;
   align-items: center;
@@ -57,8 +57,30 @@
   margin-left: 50px;
   font-weight: 500;
 }
+
+.inputTitle {
+  margin-left: 52px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  font-feature-settings: "salt" on, "liga" off;
+}
+.dateTitle {
+  margin-bottom: -0.5px;
+  font-family: Inter;
+  font-style: bold;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  font-feature-settings: "salt" on, "liga" off;
+}
 .search__input {
-  margin-left: 50px;
+  font-size: 26px;
+  margin: -7px 60px 0 50px;
   height: 30px;
   width: 250px;
   border: none;
@@ -67,7 +89,7 @@
 .search__btn {
   width: 110px;
   height: 45px;
-  margin-left: 280px;
+  margin-left: 170px;
 
   border: none;
   background: #ff385c;
