@@ -1266,6 +1266,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@here/maps-api-for-javascript@^1.27.0":
+  version "1.27.0"
+  resolved "https://repo.platform.here.com/artifactory/api/npm/maps-api-for-javascript/-/@here/maps-api-for-javascript-1.27.0.tgz#36f1c3329ef08dc8f03a91b00f0c9e23c671d461"
+  integrity sha1-NvHDMp7wjcjwOpGwDwyeI8Zx1GE=
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"

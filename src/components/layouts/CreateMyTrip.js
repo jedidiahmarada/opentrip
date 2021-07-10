@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from '../styles/CreateMyTrip.module.css'
+import Map from './Map'
+import InterMap from "./InterMap";
 
 const CreateMyTrip = () => {
+
   return (
     <div className={styles.createMyTripContainer}>
       <h1 className={styles.judulCreateMyTrip}>Create New Trip</h1>
@@ -29,22 +32,36 @@ const CreateMyTrip = () => {
           <input className={styles.inputCreateMyTrip2}/>
         </div>
       </div>
-      <div id={styles.kumpContInp} className={styles.kumpContInpRow3}>
+      <div id={styles.kumpContInp} className={styles.kumpContInpRow2}>
+        <div className={styles.containerInputAn}>
+          <p className={styles.inputJdl}>Trip Duration</p>
+          <input className={styles.inputCreateMyTrip2}/>
+        </div>
         <div className={styles.containerInputAn}>
           <p className={styles.inputJdl}>Quota</p>
           <input className={styles.inputCreateMyTrip2}/>
         </div>
-      </div>
-      <div id={styles.kumpContInp} className={styles.kumpContInpRow4}>
         <div className={styles.containerInputAn}>
-          <p className={styles.inputJdl}>Pickup Spot 1</p>
-          <input className={styles.inputCreateMyTrip}/>
-        </div>
-        <div className={styles.containerInputAn}>
-          <p className={styles.inputJdl}>Pickup Spot 2</p>
-          <input className={styles.inputCreateMyTrip}/>
+          <p className={styles.inputJdl}>Pickup Spot</p>
+          <input className={styles.inputCreateMyTrip2}/>
         </div>
       </div>
+      <div id={styles.kumpContInp} className={styles.kumpContInpRow3}>
+        <div className={styles.containerMap}>
+          <InterMap/>
+          {/*<Map/>*/}
+        </div>
+      </div>
+      {/*<div id={styles.kumpContInp} className={styles.kumpContInpRow4}>*/}
+      {/*  <div className={styles.containerInputAn}>*/}
+      {/*    <p className={styles.inputJdl}>Pickup Spot 1</p>*/}
+      {/*    <input className={styles.inputCreateMyTrip}/>*/}
+      {/*  </div>*/}
+      {/*  <div className={styles.containerInputAn}>*/}
+      {/*    <p className={styles.inputJdl}>Pickup Spot 2</p>*/}
+      {/*    <input className={styles.inputCreateMyTrip}/>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <br/>
       <div className={styles.tripDetil}>
         <div className={styles.tripDetailAtas}>
