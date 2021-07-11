@@ -1,25 +1,23 @@
-import React from "react";
-
-import { login } from "../redux/services/userService";
+import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { loginAction, loginAsync } from "../redux/actions/loginAction";
+import { loginAsync } from "../redux/actions/loginAction";
 
 import styles from "../styles/login.module.css";
 import logo from "../assets/picture/logo.png";
 
 const Login = () => {
   const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
+  const [emailset, setEmailset] = useState("");
 
-  const { loading, error, errorMessage } = useSelector(
+  const { email, loading, error, errorMessage } = useSelector(
     (state) => state.loginReducer
   );
+  console.log(email, "ini email");
 
   const dispatch = useDispatch();
   const history = useHistory();
-  console.log(email, "wkwkwkwk");
+  console.log(emailset, "wkwkwkwk");
 
   const home = () => {
     history.push("/");
@@ -32,20 +30,16 @@ const Login = () => {
   const handleClick = (e) => {
     e.preventDefault();
     const store = window.localStorage;
-    // login(email, password)
-    //   .then((response) => {
-    //     store.setItem("token", response.data.token_host);
-    //     const { token_host } = response.data;
-    //     console.log(token_host);
-    //     console.log(response);
-    // dispatch(loginAction(email, password));
-    dispatch(loginAsync(email, password));
-    // })
-
-    // .catch((error) => {
-    //   console.log(error);
-    // });
+    dispatch(loginAsync(emailset, password));
   };
+
+  // useEffect(() => {
+  //   // jika email dan password = true
+  //   if (email != ""){
+  //     history.push("/");
+  //   }
+  //   //action yang akan dilakukan
+  // }, [email])//syarat
 
   return (
     <div className={styles.box}>
@@ -60,17 +54,18 @@ const Login = () => {
           <p className={styles.usernameTitle}>Email</p>
           <input
             className={styles.login__input}
-            // placeholder="username"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={emailset}
+            onChange={(e) => setEmailset(e.target.value)}
           ></input>
         </div>
         <div>
           <p className={styles.usernameTitle}>Password</p>
           <input
             className={styles.psw__input}
+            value={password}
             // placeholder="password"
             type="password"
+            onChange={(e) => setPassword(e.target.value)}
           ></input>
         </div>
         {loading && <div>loading...</div>}

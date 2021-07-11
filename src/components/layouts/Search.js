@@ -21,7 +21,8 @@ const Search = () => (
         </div>
         <div>
           <p className={styles.dateTitle}>Tanggal</p>
-          <DatePickerComponent></DatePickerComponent>
+          <input className={styles.datepicker} type="date" placeholder="Kapan saja"></input>
+          {/* <DatePickerComponent></DatePickerComponent> */}
         </div>
         <div>
           <button className={styles.search__btn}>Cari</button>

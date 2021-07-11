@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import uploadicon from "../../assets/picture/uploadicon.png";
 import "../../styles/RegisHoster.css";
 import { useHistory } from "react-router-dom";
@@ -6,6 +7,86 @@ import Header from "../Header";
 import Footer from "../Footer";
 
 const RegisHoster = () => {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [identitiyNo, setIdentityNo] = useState("");
+  const [identitypic, setIdentitypic] = useState("");
+  const [sidPic, setSidPic] = useState("");
+  const [bank, setBank] = useState("");
+  const [accountnum, setAccountnum] = useState("");
+  const [bookAccountpic, setBookAccountPic] = useState("");
+
+  const [previewIdPic, setPreviewIdPic] = useState("");
+  const [previewSidPic, setPreviewSidPic] = useState("");
+  const [previewBaPic, setPreviewBaPic] = useState("");
+
+  //UPLOAD KTP
+  //======================
+  useEffect(() => {
+    if (!identitypic) {
+      setPreviewIdPic(undefined);
+      return;
+    }
+
+    const objectUrl = URL.createObjectURL(identitypic);
+    setPreviewIdPic(objectUrl);
+    return () => URL.revokeObjectURL(objectUrl);
+  }, [identitypic]);
+
+  const onSelectFileId = (e) => {
+    if (!e.target.files || e.target.files.length === 0) {
+      setIdentitypic(undefined);
+      return;
+    }
+    setIdentitypic(e.target.files[0]);
+  };
+  //======================
+
+  //UPLOAD FOTO SELFIE
+  //======================
+  useEffect(() => {
+    if (!sidPic) {
+      setPreviewSidPic(undefined);
+      return;
+    }
+
+    const objectUrl = URL.createObjectURL(sidPic);
+    setPreviewSidPic(objectUrl);
+    return () => URL.revokeObjectURL(objectUrl);
+  }, [sidPic]);
+
+  const onSelectFileSid = (e) => {
+    if (!e.target.files || e.target.files.length === 0) {
+      setSidPic(undefined);
+      return;
+    }
+    setSidPic(e.target.files[0]);
+  };
+
+  //UPLOAD BOOK ACCOUNT
+  //======================
+  useEffect(() => {
+    if (!bookAccountpic) {
+      setPreviewBaPic(undefined);
+      return;
+    }
+
+    const objectUrl = URL.createObjectURL(bookAccountpic);
+    setPreviewBaPic(objectUrl);
+    return () => URL.revokeObjectURL(objectUrl);
+  }, [bookAccountpic]);
+
+  const onSelectFileBa = (e) => {
+    if (!e.target.files || e.target.files.length === 0) {
+      setBookAccountPic(undefined);
+      return;
+    }
+    setBookAccountPic(e.target.files[0]);
+  };
+
   const history = useHistory();
 
   const phOrder = () => {
@@ -47,38 +128,48 @@ const RegisHoster = () => {
                 <input type="text" className="alamatinput" />
               </div>
 
+              {/* UPLOAD KTP */}
               <div className="uploadfotoKTP">
                 <label>Upload Foto KTP</label>
                 <input
-                  // type="image"
+                  type="file"
                   className="uploadfotoKTPinput"
                   alt="uploadfotoKTPinput"
+                  accept="image/*"
+                  onChange={onSelectFileId}
                 />
-                <img className="uploadicon" src={uploadicon} alt="uploadicon" />
+                <img
+                  className="uploadicon"
+                  src={previewIdPic}
+                  alt="uploadicon"
+                />
                 <h4 className="h4uploadfotoktp">Upload Foto KTP (JPG,PNG)</h4>
-                <button type="submit" className="browsefileuploadKTP">
+                {/* <button type="submit" className="browsefileuploadKTP">
                   Browse File
-                </button>
+                </button> */}
               </div>
 
+              {/* UPLOAD FOTO SELFIE */}
               <div className="uploadfotoselfie">
                 <label>Upload Foto Selfie Dengan KTP</label>
                 <input
-                  // type="image"
+                  type="file"
                   className="uploadfotoselfieinput"
                   alt="uploadfotoselfieinput"
+                  accept="image/*"
+                  onChange={onSelectFileSid}
                 />
                 <img
                   className="uploadicon2"
-                  src={uploadicon}
+                  src={previewSidPic}
                   alt="uploadicon"
                 />
                 <h4 className="h4uploadfotoselfie">
                   Upload Foto Selfie Dengan KTP (JPG,PNG)
                 </h4>
-                <button type="submit" className="browsefileuploadselfie">
+                {/* <button type="submit" className="browsefileuploadselfie">
                   Browse File
-                </button>
+                </button> */}
               </div>
 
               <div className="bankpembayaran">
@@ -103,21 +194,23 @@ const RegisHoster = () => {
               <div className="fotobukutabungan">
                 <label>Foto Buku Tabungan</label>
                 <input
-                  // type="image"
+                  type="file"
                   className="fotobukutabunganinput"
                   alt="fotobukutabunganinput"
+                  accept="image/*"
+                  onChange={onSelectFileBa}
                 />
                 <img
                   className="uploadicon3"
-                  src={uploadicon}
+                  src={previewBaPic}
                   alt="uploadicon"
                 />
                 <h4 className="h4fotobukutabungan">
                   Upload Foto Buku Tabungan (JPG,PNG)
                 </h4>
-                <button type="submit" className="browsefileuploadKTP">
+                {/* <button type="submit" className="browsefileuploadKTP">
                   Browse File
-                </button>
+                </button> */}
               </div>
 
               <button

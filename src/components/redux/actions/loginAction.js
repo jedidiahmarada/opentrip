@@ -8,7 +8,7 @@ export const loginStart = () => {
 
 export const loginAction = (email, password) => {
   return {
-    type: "LOGIN",
+    type: "LOGIN_SUCCES",
     payload: {
       email: email,
       password: password,
@@ -31,7 +31,7 @@ export const loginAsync = (email, password) => {
     loginService(email, password)
       .then((response) => {
         console.log(response);
-        dispatch(loginService(email, password));
+        dispatch(loginAction(email, password));
       })
       .catch((error) => {
         console.log(error, "error~");

@@ -50,6 +50,7 @@
 
   padding: 10px 0 10px 0;
   align-items: center;
+  border-radius: 4px;
 }
 
 .search__destination h4 {
@@ -69,6 +70,7 @@
   font-feature-settings: "salt" on, "liga" off;
 }
 .dateTitle {
+  margin-top: -15px;
   margin-bottom: -0.5px;
   font-family: Inter;
   font-style: bold;
@@ -79,17 +81,31 @@
   font-feature-settings: "salt" on, "liga" off;
 }
 .search__input {
-  font-size: 26px;
-  margin: -7px 60px 0 50px;
+  font-size: 22px;
+  margin: -7px 60px 7px 50px;
   height: 30px;
   width: 250px;
   border: none;
 }
 
+.search__input:focus {
+  outline: none;
+}
+
+.datepicker {
+  border: none;
+  border-bottom: solid 1px black;
+  margin-top: 9px;
+}
+
+.datepicker:focus {
+  outline: none;
+}
+
 .search__btn {
   width: 110px;
   height: 45px;
-  margin-left: 170px;
+  margin-left: 155px;
 
   border: none;
   background: #ff385c;

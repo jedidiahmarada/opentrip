@@ -2,20 +2,17 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import HomePage from "./components/pages/HomePages";
-import Header from "./components/layouts/Header";
 import RegisPage from "./components/layouts/RegisPage";
 import Login from "./components/layouts/Login";
 import DestinationPages from "./components/pages/DestinationPages";
 import DestinationDetail from "./components/layouts/desdetail/DestinationDetail";
 import RegisUser from "./components/layouts/registers/RegisUser";
 import RegisHoster from "./components/layouts/registers/RegisHoster";
-import Footer from "./components/layouts/Footer";
 import BillingDet from "./components/layouts/checkout/BillingDet";
 import Order from "./components/layouts/checkout/Order";
 import Payment from "./components/layouts/checkout/Payment";
 import OrderReceived from "./components/layouts/order/OrderReceived";
-
-import PHMyTripOrder from "./components/layouts/hoster/PHMyTripOrder";
+// import PHMyTripOrder from "./components/layouts/hoster/PHMyTripOrder";
 
 const App = () => {
   const pathname = window.location.pathname;
@@ -34,7 +31,7 @@ const App = () => {
             <Route exact path="/regisuser" component={RegisUser} />
             <Route exact path="/regishoster" component={RegisHoster} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/phorder" component={PHMyTripOrder} />
+            {/* <Route exact path="/phorder" component={PHMyTripOrder} /> */}
             <Route exact path="/checkout" component={BillingDet} />
             <Route exact path="/checkout/order" component={Order} />
             <Route exact path="/checkout/order/payment" component={Payment} />
