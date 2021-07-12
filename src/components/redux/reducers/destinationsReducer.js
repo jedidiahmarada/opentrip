@@ -18,6 +18,9 @@ const initState = {
 };
 
 export default function (state = initState, action) {
+  console.log(action.type);
+  console.log(GET_DESTINATIONS);
+  console.log(action.type == GET_DESTINATIONS);
   switch (action.type) {
     case GET_POPULAR_DESTINATIONS:
       return {
@@ -27,7 +30,8 @@ export default function (state = initState, action) {
     case GET_VITAMIN_SEA:
       return { ...state, vitaminSea: action.payload.vitaminSea };
     case GET_DESTINATIONS:
-      return { ...state, destinations: action.payload.destinations };
+      console.log(action.payload?.destinations, "hai");
+      return { ...state, destinations: action.payload?.destinations };
     case GET_NAIK_GUNUNG:
       return { ...state, naikGunung: action.payload.naikGunung };
     case GET_NATURE:

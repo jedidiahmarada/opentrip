@@ -1,0 +1,55 @@
+.destination0 {
+  margin: 0px 120px;
+}
+
+.destination1 {
+  display: flex;
+  margin: 50px 0px;
+  justify-content: space-between;
+}
+
+.semuatur {
+  height: 42px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  color: #4a4a4a;
+}
+
+.urutkan1 {
+  display: flex;
+  align-items: baseline;
+}
+
+.urutkan {
+  height: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #4a4a4a;
+  margin-right: 20px;
+}
+
+select.pilihurutan {
+  padding: 3px;
+  color: #ff385c;
+  height: 30px;
+  border-color: #ff385c;
+  font-size: 11px !important;
+}
+
+.destination2 {
+  display: flex;
+  justify-content: space-between;
+}
+.filter1 {
+  padding-right: 20px;
+}
+
+/* .destinationCard1 {
+} */
+
+.pagination1 {
+  display: flex;
+  justify-content: flex-end;
+}

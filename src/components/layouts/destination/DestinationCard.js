@@ -4,7 +4,7 @@ import destinationsActions from "../../redux/actions/destinationsActions";
 import DestinationItem from "./DestinationItem";
 import styles from "../../styles/destinationCard.module.css";
 
-const DestinationCard = () => {
+const DestinationCard = (props) => {
   //   const destinations = useSelector(
   //     (state) => state.destinationsReducer.destinations
   //   );
@@ -13,13 +13,15 @@ const DestinationCard = () => {
   //     dispatch(destinationsActions.getDestinations());
   //   }, [dispatch]);
 
-  const vitaminSea = useSelector(
-    (state) => state.destinationsReducer.vitaminSea
+  const destinations = useSelector(
+    (state) => state.destinationsReducer.destinations
   );
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(destinationsActions.getVitaminSea());
-  }, [dispatch]);
+    console.log(props, "coba");
+    dispatch(destinationsActions.getAllDestination(props.page));
+    console.log(destinations, "destinationCard");
+  }, [dispatch, props.page]);
 
   return (
     <div className={styles.div__card}>
@@ -29,8 +31,9 @@ const DestinationCard = () => {
             <DestinationItem key={destination.id} destination={destination} />
           );
         })} */}
-      {vitaminSea &&
-        vitaminSea.map((destination) => {
+      {destinations &&
+        destinations.map((destination) => {
+          console.log(destination);
           return (
             <DestinationItem key={destination.id} destination={destination} />
           );
