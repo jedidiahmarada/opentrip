@@ -11,6 +11,7 @@ export default class Map extends React.Component {
     this.map = null;
   }
 
+
   componentDidMount() {
     if (!this.map) {
       // instantiate a platform, default layers and a map as usual
@@ -28,18 +29,49 @@ export default class Map extends React.Component {
         },
       );
       this.map = map;
+      // attach the listener
+      map.addEventListener('mapviewchange', this.handleMapViewChange);
+      // add the interactive behaviour to the map
+      new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
     }
   }
 
+  componentWillUnmount() {
+    if (this.map) {
+      this.map.removeEventListener('mapviewchange', this.handleMapViewChange);
+    }
+  }
+
+
+  handleMapViewChange = (ev) => {
+    const {
+      onMapViewChange
+    } = this.props;
+    if (ev.newValue && ev.newValue.lookAt) {
+      const lookAt = ev.newValue.lookAt;
+      // adjust precision
+      const lat = Math.trunc(lookAt.position.lat * 1E7) / 1E7;
+      const lng = Math.trunc(lookAt.position.lng * 1E7) / 1E7;
+      const zoom = Math.trunc(lookAt.zoom * 1E2) / 1E2;
+      onMapViewChange(zoom, lat, lng);
+    }
+  }
+
+
+
   render() {
     return (
-      <div
-        style={{
-          width: '100%',
-          height:'300px',
-        }}
-        ref={this.ref}
-      />
+      <div>
+        <div
+          style={{
+            width: '100%',
+            height: '300px',
+          }}
+          ref={this.ref}
+        />
+        <input/>
+      </div>
     )
   }
 }
