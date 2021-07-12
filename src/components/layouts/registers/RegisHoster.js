@@ -4,10 +4,10 @@ import "../../styles/RegisHoster.css";
 
 function RegisHoster() {
   return (
-    <div class="regishosterbackground">
-      <div class="regishosterpage">
+    <div className="regishosterbackground">
+      <div className="regishosterpage">
         <br />
-        <div class="rectangle">
+        <div className="rectangle">
           <br />
           <form>
             <div>
@@ -73,7 +73,7 @@ function RegisHoster() {
 
               <div className="bankpembayaran">
                 <label>Bank Pembayaran</label>
-                <div class="form-group col-md-4">
+                <div className="form-group col-md-4">
                   <select name="wgtmsr" id="wgtmsr">
                     <option value="btn">BTN</option>
                     <option value="btpn">BTPN</option>

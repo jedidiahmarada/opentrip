@@ -7,7 +7,7 @@ import photogaleri from "../../assets/picture/photogaleri.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const DestinationFilter = () => (
-  <div class="destinationbackground">
+  <div className="destinationbackground">
     <div>
       <img className="filtericon" src={filtericon} alt="filtericon" />
       <p className="filterp">Filter</p>
@@ -16,9 +16,13 @@ const DestinationFilter = () => (
       <hr className="hr1"></hr>
       <div className="rectangledestination"></div>
 
-      <div id="list1" class="dropdown-check-list" tabindex="100">
-        <span class="anchor">Tipe Perjalanan</span>
-        <ul class="items">
+      <div
+        id="list1"
+        className="dropdown-check-list"
+        // tabindex="100"
+      >
+        <span className="anchor">Tipe Perjalanan</span>
+        <ul className="items">
           <li>
             <input type="checkbox" />
             Open Trip{" "}
@@ -32,12 +36,12 @@ const DestinationFilter = () => (
 
       <div
         id="list1"
-        class="dropdown-check-list"
-        tabindex="100"
+        className="dropdown-check-list"
+        // tabindex="100"
         className="temaperjalanan"
       >
-        <span class="anchor">Tema Perjalanan</span>
-        <ul class="items">
+        <span className="anchor">Tema Perjalanan</span>
+        <ul className="items">
           <li>
             <input type="checkbox" />
             Destinasi Populer{" "}
@@ -59,11 +63,11 @@ const DestinationFilter = () => (
 
       <div
         id="list1"
-        class="dropdown-check-list"
-        tabindex="100"
+        className="dropdown-check-list"
+        // tabindex="100"
         className="budgetperjalanan"
       >
-        <span class="anchor">Budget Perjalanan</span>
+        <span className="anchor">Budget Perjalanan</span>
         <label>
           <div className="input-group mb-3">
             <div className="input-group-prepend">
@@ -99,7 +103,7 @@ const DestinationFilter = () => (
             />
           </div>
         </label>
-        <span class="anchor">Lokasi keberangkatan</span>
+        <span className="anchor">Lokasi keberangkatan</span>
         <label>
           <div className="input-group mb-3">
             <div className="input-group-prepend">
@@ -118,7 +122,7 @@ const DestinationFilter = () => (
           </div>
         </label>
 
-        <span class="anchor">Destinasi</span>
+        <span className="anchor">Destinasi</span>
         <label>
           <div className="input-group mb-3">
             <div className="input-group-prepend">
@@ -137,7 +141,7 @@ const DestinationFilter = () => (
           </div>
         </label>
 
-        <span class="anchor">Periode Berangkat</span>
+        <span className="anchor">Periode Berangkat</span>
         <label>
           <div className="input-group mb-3">
             <div className="input-group-prepend">
@@ -160,12 +164,12 @@ const DestinationFilter = () => (
           </div>
         </label>
 
-        <span class="anchor">Durasi</span>
+        <span className="anchor">Durasi</span>
         <form>
           <div className="form-group1">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Hari"
@@ -175,7 +179,7 @@ const DestinationFilter = () => (
           <div className="form-group2">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Hari"

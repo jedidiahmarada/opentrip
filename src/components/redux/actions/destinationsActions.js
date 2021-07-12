@@ -51,21 +51,21 @@ const destinationsActions = {
     };
   },
 
-  getDestinations: (id) => {
-    return async (dispatch) => {
-      await axios
-        .get(`${url}${id}?api_key=${apiKey}&language=en-US`)
-        .then((res) => {
-          let destinations = res.data;
-          dispatch(
-            destinationsDispatchers.getDestinationsSuccess(destinations)
-          );
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    };
-  },
+  // getDestinations: (id) => {
+  //   return async (dispatch) => {
+  //     await axios
+  //       .get(`${url}${id}?api_key=${apiKey}&language=en-US`)
+  //       .then((res) => {
+  //         let destinations = res.data;
+  //         dispatch(
+  //           destinationsDispatchers.getDestinationsSuccess(destinations)
+  //         );
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //   };
+  // },
 
   getNature: (id) => {
     return async (dispatch) => {
@@ -74,6 +74,22 @@ const destinationsActions = {
         .then((res) => {
           let nature = res.data.results;
           dispatch(destinationsDispatchers.getNatureSuccess(nature));
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
+  },
+
+  getAllDestination: (page) => {
+    return async (dispatch) => {
+      await axios
+        .get(`${url}top_rated?api_key=${apiKey}&language=en-US&page=${page}`)
+        .then((res) => {
+          let destinations = res.data.results;
+          dispatch(
+            destinationsDispatchers.getDestinationsSuccess(destinations)
+          );
         })
         .catch((err) => {
           console.log(err);
