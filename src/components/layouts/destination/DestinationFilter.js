@@ -1,193 +1,361 @@
 import React from "react";
 import filtericon from "../../assets/picture/filtericon.png";
-import "../../styles/Destination.css";
+import styles from "../../styles/Destination.module.css";
 import searchicon from "../../assets/picture/searchicon.png";
 import calendericon from "../../assets/picture/calendericon.png";
 import photogaleri from "../../assets/picture/photogaleri.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const DestinationFilter = () => (
-  <div className="destinationbackground">
+  <div className={styles.destinationbackground}>
     <div>
-      <img className="filtericon" src={filtericon} alt="filtericon" />
-      <p className="filterp">Filter</p>
+      <img className={styles.filtericon} src={filtericon} alt="filtericon" />
+      <p className={styles.filterp}>Filter</p>
     </div>
-    <div className="filtercoloum">
-      <hr className="hr1"></hr>
-      <div className="rectangledestination"></div>
+    <div className={styles.filtercoloum}>
+      <div className={styles.tipeperjalanan}>
+        <div
+          className={styles.tipeperjalanan.accordion}
+          id="accordionPanelsStayOpenExample"
+        >
+          <div className={styles.tipeperjalanan.accordion_item}>
+            <h2
+              className={styles.tipeperjalanan.accordion_header}
+              id="panelsStayOpen-headingOne"
+            >
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Tipe Perjalanan
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div className={styles.tipeperjalanan.accordion_body}>
+                <div className="form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck1"
+                  ></input>
+                  <label className="form-check-label" for="exampleCheck1">
+                    Open Trip
+                  </label>
+                </div>
 
-      <div
-        id="list1"
-        className="dropdown-check-list"
-        // tabindex="100"
-      >
-        <span className="anchor">Tipe Perjalanan</span>
-        <ul className="items">
-          <li>
-            <input type="checkbox" />
-            Open Trip{" "}
-          </li>
-          <li>
-            <input type="checkbox" />
-            Private Trip{" "}
-          </li>
-        </ul>
+                <div className="form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label className="form-check-label" for="exampleCheck1">
+                    Private Trip
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div className={styles.temaperjalanan}>
+        <div className={styles.accordion} id="accordionPanelsStayOpenExample">
+          <div className={styles.accordion_item}>
+            <h2
+              className={styles.accordion_header}
+              id="panelsStayOpen-headingOne"
+            >
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Tema Perjalanan
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div className="accordion-body">
+                <div className="form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck1"
+                  ></input>
+                  <label className="form-check-label" for="exampleCheck1">
+                    Destinasi Popular
+                  </label>
+                </div>
 
-      <div
-        id="list1"
-        className="dropdown-check-list"
-        // tabindex="100"
-        className="temaperjalanan"
-      >
-        <span className="anchor">Tema Perjalanan</span>
-        <ul className="items">
-          <li>
-            <input type="checkbox" />
-            Destinasi Populer{" "}
-          </li>
-          <li>
-            <input type="checkbox" />
-            Vitamin Sea{" "}
-          </li>
-          <li>
-            <input type="checkbox" />
-            Naik - Naik ke Puncak Gunung{" "}
-          </li>
-          <li>
-            <input type="checkbox" />
-            Menyatu Dengan Alam{" "}
-          </li>
-        </ul>
+                <div className="form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label className="form-check-label" for="exampleCheck1">
+                    Vitamin Sea
+                  </label>
+                </div>
+                <div className="form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck1"
+                  ></input>
+                  <label className="form-check-label" for="exampleCheck1">
+                    Naik - Naik ke Puncak Gunung
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label className="form-check-label" for="exampleCheck1">
+                    Menyatu Dengan Alam
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div
-        id="list1"
-        className="dropdown-check-list"
-        // tabindex="100"
-        className="budgetperjalanan"
-      >
-        <span className="anchor">Budget Perjalanan</span>
-        <label>
-          <div className="input-group mb-3">
-            <div className="input-group-prepend">
-              <span className="input-group-text" id="basic-addon1">
-                Rp
-              </span>
+      <div className={styles.budgetperjalanan}>
+        <div className={styles.accordion} id="accordionPanelsStayOpenExample">
+          <div className={styles.accordion_item}>
+            <h2
+              className={styles.accordion_header}
+              id="panelsStayOpen-headingOne"
+            >
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Budget
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div className="accordion-body">
+                <div className="input-group mb-3">
+                  <span className="input-group-text" id="basic-addon1">
+                    Rp
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Budget Minimum"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  ></input>
+                </div>
+                <div className="input-group mb-3">
+                  <span className="input-group-text" id="basic-addon1">
+                    Rp
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Budget Maksimum"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  ></input>
+                </div>
+              </div>
             </div>
-
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Budget Minimum"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
           </div>
-        </label>
-
-        <label>
-          <div className="input-group mb-3">
-            <div className="input-group-prepend2">
-              <span className="input-group-text" id="basic-addon1">
-                Rp
-              </span>
+        </div>
+      </div>
+      <div className={styles.lokasikeberangkatan}>
+        <div className={styles.accordion} id="accordionPanelsStayOpenExample">
+          <div className={styles.accordion_item}>
+            <h2
+              className={styles.accordion_header}
+              id="panelsStayOpen-headingOne"
+            >
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Lokasi Keberangkatan
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div className="accordion-body">
+                <div className="input-group mb-3">
+                  <span className="input-group-text" id="basic-addon1">
+                    <img
+                      className="searchicon"
+                      src={searchicon}
+                      alt="searchicon"
+                    />
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Cari Lokasi Keberangkatan"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  ></input>
+                </div>
+              </div>
             </div>
-
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Budget Maksimum"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
           </div>
-        </label>
-        <span className="anchor">Lokasi keberangkatan</span>
-        <label>
-          <div className="input-group mb-3">
-            <div className="input-group-prepend">
-              <span className="input-group-text" id="basic-addon1">
-                <img className="searchicon" src={searchicon} alt="searchicon" />
-              </span>
+        </div>
+      </div>
+      <div className={styles.destinasiperjalanan}>
+        <div className={styles.accordion} id="accordionPanelsStayOpenExample">
+          <div className={styles.accordion_item}>
+            <h2
+              className={styles.accordion_header}
+              id="panelsStayOpen-headingOne"
+            >
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Destinasi
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div className="accordion-body">
+                <div className="input-group mb-3">
+                  <span className="input-group-text" id="basic-addon1">
+                    <img
+                      className="searchicon"
+                      src={searchicon}
+                      alt="searchicon"
+                    />
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Cari Destinasi"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  ></input>
+                </div>
+              </div>
             </div>
-
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Cari Lokasi Keberangkatan"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
           </div>
-        </label>
-
-        <span className="anchor">Destinasi</span>
-        <label>
-          <div className="input-group mb-3">
-            <div className="input-group-prepend">
-              <span className="input-group-text" id="basic-addon1">
-                <img className="searchicon" src={searchicon} alt="searchicon" />
-              </span>
+        </div>
+      </div>
+      <div className={styles.periodeberangkat}>
+        <div className={styles.accordion} id="accordionPanelsStayOpenExample">
+          <div className={styles.accordion_item}>
+            <h2
+              className={styles.accordion_header}
+              id="panelsStayOpen-headingOne"
+            >
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Periode Berangkat
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div className="accordion-body">
+                {/* <div className="input-group mb-3">
+                  <span className="input-group-text" id="basic-addon1">
+                    <img
+                      className="calendericon"
+                      src={calendericon}
+                      alt="calendericon"
+                    />
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Pilih Tanggal Keberangkatan"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  ></input>
+                </div> */}
+              </div>
             </div>
-
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Cari Destinasi"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
           </div>
-        </label>
-
-        <span className="anchor">Periode Berangkat</span>
-        <label>
-          <div className="input-group mb-3">
-            <div className="input-group-prepend">
-              <span className="input-group-text" id="basic-addon1">
-                <img
-                  className="calendericon"
-                  src={calendericon}
-                  alt="calendericon"
-                />
-              </span>
+        </div>
+      </div>
+      <div className={styles.durasiperjalanan}>
+        <div className={styles.accordion} id="accordionPanelsStayOpenExample">
+          <div className={styles.accordion_item}>
+            <h2
+              className={styles.accordion_header}
+              id="panelsStayOpen-headingOne"
+            >
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Durasi Perjalanan
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div className="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element.
+              </div>
             </div>
-
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Pilih Tanggal Keberangkatan"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
           </div>
-        </label>
-
-        <span className="anchor">Durasi</span>
-        <form>
-          <div className="form-group1">
-            <input
-              type="email"
-              className="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Hari"
-            />
-          </div>
-
-          <div className="form-group2">
-            <input
-              type="email"
-              className="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Hari"
-            />
-          </div>
-
-          <input type="range" className="durasirange" min="0" max="5" />
-        </form>
+        </div>
       </div>
     </div>
   </div>

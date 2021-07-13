@@ -12,11 +12,14 @@ const DestinationPages = () => {
         <h4 className={styles.semuatur}>Semua Tur</h4>
         <div className={styles.urutkan1}>
           <h3 className={styles.urutkan}>Urutkan</h3>
-
           <select className={styles.pilihurutan}>
             <option>Pilih Urutan</option>
           </select>
         </div>
+      </div>
+      <div className={styles.kotakgaris}>
+        <hr className={styles.hr1}></hr>
+        <div className={styles.rectangledestination}></div>
       </div>
 
       <div className={styles.destination2}>

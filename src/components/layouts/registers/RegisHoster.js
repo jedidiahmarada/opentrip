@@ -93,17 +93,10 @@ const RegisHoster = () => {
     history.push("/phorder");
   };
   return (
-<<<<<<< HEAD
-    <>
-      <Header />
-      <div class="regishosterbackground">
-        <div class="regishosterpage">
-=======
     <div className="regishosterbackground">
       <div className="regishosterpage">
         <br />
         <div className="rectangle">
->>>>>>> 436786493996fdbe9a6215d24372a6348fead746
           <br />
           <div class="rectangle">
             <br />
@@ -180,15 +173,10 @@ const RegisHoster = () => {
               </div>
 
               <div className="bankpembayaran">
-<<<<<<< HEAD
                 <div className="labelbank">
                   <label>Bank Pembayaran</label>
                 </div>
                 <div class="form-group col-md-4">
-=======
-                <label>Bank Pembayaran</label>
-                <div className="form-group col-md-4">
->>>>>>> 436786493996fdbe9a6215d24372a6348fead746
                   <select name="wgtmsr" id="wgtmsr">
                     <option value="btn">BTN</option>
                     <option value="btpn">BTPN</option>
@@ -237,7 +225,7 @@ const RegisHoster = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 export default RegisHoster;
