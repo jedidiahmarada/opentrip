@@ -2,6 +2,21 @@
   margin: 0px 120px;
 }
 
+.underline {
+  width: 100px;
+  height: 8px;
+  z-index: 1;
+  margin-top: -25px;
+
+  /* Main Color */
+
+  background: #ff385c;
+}
+
+.garis2 {
+  margin: -2px 0 55px 0;
+}
+
 .destination1 {
   display: flex;
   margin: 50px 0px;

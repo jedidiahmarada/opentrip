@@ -1,5 +1,5 @@
 import axios from "axios";
-import destinationsDispatchers from "./dispatchers";
+import destinationsDispatchers from "./dispatchers/destinationDispatchers";
 
 const url = "https://api.themoviedb.org/3/movie/";
 const apiKey = "26b6f99577e56d992ffe47051578e1ac";

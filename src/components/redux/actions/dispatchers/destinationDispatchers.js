@@ -4,7 +4,7 @@ import {
   GET_DESTINATIONS,
   GET_NAIK_GUNUNG,
   GET_NATURE,
-} from "./actionTypes";
+} from "../actionTypes";
 
 const destinationsDispatchers = {
   getPopularDestinationsSuccess: (popularDestinations) => {

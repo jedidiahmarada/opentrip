@@ -22,7 +22,8 @@ const DestinationItem = ({ destination }) => {
             alt={destination.title}
           />
           {/* </Link> */}
-          <h2 className={styles.title__card}>Title</h2>
+          {/* <h2 className={styles.title__card}>Title</h2> */}
+          <h2 className={styles.title__card}>{destination.title}</h2>
           <p className={styles.subtitle__card}>Sub title</p>
           <p className={styles.harga}>Harga/</p>
           <button className={styles.card__btn} onClick={DesDetail}>

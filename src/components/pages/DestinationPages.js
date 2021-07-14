@@ -23,7 +23,10 @@ const DestinationPages = () => {
             </select>
           </div>
         </div>
-
+        <div className={styles.underline} />
+        <div>
+          <hr className={styles.garis2} />
+        </div>
         <div className={styles.destination2}>
           <div className={styles.filter1}>
             <Filter />
