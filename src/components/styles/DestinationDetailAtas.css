@@ -80,6 +80,13 @@
   background: #f1f1f1;
 }
 
+.petaLokasi{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .hargaBerdasar {
   font-size: 16px;
   font-weight: 550;
@@ -87,17 +94,40 @@
   font-style: normal;
 }
 
+.increDecreBtn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #aaaaaa;
+  width: 190px;
+  height: 59px;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.tombolTambah {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.tombolTambah:hover {
+  cursor: pointer;
+}
+
+.jumlahCounter {
+  margin-bottom: 4px;
+}
+
+.increDecreWBtn {
+  display: flex;
+  align-items: center;
+}
+
 .desdet-btn {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 20px 15px;
-
-  position: absolute;
+  align-items: center;
+  justify-content: center;
   width: 154px;
   height: 59px;
-  left: 825.49px;
-  top: 992.5px;
 
   background: #ff385c;
   border: none;
@@ -110,6 +140,7 @@
 
   color: #ffffff;
 }
+
 .nav {
   margin: 50px;
 }

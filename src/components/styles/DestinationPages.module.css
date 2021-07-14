@@ -6,7 +6,7 @@
   width: 100px;
   height: 8px;
   z-index: 1;
-  margin-top: -25px;
+  margin-top: -23px;
 
   /* Main Color */
 
@@ -14,7 +14,7 @@
 }
 
 .garis2 {
-  margin: -2px 0 55px 0;
+  margin: 0 0 55px 0;
 }
 
 .destination1 {
