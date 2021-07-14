@@ -304,22 +304,21 @@ const DestinationFilter = () => (
               aria-labelledby="panelsStayOpen-headingOne"
             >
               <div className="accordion-body">
-                {/* <div className="input-group mb-3">
-                  <span className="input-group-text" id="basic-addon1">
+                <div className="input-group mb-3">
+                  {/* <span className="input-group-text" id="basic-addon1">
                     <img
                       className="calendericon"
                       src={calendericon}
                       alt="calendericon"
                     />
-                  </span>
+                  </span> */}
+
                   <input
-                    type="text"
+                    type="date"
                     className="form-control"
                     placeholder="Pilih Tanggal Keberangkatan"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
                   ></input>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -349,9 +348,30 @@ const DestinationFilter = () => (
               aria-labelledby="panelsStayOpen-headingOne"
             >
               <div className="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element.
+                <div className={styles.boxdurasi}>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Hari"
+                  ></input>
+                </div>
+                <div className={styles.boxdurasi}>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Hari"
+                  ></input>
+                </div>
+
+                <div className={styles.durasirange}>
+                  <input
+                    type="range"
+                    min="0"
+                    max="5"
+                    class="slider"
+                    id="myRange"
+                  ></input>
+                </div>
               </div>
             </div>
           </div>
