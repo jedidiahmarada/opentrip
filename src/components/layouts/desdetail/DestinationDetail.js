@@ -9,6 +9,7 @@ import Footer from "../Footer";
 import { useHistory } from "react-router-dom";
 import Counterer from "./Counterer";
 import CounterContext from "./Counter";
+import InterMap from "../InterMap";
 
 const DestinationDetailAtas = () => {
   const history = useHistory();
@@ -70,7 +71,9 @@ const DestinationDetailAtas = () => {
             cssClass="e-date-icon"
             cssClass="e-date-wrapper"
           />
-          <div className="petaLokasi"></div>
+          <div className="petaLokasi">
+            <InterMap/>
+          </div>
           <h4 className="hargaBerdasar">Harga berdasarkan jumlah orang</h4>
           {/*<div className={styles.kalender}></div>*/}
           <div className="increDecreWBtn">
