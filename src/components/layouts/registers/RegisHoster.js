@@ -111,10 +111,10 @@ const RegisHoster = () => {
     history.push("/phorder");
   };
   return (
-    <>
-      <Header />
-      <div class="regishosterbackground">
-        <div class="regishosterpage">
+    <div className="regishosterbackground">
+      <div className="regishosterpage">
+        <br />
+        <div className="rectangle">
           <br />
           <div class="rectangle">
             <br />
@@ -268,7 +268,7 @@ const RegisHoster = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 export default RegisHoster;

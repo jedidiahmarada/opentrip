@@ -2,10 +2,14 @@
   background-color: white;
 }
 
+.fiterContainer {
+  margin-top: -30px;
+}
+
 .filtericon {
   width: 27px;
   height: 27px;
-  margin-top: -10px;
+  margin-top: 40px;
 }
 
 .filterp {
@@ -18,7 +22,7 @@
 
 .filtercoloum {
   width: 310px;
-  height: 1200px;
+  height: 1100px;
   border: 1px solid white;
   background-color: #ffffff;
   box-shadow: 0px 10px 20px 20px rgba(97, 97, 97, 0.07);
@@ -78,12 +82,12 @@
 }
 
 .temaperjalanan input {
-  left: 25px;
+  left: 45px;
 }
 
 .temaperjalanan label {
   color: #4a4a4a;
-  text-indent: 15px;
+  text-indent: 35px;
   font-weight: 400;
   line-height: 26px;
   display: flex;
@@ -92,6 +96,30 @@
 }
 
 .budgetperjalanan span,
+.lokasikeberangkatan span,
+.destinasiperjalanan span {
+  font-size: 13px;
+  color: #4d4d4d;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.budgetperjalanan input,
+.lokasikeberangkatan input,
+.destinasiperjalanan input {
+  justify-content: space-between;
+  left: 0px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.budgetperjalanan ::placeholder {
+  font-size: 12px;
+  color: #bcbcbc !important;
+  letter-spacing: 0.2px;
+  display: flex;
+}
+
 .lokasikeberangkatan span {
   font-size: 13px;
   color: #4d4d4d;
@@ -100,8 +128,8 @@
 .budgetperjalanan ::placeholder,
 .lokasikeberangkatan ::placeholder,
 .destinasiperjalanan ::placeholder,
-.periodeberangkat ::placeholder,
-.boxdurasi ::placeholder {
+.boxdurasi ::placeholder,
+.periodeberangkat ::placeholder {
   font-size: 12px;
   color: #bcbcbc !important;
   letter-spacing: 0.2px;
@@ -110,12 +138,15 @@
 }
 
 .lokasikeberangkatan span img,
-.destinasiperjalanan span img,
-.periodeberangkat span img {
+.destinasiperjalanan span img {
   width: 15px;
   height: 15px;
 }
-
+.periodeberangkat input {
+  left: 20px;
+  margin-right: 40px;
+  border-radius: 10px;
+}
 .boxdurasi {
   width: 40%;
   justify-content: space-between;

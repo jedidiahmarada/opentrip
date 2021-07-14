@@ -1,5 +1,6 @@
 .destination0 {
-  margin: 0px 120px;
+  margin: 110px 120px;
+  margin-top: auto;
 }
 
 .underline {
@@ -51,6 +52,29 @@ select.pilihurutan {
   height: 30px;
   border-color: #ff385c;
   font-size: 11px !important;
+}
+
+.kotakgaris {
+  display: flex;
+  justify-content: left;
+}
+
+.rectangledestination {
+  height: 12px;
+  width: 100px;
+  background-color: #ff385c;
+  display: flex;
+  justify-content: left;
+  margin-left: -1222px;
+  margin-top: 5px;
+}
+
+.hr1 {
+  display: flex;
+  width: 1220px;
+  height: 0px;
+  border: 1px solid #e3e3e3;
+  margin-left: 0px;
 }
 
 .destination2 {
