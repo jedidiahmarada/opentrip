@@ -6,7 +6,7 @@ export const hostRegisStart = () => {
   };
 };
 
-export const travRegisAction = (
+export const hostRegisAction = (
   username,
   email,
   password,
@@ -37,7 +37,7 @@ export const travRegisAction = (
   };
 };
 
-export const HostRegisError = (errorMessage) => ({
+export const hostRegisError = (errorMessage) => ({
   type: "H_REGIS_ERROR",
   payload: {
     errorMessage,

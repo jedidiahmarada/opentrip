@@ -52,4 +52,4 @@ const hostRegisReducer = (state = initialState, action) => {
   }
 };
 
-export default travRegisReducer;
+export default hostRegisReducer;

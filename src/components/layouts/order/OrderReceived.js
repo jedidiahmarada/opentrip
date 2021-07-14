@@ -35,6 +35,20 @@ const OrderReceived = () => {
               </tr>
             </tbody>
           </Table>
+          {/* <table className={styles.table1}>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+            </tr>
+            <tr>
+              <td>Peter</td>
+              <td>Griffin</td>
+            </tr>
+            <tr>
+              <td>Lois</td>
+              <td>Griffin</td>
+            </tr>
+          </table> */}
         </div>
         <div>
           <h4 className={styles.title__deskripsi}>Nicepay Secure Payment</h4>

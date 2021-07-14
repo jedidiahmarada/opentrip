@@ -61,6 +61,7 @@
 
 .inputTitle {
   margin-left: 52px;
+  margin-bottom: 10px;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -92,10 +93,16 @@
   outline: none;
 }
 
+input,
+input::-webkit-input-placeholder {
+  font-size: 20px;
+}
+
 .datepicker {
   border: none;
   border-bottom: solid 1px black;
   margin-top: 9px;
+  margin-bottom: -15px;
 }
 
 .datepicker:focus {
