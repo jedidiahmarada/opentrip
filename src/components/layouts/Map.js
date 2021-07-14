@@ -70,7 +70,7 @@ export default class Map extends React.Component {
           }}
           ref={this.ref}
         />
-        <input/>
+        {/*<input/>*/}
       </div>
     )
   }

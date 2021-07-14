@@ -20,54 +20,54 @@
 /*}*/
 
 .bgImgDDetails {
-  width: 600px;
-  height: 1000px;
-  background-image: url("https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig");
-  background-repeat: no-repeat;
-  background-position: center;
-  /*border: dotted;*/
+    width: 600px;
+    height: 1000px;
+    background-image: url("https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border: dotted;*/
 }
 
 .destinasiAtas {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .bagKanan {
-  display: flex;
-  flex-direction: column;
-  width: 46%;
-  justify-content: flex-start;
-  align-items: baseline;
-  /*align-content: center;*/
-  margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    justify-content: flex-start;
+    align-items: baseline;
+    /*align-content: center;*/
+    margin-right: 4%;
 }
 
 .routerDAtas {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #ff385c;
-  font-weight: normal;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ff385c;
+    font-weight: normal;
 }
 
 .solidDivider {
-  border-top: 1px solid #bbb;
-  width: 598px;
+    border-top: 1px solid #bbb;
+    width: 598px;
 }
 
 .namaDestinasi {
-  font-family: Inter;
-  font-size: 43px;
-  color: #4a4a4a;
-  margin-bottom: 0;
+    font-family: Inter;
+    font-size: 43px;
+    color: #4a4a4a;
+    margin-bottom: 0;
 }
 
 .ketNamaDestinasi {
-  font-size: 14px;
-  color: #9f9f9f;
-  font-weight: normal;
-  margin-top: 5px;
-  margin-bottom: 30px;
+    font-size: 14px;
+    color: #9f9f9f;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 /*.e-date-icon {*/
@@ -76,88 +76,112 @@
 /*}*/
 
 .e-date-wrapper {
-  border-top: 3px solid green;
-  background: #f1f1f1;
+    border-top: 3px solid green;
+    background: #f1f1f1;
 }
 
 .hargaBerdasar {
-  font-size: 16px;
-  font-weight: 550;
-  color: #4a4a4a;
-  font-style: normal;
+    font-size: 16px;
+    font-weight: 550;
+    color: #4a4a4a;
+    font-style: normal;
+}
+
+.increDecreBtn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #aaaaaa;
+    width: 190px;
+    height: 59px;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.tombolTambah {
+    width: 20px;
+    margin: 0 5px;
+}
+
+.tombolTambah:hover {
+    cursor: pointer;
+}
+
+.jumlahCounter {
+    margin-bottom: 4px;
+}
+
+.increDecreWBtn {
+    display: flex;
+    align-items: center;
 }
 
 .desdet-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 154px;
+    height: 59px;
 
-  position: absolute;
-  width: 154px;
-  height: 59px;
-  left: 825.49px;
-  top: 992.5px;
+    background: #ff385c;
+    border: none;
 
-  background: #ff385c;
-  border: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .nav {
-  margin: 50px;
+    margin: 50px;
 }
 
 .nav-ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .nav-li {
-  text-decoration: none;
-  height: 25px;
-  float: left;
-  margin-right: 0px;
-  border-right: 1px solid #aaa;
-  padding: 0 20px;
+    text-decoration: none;
+    height: 25px;
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid #aaa;
+    padding: 0 20px;
 }
 
 .nav-li:last-child {
-  border-right: none;
+    border-right: none;
 }
 
 .nav-li a {
-  text-decoration: none;
-  color: #ccc;
-  font: 25px/1 Helvetica, Verdana, sans-serif;
+    text-decoration: none;
+    color: #ccc;
+    font: 25px/1 Helvetica, Verdana, sans-serif;
 
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .nav-li a:hover {
-  color: #ff385c;
-  cursor: pointer;
-  text-decoration: none;
+    color: #ff385c;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-li-active a {
-  font-weight: bold;
-  color: #ff385c;
+    font-weight: bold;
+    color: #ff385c;
 }
 
 .msg-active {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .msg-null {
-  text-decoration: none;
+    text-decoration: none;
 }

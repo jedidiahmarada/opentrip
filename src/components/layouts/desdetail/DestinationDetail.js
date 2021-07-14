@@ -7,6 +7,8 @@ import Sdk from "./Sdk";
 import Header from "../Header";
 import Footer from "../Footer";
 import { useHistory } from "react-router-dom";
+import Counterer from "./Counterer";
+import CounterContext from "./Counter";
 
 const DestinationDetailAtas = () => {
   const history = useHistory();
@@ -37,6 +39,18 @@ const DestinationDetailAtas = () => {
 
   // const history = useHistory();
 
+  const [ count, setCounter ] = useState(0);
+
+  const increment = () => {
+    setCounter(count + 1);
+  }
+
+  const decrement = () => {
+    if (count > 0) {
+      setCounter(count - 1);
+    }
+  }
+
   return (
     <div>
       <Header />
@@ -59,9 +73,16 @@ const DestinationDetailAtas = () => {
           <div className="petaLokasi"></div>
           <h4 className="hargaBerdasar">Harga berdasarkan jumlah orang</h4>
           {/*<div className={styles.kalender}></div>*/}
-          <button className={"desdet-btn"} onClick={checkout}>
-            Pesan Sekarang
-          </button>
+          <div className="increDecreWBtn">
+            <div className="increDecre">
+              <CounterContext.Provider value={{count, increment, decrement}}>
+                <Counterer/>
+              </CounterContext.Provider>
+            </div>
+            <button className={"desdet-btn"} onClick={checkout}>
+              Pesan Sekarang
+            </button>
+          </div>
         </div>
       </div>
 
