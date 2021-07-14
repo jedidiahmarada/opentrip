@@ -7,6 +7,7 @@ import Sdk from "./Sdk";
 import Header from "../Header";
 import Footer from "../Footer";
 import { useHistory } from "react-router-dom";
+
 import Counterer from "./Counterer";
 import CounterContext from "./Counter";
 import InterMap from "../InterMap";
@@ -40,17 +41,17 @@ const DestinationDetailAtas = () => {
 
   // const history = useHistory();
 
-  const [ count, setCounter ] = useState(0);
+  const [count, setCounter] = useState(0);
 
   const increment = () => {
     setCounter(count + 1);
-  }
+  };
 
   const decrement = () => {
     if (count > 0) {
       setCounter(count - 1);
     }
-  }
+  };
 
   return (
     <div>
@@ -72,14 +73,14 @@ const DestinationDetailAtas = () => {
             cssClass="e-date-wrapper"
           />
           <div className="petaLokasi">
-            <InterMap/>
+            <InterMap />
           </div>
           <h4 className="hargaBerdasar">Harga berdasarkan jumlah orang</h4>
           {/*<div className={styles.kalender}></div>*/}
           <div className="increDecreWBtn">
             <div className="increDecre">
-              <CounterContext.Provider value={{count, increment, decrement}}>
-                <Counterer/>
+              <CounterContext.Provider value={{ count, increment, decrement }}>
+                <Counterer />
               </CounterContext.Provider>
             </div>
             <button className={"desdet-btn"} onClick={checkout}>

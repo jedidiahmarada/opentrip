@@ -3,9 +3,6 @@ import iphonemockup1 from "../assets/picture/iphone1mockup.png";
 import iphonemockup2 from "../assets/picture/iphone2mockup.png";
 import "../styles/bannerb.css";
 
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 const BannerB = () => {
   return (
     <div className="bannerb">
