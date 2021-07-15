@@ -11,6 +11,8 @@ import filtericon1 from "../../assets/picture/filtericon1.png";
 import "../../styles/PHMyTripTable.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import HosterNav from "./HosterNav";
+
 function PHMyTripTable() {
   return (
     <div className="tableboxbackgorund">
@@ -29,7 +31,7 @@ function PHMyTripTable() {
           height="42"
         ></img>
       </nav>
-
+      <HosterNav />
       <div className="tableboxpage">
         <p className="mytrip">My Trip</p>
         <button class="button">New Trip + </button>

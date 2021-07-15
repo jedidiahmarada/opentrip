@@ -178,11 +178,10 @@
 }
 
 .uploadicon {
-  width: 40px;
-  height: 40px;
+  width: 270px;
   position: absolute;
-  top: 80px;
-  left: 280px;
+  z-index: 1;
+  margin: 68px 0 0 45px;
 }
 
 .uploadfotoselfie {
@@ -236,11 +235,10 @@
 }
 
 .uploadicon2 {
-  width: 40px;
-  height: 40px;
+  width: 270px;
   position: absolute;
-  top: 80px;
-  left: 280px;
+  z-index: 1;
+  margin: 68px 0 0 -56px;
 }
 
 .labelbank {
@@ -340,11 +338,10 @@
 }
 
 .uploadicon3 {
-  width: 40px;
-  height: 40px;
+  width: 270px;
   position: absolute;
-  top: 80px;
-  left: 280px;
+  z-index: 1;
+  margin: 70px 0 0 30px;
 }
 
 .submitregister {

@@ -12,7 +12,10 @@ export const login = async (email, password) => {
       },
       body: JSON.stringify(data),
     });
-    return response.json();
+    if (response.status === 200) {
+      return response.json();
+    }
+    throw new Error("BLT lancar");
   } catch (error) {
     throw error;
   }

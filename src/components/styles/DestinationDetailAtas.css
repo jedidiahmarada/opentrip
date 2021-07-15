@@ -80,7 +80,7 @@
   background: #f1f1f1;
 }
 
-.petaLokasi{
+.petaLokasi {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -142,11 +142,12 @@
 }
 
 .nav {
-  margin: 50px;
+  margin: 50px 50px 5px 50px;
 }
 
 .nav-ul {
   list-style-type: none;
+  margin-top: 10px;
 }
 
 .nav-li {

@@ -185,7 +185,7 @@ const RegisHoster = () => {
                   <img
                     className="uploadicon"
                     src={identitypicSet}
-                    alt="uploadicon"
+                    // alt="uploadicon"
                   />
                   <h4 className="h4uploadfotoktp">Upload Foto KTP (JPG,PNG)</h4>
                   {/* <button type="submit" className="browsefileuploadKTP">
@@ -206,7 +206,7 @@ const RegisHoster = () => {
                   <img
                     className="uploadicon2"
                     src={sidPicSet}
-                    alt="uploadicon"
+                    // alt="uploadicon"
                   />
                   <h4 className="h4uploadfotoselfie">
                     Upload Foto Selfie Dengan KTP (JPG,PNG)
@@ -253,7 +253,7 @@ const RegisHoster = () => {
                   <img
                     className="uploadicon3"
                     src={bookAccountpicSet}
-                    alt="uploadicon"
+                    // alt="uploadicon"
                   />
                   <h4 className="h4fotobukutabungan">
                     Upload Foto Buku Tabungan (JPG,PNG)

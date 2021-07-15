@@ -29,8 +29,8 @@ const Login = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    const store = window.localStorage;
-    dispatch(loginAsync(emailset, password));
+
+    dispatch(loginAsync(emailset, password, history));
   };
 
   // useEffect(() => {
