@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <img className={styles.logoHeader} src={logo} alt="logo" />
+      <img className={styles.logoHeader} src={logo} alt="logo"  />
       <div className={styles.header__user}>
         <div className={styles.header__user__container}>
           {token ? (

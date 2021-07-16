@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import logo from "../assets/picture/logo.png";
 import instagram from "../assets/picture/instagram.png";
@@ -8,10 +9,14 @@ import youtube from "../assets/picture/youtube.png";
 import "../styles/Footer.css";
 
 const Footer = () => {
+  const history = useHistory();
+  const home = () => {
+    history.push("/");
+  };
   return (
     <footer>
       <div className="footer-atas">
-        <img className="logoFooter" src={logo} />
+        <img className="logoFooter" src={logo} onClick={home} />
         <ul className="footer-company">
           <h5 className="h5-company">Company</h5>
           <li className="li-company">About</li>

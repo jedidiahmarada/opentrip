@@ -10,7 +10,7 @@ const DestinationSlider = (props) => {
     speed: 500,
     slidesToShow: 3,
     // responsive: { props: { responsiveConfig } },
-    slidesToScroll: 3,
+    slidesToScroll: 5,
     // accessibility: true,
     // arrows: true,
     centerMode: true,

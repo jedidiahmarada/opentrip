@@ -1,11 +1,11 @@
-import {createContext} from 'react';
+import { createContext } from "react";
 
 const CounterContext = createContext({
   count: 0,
   increment: () => {},
-  decrement: () => {}
+  decrement: () => {},
 });
 
-CounterContext.displayName = 'CounterContext';
+CounterContext.displayName = "CounterContext";
 
 export default CounterContext;
