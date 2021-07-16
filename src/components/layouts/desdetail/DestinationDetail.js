@@ -10,6 +10,7 @@ import { useHistory } from "react-router-dom";
 import Counterer from "./Counterer";
 import CounterContext from "./Counter";
 import InterMap from "../InterMap";
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 const DestinationDetailAtas = () => {
   const history = useHistory();
@@ -52,6 +53,8 @@ const DestinationDetailAtas = () => {
     }
   }
 
+  const quotaBar = <ProgressBar max={10} now={count} label={`${count} pax`} variant="danger"/>;
+
   return (
     <div>
       <Header />
@@ -75,6 +78,10 @@ const DestinationDetailAtas = () => {
             <InterMap/>
           </div>
           <h4 className="hargaBerdasar">Harga berdasarkan jumlah orang</h4>
+          <div className="quotaBar">
+            {quotaBar}
+            <p className='ketBar'>{count} dari 10 kuota sudah terisi</p>
+          </div>
           {/*<div className={styles.kalender}></div>*/}
           <div className="increDecreWBtn">
             <div className="increDecre">

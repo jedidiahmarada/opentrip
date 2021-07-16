@@ -85,13 +85,29 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .hargaBerdasar {
+    font-family: Inter;
     font-size: 16px;
     font-weight: 550;
     color: #4a4a4a;
     font-style: normal;
+}
+
+.quotaBar {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.ketBar {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    font-style: normal;
+    margin-bottom: 0px;
 }
 
 .increDecreBtn {
