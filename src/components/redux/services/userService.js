@@ -15,7 +15,7 @@ export const login = async (email, password) => {
     if (response.status === 200) {
       return response.json();
     }
-    throw new Error("BLT lancar");
+    throw new Error("gagal cuy");
   } catch (error) {
     throw error;
   }

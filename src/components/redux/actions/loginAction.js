@@ -40,7 +40,7 @@ export const loginAsync = (email, password, history) => {
       })
       .catch((error) => {
         console.log(error, "error~");
-        dispatch(loginError("3 PERIODE!!!"));
+        dispatch(loginError("Periksa kembali email dan password anda!"));
       });
   };
 };

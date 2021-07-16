@@ -17,6 +17,7 @@ const Login = () => {
 
   const dispatch = useDispatch();
   const history = useHistory();
+
   console.log(emailset, "wkwkwkwk");
 
   const home = () => {
@@ -29,17 +30,8 @@ const Login = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-
     dispatch(loginAsync(emailset, password, history));
   };
-
-  // useEffect(() => {
-  //   // jika email dan password = true
-  //   if (email != ""){
-  //     history.push("/");
-  //   }
-  //   //action yang akan dilakukan
-  // }, [email])//syarat
 
   return (
     <div className={styles.box}>
@@ -63,7 +55,6 @@ const Login = () => {
           <input
             className={styles.psw__input}
             value={password}
-            // placeholder="password"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           ></input>

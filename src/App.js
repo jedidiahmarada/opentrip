@@ -13,8 +13,8 @@ import Order from "./components/layouts/checkout/Order";
 import Payment from "./components/layouts/checkout/Payment";
 import OrderReceived from "./components/layouts/order/OrderReceived";
 
-import PHMyTripOrder from "./components/layouts/hoster/PHMyTripOrder";
-import PHMyTripTable from "./components/layouts/hoster/PHMyTripTable";
+// import PHMyTripOrder from "./components/layouts/hoster/PHMyTripOrder";
+// import PHMyTripTable from "./components/layouts/hoster/PHMyTripTable";
 
 const App = () => {
   const pathname = window.location.pathname;
@@ -28,7 +28,8 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/destination" component={DestinationPages} />
-            <Route exact path="/desdetail" component={DestinationDetail} />
+
+            <Route exact path="/desdetail/:id" component={DestinationDetail} />
             <Route exact path="/registration" component={RegisPage} />
             <Route exact path="/regisuser" component={RegisUser} />
             <Route exact path="/regishoster" component={RegisHoster} />
@@ -39,8 +40,8 @@ const App = () => {
             <Route exact path="/checkout/order/payment" component={Payment} />
             <Route exact path="/oreceived" component={OrderReceived} />
 
-            <Route exact path="/phorder" component={PHMyTripOrder} />
-            <Route exact path="/phtable" component={PHMyTripTable} />
+            {/* <Route exact path="/phorder" component={PHMyTripOrder} />
+            <Route exact path="/phtable" component={PHMyTripTable} /> */}
           </Switch>
         </div>
       </BrowserRouter>
