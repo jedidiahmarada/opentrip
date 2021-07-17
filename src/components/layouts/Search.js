@@ -4,7 +4,7 @@ import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 
 const Search = () => (
   <div className={styles.search}>
-    <div>
+    <div className={styles.flexSearch}>
       <div className={styles.search__background}></div>
       <div className={styles.bannerA__text}>
         <h1>NEVER STOP</h1>
@@ -16,17 +16,15 @@ const Search = () => (
           <input
             className={styles.search__input}
             type="text"
-            placeholder="Semua Tempat"
+            placeholder="Semua tempat.."
           ></input>
         </div>
-        <div>
+        <div className={styles.isiTanggal}>
           <p className={styles.dateTitle}>Tanggal</p>
           <input className={styles.datepicker} type="date" placeholder="Kapan saja"></input>
           {/* <DatePickerComponent></DatePickerComponent> */}
         </div>
-        <div>
-          <button className={styles.search__btn}>Cari</button>
-        </div>
+        <button className={styles.search__btn}>Cari</button>
       </div>
     </div>
   </div>

@@ -1740,7 +1740,7 @@
   dependencies:
     "@syncfusion/ej2-base" "~19.2.44"
 
-"@syncfusion/ej2-react-calendars@^19.2.47":
+"@syncfusion/ej2-react-calendars@^19.1.66":
   version "19.2.47"
   resolved "https://registry.yarnpkg.com/@syncfusion/ej2-react-calendars/-/ej2-react-calendars-19.2.47.tgz#0e2a23f1a9781903e436dfba4bda4c8dd848a79b"
   integrity sha512-CJeBj+Jf3VuNPcwUoR9ZPQPJW18y4fIUuz4QhL7Db7EFUWD8Zv8pl1cADAHR/+ynGvWf2rDXIz3Pc27v5ojYxw==
