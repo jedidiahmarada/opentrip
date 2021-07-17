@@ -148,6 +148,11 @@ input::-webkit-input-placeholder {
     color: white;
 }
 
+.search__btn:hover {
+    background-color: #ff5874;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .hover-2 .hover-overlay {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
 }
