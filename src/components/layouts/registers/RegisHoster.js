@@ -7,8 +7,10 @@ import "../../styles/RegisHoster.css";
 import { useHistory } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
+import { getBankAsync } from "../../redux/actions/bankActions";
 
 const RegisHoster = () => {
+  //untuk onChange
   const [usernameSet, setUsernameSet] = useState("");
   const [emailSet, setEmailSet] = useState("");
   const [password, setPassword] = useState("");
@@ -51,7 +53,13 @@ const RegisHoster = () => {
   console.log(bookAccountpicSet, "book account");
   //======================================================
 
+  //untuk fetching dan maping API
+  const { getBank } = useSelector((state) => state.bankReducer);
+
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getBankAsync());
+  }, [dispatch]);
   const handleClick = () => {
     // e.preventDefault();
     dispatch(
@@ -101,15 +109,15 @@ const RegisHoster = () => {
     }
     console.log(e.target.files, "ini e");
   };
-  console.log(identitypicSet, "set bookaccut");
-  console.log(sidPicSet, "set bookaccut");
-  console.log(bookAccountpicSet, "set bookaccut");
 
   const history = useHistory();
 
   const phOrder = () => {
     history.push("/phorder");
   };
+  console.log(getBank, "ini bank ke");
+  // console.log(getBank.bank_name, "ini bank kekkk");
+
   return (
     <>
       <Header />
@@ -192,7 +200,14 @@ const RegisHoster = () => {
                   Browse File
                 </button> */}
                 </div>
-
+                <div className="noKtp">
+                  <label>No KTP</label>
+                  <input
+                    className="inputNoKtp"
+                    value={identityNoSet}
+                    onChange={(e) => setIdentityNoSet(e.target.value)}
+                  />
+                </div>
                 {/* UPLOAD FOTO SELFIE */}
                 <div className="uploadfotoselfie">
                   <label>Upload Foto Selfie Dengan KTP</label>
@@ -221,11 +236,20 @@ const RegisHoster = () => {
                     <label>Bank Pembayaran</label>
                   </div>
                   <div class="form-group col-md-4">
-                    <select name="wgtmsr" id="wgtmsr">
-                      <option value="btn">BTN</option>
-                      <option value="btpn">BTPN</option>
-                      <option value="btnsyah">BTN Syariah</option>
-                      <option value="btpnsyah">BTPN Syariah</option>
+                    <select
+                      name="wgtmsr"
+                      id="wgtmsr"
+                      value={bankSet}
+                      onChange={(e) => setBankSet(e.target.value)}
+                    >
+                      {getBank &&
+                        getBank.map((type) => (
+                          <>
+                            <option value={type.bank_name}>
+                              {type.bank_name}
+                            </option>
+                          </>
+                        ))}
                     </select>
                   </div>
                 </div>

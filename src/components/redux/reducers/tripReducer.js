@@ -1,15 +1,15 @@
-import { GET_BANK } from "../actions/actionTypes";
+import { GET_TRIP } from "../actions/actionTypes";
 
 const initState = {
-  getBank: [],
+  getTrip: [],
 };
 
 export default function (state = initState, action) {
   switch (action.type) {
-    case "GETBANK":
+    case "GETTRIP":
       return {
         ...state,
-        getBank: action.payload.getBank,
+        getTrip: action.payload.getTrip,
         loading: false,
       };
 

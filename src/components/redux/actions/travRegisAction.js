@@ -31,12 +31,18 @@ export const travRegisAsync = (username, email, password) => {
     // ^^ misal mau ambil username dari state di redux
     travRegisService(username, email, password)
       .then((response) => {
-        console.log(response, "berhasil~");
-        dispatch(travRegisAction(username, email, password));
+        if (response.code == 400) {
+          dispatch(travRegisError(response.message));
+        } else {
+          dispatch(travRegisAction(username, email, password));
+        }
+        console.log(response, "nih respone nih ");
       })
-      .catch((error) => {
-        console.log(error, "error~");
-        dispatch(travRegisError(error));
+      .catch((response) => {
+        console.log(response.message, "error~");
+        dispatch(travRegisError(response.message));
       });
   };
 };
+
+//BERSAHABATLAH DENGAN INI SEMUA AGAR JALAN MENJADI MUDAH

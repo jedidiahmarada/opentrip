@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const login = async (email, password) => {
   const url = "https://fp-open-trip.herokuapp.com/api/ot/user/login";
   const data = {
@@ -86,18 +88,16 @@ export const hostRegis = async (
   }
 };
 
-export const getBank = async () => {
-  const url = "https://fp-open-trip.herokuapp.com/api/ot/bank/all";
-  try {
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        Authorization:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2lkIjoxLCJlbWFpbCI6ImFmQGdtYWlsLmNvbSIsImZ1bGxfbmFtZSI6IkFkZSBGaXJtYW4iLCJpYXQiOjE2MjUxODQ3MzQsImV4cCI6MTYyNTE5NTUzNH0._BPK1GO-rsLEwmvYo5UdESDZEMIXMZ5A5CK-Wg_GzOo",
-      },
-    });
-    return response.json();
-  } catch (error) {
-    throw error;
-  }
+export const getBankService = async () => {
+  const url = `https://fp-open-trip.herokuapp.com/api/ot/bank/all`;
+  const response = await axios.get(url);
+  console.log("response axios", response);
+  return response;
+};
+
+export const getTripService = async () => {
+  const url = `https://fp-open-trip.herokuapp.com/api/ot/trip/all?page=0&limit=9`;
+  const response = await axios.get(url);
+  console.log("response axios", response);
+  return response;
 };

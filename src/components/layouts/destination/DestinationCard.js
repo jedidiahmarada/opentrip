@@ -4,19 +4,21 @@ import destinationsActions from "../../redux/actions/destinationsActions";
 import DestinationItem from "./DestinationItem";
 import styles from "../../styles/destinationCard.module.css";
 
+import { getTripAsync } from "../../redux/actions/tripActions";
+
 const DestinationCard = (props) => {
-  //   const destinations = useSelector(
-  //     (state) => state.destinationsReducer.destinations
-  //   );
-  //   const dispatch = useDispatch();
-  //   useEffect(() => {
-  //     dispatch(destinationsActions.getDestinations());
-  //   }, [dispatch]);
+  //untuk fetching dan maping API
+  const { getTrip } = useSelector((state) => state.tripReducer);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getTripAsync());
+  }, [dispatch]);
 
   const destinations = useSelector(
     (state) => state.destinationsReducer.destinations
   );
-  const dispatch = useDispatch();
+
   useEffect(() => {
     console.log(props, "coba");
     dispatch(destinationsActions.getAllDestination(props.page));
@@ -25,12 +27,6 @@ const DestinationCard = (props) => {
 
   return (
     <div className={styles.div__card}>
-      {/* {destinations &&
-        destinations.map((destination) => {
-          return (
-            <DestinationItem key={destination.id} destination={destination} />
-          );
-        })} */}
       {destinations &&
         destinations.map((destination) => {
           console.log(destination);
