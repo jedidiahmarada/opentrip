@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import styles from "../../styles/desCard.module.css";
 import { useHistory } from "react-router-dom";
 
-let imgURL = "https://image.tmdb.org/t/p/w500";
-
-//let imgURL = "API"
-
 const DestinationItem = ({ destination }) => {
   //untuk mengambil token
   const tokenDes = localStorage.getItem("token");
@@ -27,19 +23,14 @@ const DestinationItem = ({ destination }) => {
     <div className={styles.card__container}>
       <div className={styles.card__category}>
         <div className={styles.card}>
-          {/* <Link to={`/category/${destination.id}`}> */}
-          <img
-            // src={`${imgURL}${destination.poster_path}`}
-            src="https://th.bing.com/th/id/R199a3b217f47c915ddbb59dabdc8149c?rik=oNrgRbhOOK3Smw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-bUTz-VYcgYs%2fUQZ4VFhxyVI%2fAAAAAAAAAO4%2fVYFd7bKcZlQ%2fs1600%2fGambar%2bgambar%2bpemandangan%2bindah%2b5.jpg&ehk=f0hH2wCR%2bOtFjO2Fnw8BZ0kJGsxlXZix3tcilBzZNKs%3d&risl=&pid=ImgRaw"
-            alt={destination.title}
-          />
+          <img src={destination.thumbnail_pict} alt={destination.title} />
 
-          {/* </Link> */}
-          {/* <h2 className={styles.title__card}>Title</h2> */}
-          <h2 className={styles.title__card}>{destination.title}</h2>
-          <p className={styles.subtitle__card}>Sub title</p>
+          <h2 className={styles.title__card}>{destination.trip_name}</h2>
+          <p className={styles.subtitle__card}>
+            Minimum Keberangkatan 10 Orang, Syarat & Ketentuan Berlaku
+          </p>
           <p className={styles.harga}>
-            Harga/<p className={styles.orang}>Orang</p>
+            {destination.price}/<p className={styles.orang}>Orang</p>
           </p>
 
           <button

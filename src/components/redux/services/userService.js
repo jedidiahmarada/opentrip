@@ -101,3 +101,10 @@ export const getTripService = async () => {
   console.log("response axios", response);
   return response;
 };
+
+export const getCategoryService = async () => {
+  const url = `https://fp-open-trip.herokuapp.com/api/ot/category/all`;
+  const response = await axios.get(url);
+  console.log("response axios", response);
+  return response;
+};

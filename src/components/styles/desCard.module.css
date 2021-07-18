@@ -62,7 +62,6 @@
   width: 235px;
   height: 40px;
   background: #ff385c;
-
   text-align: center;
 
   font-family: Inter;
@@ -72,7 +71,6 @@
   line-height: 16px;
 
   color: #ffffff;
-  margin-top: 18px;
   margin-left: 22px;
   border: none;
 }

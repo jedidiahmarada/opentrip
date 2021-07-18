@@ -60,6 +60,7 @@ const RegisHoster = () => {
   useEffect(() => {
     dispatch(getBankAsync());
   }, [dispatch]);
+
   const handleClick = () => {
     // e.preventDefault();
     dispatch(
@@ -180,6 +181,14 @@ const RegisHoster = () => {
                   />
                 </div>
 
+                <div className="noKtp">
+                  <label>No KTP</label>
+                  <input
+                    className="inputNoKtp"
+                    value={identityNoSet}
+                    onChange={(e) => setIdentityNoSet(e.target.value)}
+                  />
+                </div>
                 {/* UPLOAD KTP */}
                 <div className="uploadfotoKTP">
                   <label>Upload Foto KTP</label>
@@ -196,18 +205,8 @@ const RegisHoster = () => {
                     // alt="uploadicon"
                   />
                   <h4 className="h4uploadfotoktp">Upload Foto KTP (JPG,PNG)</h4>
-                  {/* <button type="submit" className="browsefileuploadKTP">
-                  Browse File
-                </button> */}
                 </div>
-                <div className="noKtp">
-                  <label>No KTP</label>
-                  <input
-                    className="inputNoKtp"
-                    value={identityNoSet}
-                    onChange={(e) => setIdentityNoSet(e.target.value)}
-                  />
-                </div>
+
                 {/* UPLOAD FOTO SELFIE */}
                 <div className="uploadfotoselfie">
                   <label>Upload Foto Selfie Dengan KTP</label>

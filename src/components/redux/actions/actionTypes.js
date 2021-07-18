@@ -7,3 +7,5 @@ export const GET_NATURE = "GET_NATURE";
 export const GET_BANK = "GET_BANK";
 
 export const GET_TRIP = "GET_TRIP";
+
+export const GET_CATEGORY = "GET_CATEGORY";

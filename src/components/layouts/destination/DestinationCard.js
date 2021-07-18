@@ -15,20 +15,10 @@ const DestinationCard = (props) => {
     dispatch(getTripAsync());
   }, [dispatch]);
 
-  const destinations = useSelector(
-    (state) => state.destinationsReducer.destinations
-  );
-
-  useEffect(() => {
-    console.log(props, "coba");
-    dispatch(destinationsActions.getAllDestination(props.page));
-    console.log(destinations, "destinationCard");
-  }, [dispatch, props.page]);
-
   return (
     <div className={styles.div__card}>
-      {destinations &&
-        destinations.map((destination) => {
+      {getTrip &&
+        getTrip.map((destination) => {
           console.log(destination);
           return (
             <DestinationItem key={destination.id} destination={destination} />

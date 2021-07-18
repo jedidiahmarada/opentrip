@@ -5,6 +5,7 @@ import loginReducer from "./loginReducer";
 import destinationsReducer from "./destinationsReducer";
 import bankReducer from "./bankReducer";
 import tripReducer from "./tripReducer";
+import categoryReducer from "./categoryReducer";
 
 const rootReducer = combineReducers({
   hostRegisReducer,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   loginReducer,
   bankReducer,
   tripReducer,
+  categoryReducer,
   destinationsReducer,
 });
 
