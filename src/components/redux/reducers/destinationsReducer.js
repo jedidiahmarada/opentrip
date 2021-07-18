@@ -8,7 +8,6 @@ import {
 
 /* Initial state from store */
 
-// setelah dapat API Destinasi jangan lupa untuk rename
 const initState = {
   popularDestinations: [],
   vitaminSea: [],

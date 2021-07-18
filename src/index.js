@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";

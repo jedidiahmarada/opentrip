@@ -15,7 +15,7 @@ const DestinationFilter = () => {
   const [collapsed7, setCollapsed7] = useState(true);
   return (
     <div className={styles.destinationbackground}>
-      <div>
+      <div className={styles.fiterContainer}>
         <img className={styles.filtericon} src={filtericon} alt="filtericon" />
         <p className={styles.filterp}>Filter</p>
       </div>

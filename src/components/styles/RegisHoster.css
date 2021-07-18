@@ -1,13 +1,12 @@
 .regishosterbackground {
   background-color: #f5f5f5;
+  padding: 10px 0 50px 0;
 }
 
 .regishosterpage {
   max-width: 800px;
   height: 1900px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
+  margin: 80px auto 80px auto;
   padding-left: 16px;
   padding-right: 16px;
   border: 1px solid white;
@@ -20,7 +19,7 @@
   width: 798px;
   background-color: #ff385c;
   margin-left: -16px;
-  margin-top: -24px;
+  margin-top: -50px;
   padding-left: auto;
   padding-right: auto;
 }
@@ -179,11 +178,10 @@
 }
 
 .uploadicon {
-  width: 40px;
-  height: 40px;
+  width: 270px;
   position: absolute;
-  top: 80px;
-  left: 280px;
+  z-index: 1;
+  margin: 68px 0 0 45px;
 }
 
 .uploadfotoselfie {
@@ -237,11 +235,10 @@
 }
 
 .uploadicon2 {
-  width: 40px;
-  height: 40px;
+  width: 270px;
   position: absolute;
-  top: 80px;
-  left: 280px;
+  z-index: 1;
+  margin: 68px 0 0 -56px;
 }
 
 .labelbank {
@@ -341,11 +338,10 @@
 }
 
 .uploadicon3 {
-  width: 40px;
-  height: 40px;
+  width: 270px;
   position: absolute;
-  top: 80px;
-  left: 280px;
+  z-index: 1;
+  margin: 70px 0 0 30px;
 }
 
 .submitregister {

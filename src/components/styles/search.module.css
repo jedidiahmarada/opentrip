@@ -2,152 +2,191 @@
 @import url("https://cdn.syncfusion.com/ej2/material.css");
 
 .search {
-  width: 100%;
-  height: 100%;
-  display: block;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.flexSearch {
+    /*display: flex;*/
+
 }
 
 .search__background {
-  width: 100%;
-  height: 400px;
-  background-image: linear-gradient(rgba(0, 1, 0, 0.2), rgba(0, 0, 0, 1)),
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 1, 0, 0.2), rgba(0, 0, 0, 1)),
     url("../assets/picture/bannerA.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .search__background:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .bannerA__text {
-  font-size: 20px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  position: absolute;
-  margin-top: -150px;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  color: white;
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -150px;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 .search__card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 65%;
-  height: 20%;
-  display: flex;
-  position: static;
-  margin-left: 200px;
-  background-color: white;
-  margin: -30px 0 30px 220px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 65%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*position: static;*/
+    margin-left: 17%;
+    background-color: white;
+    margin-top: -30px;
+    /*margin: -30px 0 30px 270px;*/
 
-  padding: 10px 0 10px 0;
-  align-items: center;
-  border-radius: 4px;
+    padding: 10px 0 10px 0;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.search__destination {
+    display: flex;
+    flex-direction: column;
 }
 
 .search__destination h4 {
-  font-size: 14px;
-  margin-left: 50px;
-  font-weight: 500;
+    font-size: 14px;
+    /*margin-left: 50px;*/
+    font-weight: 500;
+}
+
+.isiTanggal {
+    display: flex;
+    flex-direction: column;
 }
 
 .inputTitle {
-  margin-left: 52px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+    /*margin-left: 52px;*/
+    margin-bottom: 5px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 
-  font-feature-settings: "salt" on, "liga" off;
+    font-feature-settings: "salt" on, "liga" off;
 }
-.dateTitle {
-  margin-top: -15px;
-  margin-bottom: -0.5px;
-  font-family: Inter;
-  font-style: bold;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
 
-  font-feature-settings: "salt" on, "liga" off;
-}
 .search__input {
-  font-size: 22px;
-  margin: -7px 60px 7px 50px;
-  height: 30px;
-  width: 250px;
-  border: none;
+    font-size: 18px;
+    /*margin: -7px 60px 7px 50px;*/
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.search__input::placeholder {
+    font-size: 18px;
 }
 
 .search__input:focus {
-  outline: none;
+    outline: none;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+}
+
+.dateTitle {
+    /*margin: -15px 0 -0.5px 50px;*/
+    margin-bottom: 0;
+    font-family: Inter;
+    /*font-style: bold;*/
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    font-feature-settings: "salt" on, "liga" off;
 }
 
 .datepicker {
-  border: none;
-  border-bottom: solid 1px black;
-  margin-top: 9px;
+    border: none;
+    border-bottom: solid 1px grey;
+    /*margin: 9px 0 -5px 50px;*/
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 .datepicker:focus {
-  outline: none;
+    outline: none;
 }
 
 .search__btn {
-  width: 110px;
-  height: 45px;
-  margin-left: 155px;
+    width: 110px;
+    height: 45px;
+    /*margin-left: 190px;*/
 
-  border: none;
-  background: #ff385c;
+    border: none;
+    border-radius: 3px;
+    background: #ff385c;
 
-  font-weight: 400;
-  color: white;
+    font-weight: 400;
+    color: white;
+}
+
+.search__btn:hover {
+    background-color: #ff5874;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .hover-2 .hover-overlay {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
 }
 
 .hover-2-title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 99;
-  transition: all 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.3s;
 }
 
 .hover-2-description {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  left: 0;
-  text-align: center;
-  z-index: 99;
-  transition: all 0.3s;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    transition: all 0.3s;
 }
 
 .hover-2:hover .hover-2-title {
-  transform: translateY(-1.5rem);
+    transform: translateY(-1.5rem);
 }
 
 .hover-2:hover .hover-2-description {
-  bottom: 0.5rem;
-  opacity: 1;
+    bottom: 0.5rem;
+    opacity: 1;
 }
 
 .hover-2:hover .hover-overlay {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
 }

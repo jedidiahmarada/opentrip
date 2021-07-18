@@ -9,7 +9,7 @@
   background-color: white;
   width: 100%;
   height: 70px;
-  outline: 2px solid rgb(88, 88, 88);
+  box-shadow: 0px 4px 15px rgba(115, 115, 115, 0.07);
 }
 
 .header__nav {
@@ -78,9 +78,9 @@
   margin-left: 100px;
 }
 
-.header__brand__container {
-  /*padding: 16px 5px 20px 0px;*/
-}
+/* .header__brand__container {
+  padding: 16px 5px 20px 0px;
+} */
 
 .logoHeader {
   height: 25px;

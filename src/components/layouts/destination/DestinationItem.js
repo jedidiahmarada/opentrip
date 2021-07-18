@@ -6,11 +6,22 @@ import { useHistory } from "react-router-dom";
 let imgURL = "https://image.tmdb.org/t/p/w500";
 
 const DestinationItem = ({ destination }) => {
+  const tokenDes = localStorage.getItem("token");
+  console.log(tokenDes, "ini loh tokennya woyyy ini liatt sini ya elah");
   const history = useHistory();
+  console.log(destination, "------");
+  // const DesDetail = (id) => {
 
-  const DesDetail = () => {
-    history.push("/desdetail");
+  const DesDetail = (id) => {
+    if (tokenDes == null) {
+      history.push("/login");
+    } else {
+      // history.push("/desdetail");
+      history.push(`/desdetail/${id}`);
+    }
   };
+
+  const handleClick = () => {};
   return (
     <div className={styles.card__container}>
       <div className={styles.card__category}>
@@ -22,10 +33,14 @@ const DestinationItem = ({ destination }) => {
             alt={destination.title}
           />
           {/* </Link> */}
+          {/* <h2 className={styles.title__card}>Title</h2> */}
           <h2 className={styles.title__card}>{destination.title}</h2>
           <p className={styles.subtitle__card}>Sub title</p>
           <p className={styles.harga}>Harga/</p>
-          <button className={styles.card__btn} onClick={DesDetail}>
+          <button
+            className={styles.card__btn}
+            onClick={() => DesDetail(destination.id)}
+          >
             Pesan Sekarang
           </button>
         </div>

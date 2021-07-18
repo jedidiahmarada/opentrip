@@ -12,7 +12,10 @@ export const login = async (email, password) => {
       },
       body: JSON.stringify(data),
     });
-    return response.json();
+    if (response.status === 200) {
+      return response.json();
+    }
+    throw new Error("gagal cuy");
   } catch (error) {
     throw error;
   }
@@ -68,24 +71,30 @@ export const hostRegis = async (
   formData.append("book_account_pic", fileField.files[0]);
 
   const url = "https://fp-open-trip.herokuapp.com/api/ot/host/regis";
-  const data = {
-    username,
-    email,
-    password,
-    phone,
-    address,
-    identity_no,
-    identity_pic,
-    selfie_identity_pic,
-    bank,
-    account_number,
-    book_account_pic,
-  };
+  // const data = {
+  //   bank_name,
+  // };
   try {
     const response = await fetch(url, {
       method: "POST",
       headers: {},
       body: formData,
+    });
+    return response.json();
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const getBank = async () => {
+  const url = "https://fp-open-trip.herokuapp.com/api/ot/bank/all";
+  try {
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        Authorization:
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2lkIjoxLCJlbWFpbCI6ImFmQGdtYWlsLmNvbSIsImZ1bGxfbmFtZSI6IkFkZSBGaXJtYW4iLCJpYXQiOjE2MjUxODQ3MzQsImV4cCI6MTYyNTE5NTUzNH0._BPK1GO-rsLEwmvYo5UdESDZEMIXMZ5A5CK-Wg_GzOo",
+      },
     });
     return response.json();
   } catch (error) {

@@ -15,7 +15,7 @@ const PopularDestinationList = () => {
   useEffect(() => {
     dispatch(destinationsActions.getPopularDestinations());
   }, [dispatch]);
-
+  console.log(popularDestinations, "bwakkkk");
   return (
     <div className={styles.popular__comp}>
       <h2 className={styles.slide__title}>Destinasi Populer</h2>
@@ -23,6 +23,7 @@ const PopularDestinationList = () => {
         {popularDestinations &&
           popularDestinations.map((destination) => {
             return (
+              //props1 key props 2 destination
               <DestinationItem key={destination.id} destination={destination} />
             );
           })}

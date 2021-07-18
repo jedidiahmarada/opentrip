@@ -1,5 +1,21 @@
 .destination0 {
   margin: 110px 120px;
+  margin-top: auto;
+}
+
+.underline {
+  width: 100px;
+  height: 8px;
+  z-index: 1;
+  margin-top: -23px;
+
+  /* Main Color */
+
+  background: #ff385c;
+}
+
+.garis2 {
+  margin: 0 0 55px 0;
 }
 
 .destination1 {
