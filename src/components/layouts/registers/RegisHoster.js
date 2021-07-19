@@ -225,11 +225,9 @@ const RegisHoster = () => {
                   <h4 className="h4uploadfotoselfie">
                     Upload Foto Selfie Dengan KTP (JPG,PNG)
                   </h4>
-                  {/* <button type="submit" className="browsefileuploadselfie">
-                  Browse File
-                </button> */}
                 </div>
 
+                {/* get bank from api */}
                 <div className="bankpembayaran">
                   <div className="labelbank">
                     <label>Bank Pembayaran</label>

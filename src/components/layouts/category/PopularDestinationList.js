@@ -1,21 +1,18 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import DestinationItem from "../destination/DestinationItem";
 
 import DestinationSlider from "../destination/DestinationSlider";
 import { responsive } from "../../../responsive";
 import styles from "../../styles/popular.module.css";
 
-import { getCategoryAsync } from "../../redux/actions/categoryActions";
-
 const PopularDestinationList = () => {
   //untuk fetching dan maping API
-  const { getCategory } = useSelector((state) => state.categoryReducer);
+  const getCategory = useSelector((state) => {
+    console.log(state.categoryReducer.getCategory[0], "category");
+    return state.categoryReducer.getCategory[0].Trips;
+  });
 
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getCategoryAsync());
-  }, [dispatch]);
   //============================
 
   return (

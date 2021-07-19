@@ -23,7 +23,7 @@ const DestinationItem = ({ destination }) => {
     <div className={styles.card__container}>
       <div className={styles.card__category}>
         <div className={styles.card}>
-          <img src={destination.thumbnail_pict} alt={destination.title} />
+          <img src={destination.thumbnail_pict} alt={destination.trip_name} />
 
           <h2 className={styles.title__card}>{destination.trip_name}</h2>
           <p className={styles.subtitle__card}>

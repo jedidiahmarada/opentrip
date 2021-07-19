@@ -2,32 +2,35 @@ import React, { useEffect } from "react";
 
 import styles from "../styles/category.module.css";
 import { mainResponsive } from "../../mainResponsive";
-import destinationsActions from "../redux/actions/destinationsActions";
+import { getCategoryAsync } from "../redux/actions/categoryActions";
 import { useDispatch, useSelector } from "react-redux";
 
 //Components
 import PopularDestinationList from "./category/PopularDestinationList";
 import VitaminSeaList from "./category/VitaminSeaList";
 import NaikGunungList from "./category/NaikGunungList";
-let imgURL = "https://image.tmdb.org/t/p/original";
 
 const Category = () => {
-  const naikGunung = useSelector(
-    (state) => state.destinationsReducer.naikGunung
-  );
+  // const naikGunung = useSelector(
+  //   (state) => state.destinationsReducer.naikGunung
+  // );
+  const loading = useSelector((state) => state.categoryReducer.loading);
+
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(destinationsActions.getNaikGunung());
+    dispatch(getCategoryAsync());
   }, [dispatch]);
+
   return (
     <div className={styles.container}>
-      {" "}
       <div className="container main-container">
-        <PopularDestinationList />
+        {loading ? <div>Loading...</div> : <PopularDestinationList />}
+
         <br />
-        <VitaminSeaList />
+        {loading ? <div>Loading...</div> : <VitaminSeaList />}
+
         <br />
-        <NaikGunungList />
+        {loading ? <div>Loading...</div> : <NaikGunungList />}
       </div>
     </div>
   );

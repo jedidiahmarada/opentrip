@@ -7,9 +7,22 @@ export const getCategory = (getCategory) => {
   };
 };
 
+export const getCategoryLoad = () => {
+  return {
+    type: "GETCATEGORYLOAD",
+  };
+};
+
+export const getCategoryError = (errorMessage) => {
+  return {
+    type: "GETCATEGORYERROR",
+    payload: { errorMessage },
+  };
+};
+
 export const getCategoryAsync = () => {
   return (dispatch) => {
-    dispatch(getCategory());
+    dispatch(getCategoryLoad());
     getCategoryService()
       .then((response) => {
         console.log(response);
@@ -17,7 +30,7 @@ export const getCategoryAsync = () => {
       })
       .catch((error) => {
         console.log(error.message);
-        dispatch(getCategory(error.message));
+        dispatch(getCategoryError(error.message));
       });
   };
 };
