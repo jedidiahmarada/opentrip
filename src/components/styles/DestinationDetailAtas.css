@@ -1,7 +1,7 @@
 /*!* (A) SQUARE CONTAINER *!*/
 /*.detailDestination {*/
 /*    position: relative;*/
-/*    width: 300px;*/
+/*    width  : 300px;*/
 /*    height: 300px;*/
 /*    border: dotted;*/
 /*}*/
@@ -22,9 +22,9 @@
 .bgImgDDetails {
   width: 600px;
   height: 1000px;
-  background-image: url("https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig");
-  background-repeat: no-repeat;
-  background-position: center;
+  /*background-image: url("https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
   /*border: dotted;*/
 }
 

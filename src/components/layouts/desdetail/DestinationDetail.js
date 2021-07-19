@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import "../../styles/DestinationDetailAtas.css";
-import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
+import {DatePickerComponent} from "@syncfusion/ej2-react-calendars";
 import Dperjalanan from "./DPerjalanan";
 import Galeri from "./Galeri";
 import Sdk from "./Sdk";
 import Header from "../Header";
 import Footer from "../Footer";
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 import Counterer from "./Counterer";
@@ -25,20 +25,20 @@ const DestinationDetailAtas = () => {
     history.push("/checkout");
   };
   const handleDperjalanan = () => {
-    setActive({ dperjalanan: true, sdk: false, galeri: false });
+    setActive({dperjalanan: true, sdk: false, galeri: false});
   };
 
   const handleSdk = () => {
-    setActive({ dperjalanan: false, sdk: true, galeri: false });
+    setActive({dperjalanan: false, sdk: true, galeri: false});
   };
 
   const handleGaleri = () => {
-    setActive({ dperjalanan: false, sdk: false, galeri: true });
+    setActive({dperjalanan: false, sdk: false, galeri: true});
   };
 
-  const showDperjalanan = active.dperjalanan ? <Dperjalanan /> : null;
-  const showSdk = active.sdk ? <Sdk /> : null;
-  const showGaleri = active.galeri ? <Galeri /> : null;
+  const showDperjalanan = active.dperjalanan ? <Dperjalanan/> : null;
+  const showSdk = active.sdk ? <Sdk/> : null;
+  const showGaleri = active.galeri ? <Galeri/> : null;
 
   const [count, setCounter] = useState(0);
 
@@ -58,19 +58,20 @@ const DestinationDetailAtas = () => {
 
   const quotaBar = (
     //jumlah max harusnya berdasarkan API quota
-    <ProgressBar max={10} now={count} label={`${count} pax`} variant="danger" />
+    <ProgressBar max={10} now={count} label={`${count} pax`} variant="danger"/>
   );
 
   return (
     <>
-      <Header />
+      <Header/>
       <div>
         <div className="destinasiAtas">
-          <div className="bgImgDDetails" />
+          {/*<div className="bgImgDDetails"/>*/}
+          <img className="bgImgDDetails" src={"https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig"}/>
           <div className="bagKanan">
             <div className="sblmDivider">
               <p className="routerDAtas">Destinasi / Jawa Timur</p>
-              <hr className="solidDivider" />
+              <hr className="solidDivider"/>
             </div>
             <h1 className="namaDestinasi">Gunung Bromo</h1>
             <h5 className="ketNamaDestinasi">
@@ -82,7 +83,7 @@ const DestinationDetailAtas = () => {
               cssClass="e-date-wrapper"
             />
             <div className="petaLokasi">
-              <InterMap />
+              <InterMap/>
             </div>
             <h4 className="hargaBerdasar">Harga berdasarkan jumlah orang</h4>
             <div className="quotaBar">
@@ -93,9 +94,9 @@ const DestinationDetailAtas = () => {
             <div className="increDecreWBtn">
               <div className="increDecre">
                 <CounterContext.Provider
-                  value={{ count, increment, decrement }}
+                  value={{count, increment, decrement}}
                 >
-                  <Counterer />
+                  <Counterer/>
                 </CounterContext.Provider>
               </div>
               <button className={"desdet-btn"} onClick={checkout}>
@@ -142,7 +143,7 @@ const DestinationDetailAtas = () => {
           {showGaleri}
         </div>
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 };
