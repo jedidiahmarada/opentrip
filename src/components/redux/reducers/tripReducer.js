@@ -1,7 +1,6 @@
-import { GET_TRIP } from "../actions/actionTypes";
-
 const initState = {
   getTrip: [],
+  getTripId: null,
 };
 
 export default function (state = initState, action) {
@@ -10,6 +9,12 @@ export default function (state = initState, action) {
       return {
         ...state,
         getTrip: action.payload.getTrip,
+        loading: false,
+      };
+    case "GETTRIPID":
+      return {
+        ...state,
+        getTripId: action.payload.getTripId,
         loading: false,
       };
 

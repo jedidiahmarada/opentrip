@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "../../styles/desCard.module.css";
 import { useHistory } from "react-router-dom";
 

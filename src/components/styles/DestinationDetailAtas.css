@@ -1,24 +1,3 @@
-/*!* (A) SQUARE CONTAINER *!*/
-/*.detailDestination {*/
-/*    position: relative;*/
-/*    width: 300px;*/
-/*    height: 300px;*/
-/*    border: dotted;*/
-/*}*/
-/*!* (B) IMAGE *!*/
-/*.left_bg {*/
-/*    !* (B1) POSITION IMAGE *!*/
-/*    position: absolute;*/
-/*    top: -50px;*/
-/*    left: -100px;*/
-
-/*    !* (B2) CROP IMAGE *!*/
-/*    !* ORIGINAL IMAGE IS 600 X 420 *!*/
-/*    !* RECT(TOP, RIGHT, BOTTOM, LEFT) *!*/
-/*    clip: rect(50px, 400px, 350px, 100px);*/
-/*    width: 400px;*/
-/*}*/
-
 .bgImgDDetails {
   width: 600px;
   height: 1000px;

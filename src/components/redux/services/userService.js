@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// LOGIN
 export const login = async (email, password) => {
   const url = "https://fp-open-trip.herokuapp.com/api/ot/user/login";
   const data = {
@@ -22,7 +23,9 @@ export const login = async (email, password) => {
     throw error;
   }
 };
+//=============================================
 
+// REGIS TRAVEL
 export const travRegis = async (username, email, password) => {
   const url = "https://fp-open-trip.herokuapp.com/api/ot/travel/regis";
   const data = {
@@ -43,7 +46,9 @@ export const travRegis = async (username, email, password) => {
     throw error;
   }
 };
+//=============================================
 
+// REGIS HOSTER
 export const hostRegis = async (
   username,
   email,
@@ -73,9 +78,6 @@ export const hostRegis = async (
   formData.append("book_account_pic", fileField.files[0]);
 
   const url = "https://fp-open-trip.herokuapp.com/api/ot/host/regis";
-  // const data = {
-  //   bank_name,
-  // };
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -87,24 +89,49 @@ export const hostRegis = async (
     throw error;
   }
 };
+//=============================================
 
+//GET ALL BANK
 export const getBankService = async () => {
   const url = `https://fp-open-trip.herokuapp.com/api/ot/bank/all`;
   const response = await axios.get(url);
   console.log("response axios", response);
   return response;
 };
+//============================================
 
+//GET ALL TRIP
 export const getTripService = async () => {
   const url = `https://fp-open-trip.herokuapp.com/api/ot/trip/all?page=0&limit=9`;
   const response = await axios.get(url);
   console.log("response axios", response);
   return response;
 };
+//============================================
 
+//GET TRIP BY ID
+export const getTripIdService = async (id) => {
+  const url = `https://fp-open-trip.herokuapp.com/api/ot/trip?id=${id}`;
+  const response = await axios.get(url);
+  console.log("response axios", response);
+  return response;
+};
+//=============================================
+
+//GET CATEGORY TRIP
 export const getCategoryService = async () => {
   const url = `https://fp-open-trip.herokuapp.com/api/ot/category/all`;
   const response = await axios.get(url);
   console.log("response axios", response);
   return response;
 };
+//=============================================
+
+//FILTER CATEGORY TRIP BY ID
+export const getCategoryIdService = async (id) => {
+  const url = `https://fp-open-trip.herokuapp.com/api/ot/category?id=${id}`;
+  const response = await axios.get(url);
+  console.log("response axios", response);
+  return response;
+};
+//=============================================
