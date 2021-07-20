@@ -79,7 +79,13 @@ const DestinationDetailAtas = () => {
       <Header />
       <div>
         <div className="destinasiAtas">
-          <div className="bgImgDDetails" />
+          {/*<div className="bgImgDDetails"/>*/}
+          <img
+            className="bgImgDDetails"
+            src={
+              "https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig"
+            }
+          />
           <div className="bagKanan">
             <div className="sblmDivider">
               <p className="routerDAtas">{getTripId && getTripId.trip_name}</p>
