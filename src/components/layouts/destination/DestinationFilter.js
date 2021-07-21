@@ -1,4 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import {
+  getCategoryAsync,
+  getIdCategoryAsync,
+  setCheckedCategory,
+} from "../../redux/actions/categoryActions";
+import { useDispatch, useSelector } from "react-redux";
+
 import filtericon from "../../assets/picture/filtericon.png";
 import styles from "../../styles/Destination.module.css";
 import searchicon from "../../assets/picture/searchicon.png";
@@ -13,6 +20,21 @@ const DestinationFilter = () => {
   const [collapsed5, setCollapsed5] = useState(true);
   const [collapsed6, setCollapsed6] = useState(true);
   const [collapsed7, setCollapsed7] = useState(true);
+
+  const [Checked, setChecked] = useState([]);
+
+  const handleToggle = (id) => {
+    dispatch(setCheckedCategory(id));
+  };
+
+  const { getCategory } = useSelector((state) => state.categoryReducer);
+  const { checkedCategory } = useSelector((state) => state.categoryReducer);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getCategoryAsync());
+  }, [dispatch]);
+
   return (
     <div className={styles.destinationbackground}>
       <div className={styles.fiterContainer}>
@@ -88,50 +110,28 @@ const DestinationFilter = () => {
                 className="accordion-collapse collapse show"
                 aria-labelledby="panelsStayOpen-headingOne"
               >
-                <div className={styles.temaperjalanan.accordion_body}>
-                  <div className="form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="exampleCheck1"
-                    ></input>
-                    <label className="form-check-label" for="exampleCheck1">
-                      Destinasi Popular
-                    </label>
-                  </div>
-
-                  <div className="form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="exampleCheck1"
-                    />
-                    <label className="form-check-label" for="exampleCheck1">
-                      Vitamin Sea
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="exampleCheck1"
-                    ></input>
-                    <label className="form-check-label" for="exampleCheck1">
-                      Naik - Naik ke Puncak Gunung
-                    </label>
-                  </div>
-
-                  <div className="form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="exampleCheck1"
-                    />
-                    <label className="form-check-label" for="exampleCheck1">
-                      Menyatu Dengan Alam
-                    </label>
-                  </div>
-                </div>
+                {getCategory &&
+                  getCategory.map((id) => {
+                    return (
+                      <div className={styles.temaperjalanan.accordion_body}>
+                        <div className="form-check">
+                          <input
+                            type="checkbox"
+                            className="form-check-input"
+                            id="exampleCheck1"
+                            checked={checkedCategory.includes(id.id)}
+                            onChange={() => handleToggle(id.id)}
+                          ></input>
+                          <label
+                            className="form-check-label"
+                            for="exampleCheck1"
+                          >
+                            {id.category_name}
+                          </label>
+                        </div>
+                      </div>
+                    );
+                  })}
               </div>
             </Collapsible>
             <div className={styles.budgetperjalanan}>

@@ -128,8 +128,17 @@ export const getCategoryService = async () => {
 //=============================================
 
 //FILTER CATEGORY TRIP BY ID
-export const getCategoryIdService = async (id) => {
-  const url = `https://fp-open-trip.herokuapp.com/api/ot/category?id=${id}`;
+export const getIdCategoryService = async (id) => {
+  const url = `https://fp-open-trip.herokuapp.com/api/ot/category/search?id=${id}`;
+  const response = await axios.get(url);
+  console.log("response axios", response);
+  return response;
+};
+//=============================================
+
+//FILTER CATEGORY FILTER
+export const getFilterCategoryService = async (queryParams) => {
+  const url = `https://fp-open-trip.herokuapp.com/api/ot/category/search?page=0&limit=5&${queryParams}`;
   const response = await axios.get(url);
   console.log("response axios", response);
   return response;

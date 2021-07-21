@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { hostRegisAsync } from "../../redux/actions/hostRegisAction";
 
-import uploadicon from "../../assets/picture/uploadicon.png";
 import "../../styles/RegisHoster.css";
 import { useHistory } from "react-router-dom";
 import Header from "../Header";
@@ -40,17 +39,6 @@ const RegisHoster = () => {
     error,
     errorMessage,
   } = useSelector((state) => state.travRegisReducer);
-  console.log(emailSet, "email");
-  console.log(usernameSet, "username");
-  console.log(password, "ini password");
-  console.log(phoneSet, "ini phone");
-  console.log(addressSet, "ini address");
-  console.log(identityNoSet, "identity_no");
-  console.log(identitypicSet, "identity_pic");
-  console.log(sidPicSet, "SID PIC");
-  console.log(bankSet, "bank");
-  console.log(accountnumSet, "account number");
-  console.log(bookAccountpicSet, "book account");
   //======================================================
 
   //untuk fetching dan maping API
@@ -113,11 +101,7 @@ const RegisHoster = () => {
 
   const history = useHistory();
 
-  const phOrder = () => {
-    history.push("/phorder");
-  };
   console.log(getBank, "ini bank ke");
-  // console.log(getBank.bank_name, "ini bank kekkk");
 
   return (
     <>

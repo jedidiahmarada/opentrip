@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Filter from "../layouts/destination/DestinationFilter";
-import DestinationCard from "../layouts/destination/DestinationCard";
 import styles from "../styles/DestinationPages.module.css";
 
+//component
 import Header from "../layouts/Header";
 import Footer from "../layouts/Footer";
+import Filter from "../layouts/destination/DestinationFilter";
+import DestinationCard from "../layouts/destination/DestinationCard";
 
 const DestinationPages = () => {
   const [page, setPage] = useState(1);

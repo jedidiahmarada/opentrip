@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 import styles from "../styles/category.module.css";
-import { mainResponsive } from "../../mainResponsive";
 import { getCategoryAsync } from "../redux/actions/categoryActions";
 import { useDispatch, useSelector } from "react-redux";
 

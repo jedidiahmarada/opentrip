@@ -6,8 +6,20 @@ import styles from "../../styles/destinationCard.module.css";
 import { getTripAsync } from "../../redux/actions/tripActions";
 
 const DestinationCard = (props) => {
+  const filteredCategory = useSelector((state) => {
+    let category = [];
+    state.categoryReducer.getCategory.forEach((element) => {
+      category = [...category, ...element.Trips];
+    });
+    console.log(category, "category");
+    const filtered = category.filter((element) =>
+      state.categoryReducer.checkedCategory.includes(element.category_id)
+    );
+    console.log(filtered, "filtered");
+    return filtered.sort((a, b) => a.id - b.id);
+  });
+  console.log(filteredCategory, "filter");
   //untuk fetching dan maping API
-  const { getTrip } = useSelector((state) => state.tripReducer);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -16,8 +28,13 @@ const DestinationCard = (props) => {
 
   return (
     <div className={styles.div__card}>
-      {getTrip &&
-        getTrip.map((destination) => {
+      {!filteredCategory.length && (
+        <div className={styles.div__pilihkategori}>
+          Silahkan Pilih Tema Perjalanan
+        </div>
+      )}
+      {filteredCategory &&
+        filteredCategory.map((destination) => {
           console.log(destination);
           return (
             <DestinationItem key={destination.id} destination={destination} />

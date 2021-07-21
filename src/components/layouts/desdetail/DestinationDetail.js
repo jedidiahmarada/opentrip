@@ -82,9 +82,7 @@ const DestinationDetailAtas = () => {
           {/*<div className="bgImgDDetails"/>*/}
           <img
             className="bgImgDDetails"
-            src={
-              "https://pbs.twimg.com/media/E41VcZgVgAAtZ5s?format=jpg&name=orig"
-            }
+            src={getTripId && getTripId.thumbnail_pict}
           />
           <div className="bagKanan">
             <div className="sblmDivider">
