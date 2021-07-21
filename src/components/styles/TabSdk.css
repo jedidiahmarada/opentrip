@@ -2,6 +2,12 @@
   /* display: grid; */
   margin-bottom: 50px;
 }
+
+.penampungSDK {
+  display: flex;
+  flex-direction: column;
+  margin-left: 110px;
+}
 .h6SK1 {
   /* position: absolute; */
   left: 120px;
@@ -21,7 +27,7 @@
 }
 
 .h6SK3 {
-  position: absolute;
+  /*position: absolute;*/
   left: 750px;
   top: 200px;
   font-weight: 600;
@@ -36,10 +42,10 @@
 }
 
 .h2SK1 {
-  position: absolute;
+  /*position: absolute;*/
   width: 201px;
   height: 29px;
-  margin-left: 105px;
+  /*margin-left: 105px;*/
   margin-top: 30px;
   font-weight: 500;
   font-size: 24px;
@@ -48,6 +54,7 @@
 
 .ul-first {
   list-style: none;
+  padding: 0;
 }
 
 .ul-second {
@@ -55,9 +62,10 @@
 }
 
 .li-sdk {
-  position: relative;
-  top: 80px;
-  left: 90px;
+  /*position: relative;*/
+  /*top: 80px;*/
+  /*left: 90px;*/
+  margin-left: 20px;
   color: #4a4a4a;
   font-style: normal;
   font-weight: 500;
@@ -66,44 +74,54 @@
 }
 
 .li-sdk-second {
-  position: relative;
-  top: 175px;
-  left: 90px;
+  /*position: relative;*/
+  margin-left: -10px;
   color: #4a4a4a;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 35px;
-  bottom: 50px;
 }
 
 .li-sdk:before {
-  position: absolute;
-  top: 6px;
-  margin: 8px 0 0 -12px;
-  vertical-align: middle;
+  content: "\2022";
+  color: #ff385c;
+  font-weight: bold;
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: #ff385c;
-  content: "";
+  width: 1em;
+  margin-left: -1em;
+  /*position: absolute;*/
+  /*top: 6px;*/
+  /*margin: 8px 0 0 -12px;*/
+  /*vertical-align: middle;*/
+  /*display: inline-block;*/
+  /*width: 6px;*/
+  /*height: 6px;*/
+  /*background: #ff385c;*/
+  /*content: "";*/
 }
 
 .li-sdk-second:before {
-  position: absolute;
-  top: 6px;
-  margin: 8px 0 0 -12px;
-  vertical-align: middle;
+  content: "\2022";
+  color: #ff385c;
+  font-weight: bold;
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: #ff385c;
-  content: "";
+  width: 1em;
+  margin-left: -1em;
+  /*position: absolute;*/
+  /*top: 6px;*/
+  /*margin: 8px 0 0 -12px;*/
+  /*vertical-align: middle;*/
+  /*display: inline-block;*/
+  /*width: 6px;*/
+  /*height: 6px;*/
+  /*background: #ff385c;*/
+  /*content: "";*/
 }
 
 .h2SK2 {
-  position: absolute;
-  margin-left: 105px;
+  /*position: absolute;*/
+  /*margin-left: 105px;*/
   top: 1640px;
   font-weight: 500;
   font-size: 24px;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { travRegisAsync } from "../../redux/actions/travRegisAction";
@@ -54,13 +54,15 @@ const RegisUser = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             ></input>
-            {loading && <div>loading...</div>}
-            {error && <div>{errorMessage}</div>}
-            {!loading && (
-              <button className={styles.regisUser__btn} onClick={handleClick}>
-                Register
-              </button>
-            )}
+            <div>
+              {loading && <div>loading...</div>}
+              {error && <div>{errorMessage}</div>}
+              {!loading && (
+                <button className={styles.regisUser__btn} onClick={handleClick}>
+                  Register
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>

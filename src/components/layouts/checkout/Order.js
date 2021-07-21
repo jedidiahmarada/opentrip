@@ -46,7 +46,7 @@ const Order = () => {
 
           <div className={styles.kontenIsi}>
             <div className={styles.bagJudPaket}>
-              <h4 className={styles.judulPaket}>Paket Wisata Gunung Bromo</h4>
+              <h4 className={styles.judulPaket}>Pulau Komodo, NTT</h4>
               <p className={styles.tanggalTrip}>Tanggal Trip : 12-06-2021</p>
             </div>
 

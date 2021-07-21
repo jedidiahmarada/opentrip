@@ -1,25 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "../../styles/DestinationDetailAtas.css";
 import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
+import { useHistory, useParams } from "react-router-dom";
+import ProgressBar from "react-bootstrap/ProgressBar";
+import { getTripIdAsync } from "../../redux/actions/tripActions";
+
+//component
 import Dperjalanan from "./DPerjalanan";
 import Galeri from "./Galeri";
 import Sdk from "./Sdk";
 import Header from "../Header";
 import Footer from "../Footer";
-import { useHistory } from "react-router-dom";
-import ProgressBar from "react-bootstrap/ProgressBar";
-
 import Counterer from "./Counterer";
 import CounterContext from "./Counter";
 import InterMap from "../InterMap";
 
 const DestinationDetailAtas = () => {
   const history = useHistory();
+  const { id } = useParams();
   const [active, setActive] = useState({
     dperjalanan: true,
     sdk: false,
     galeri: false,
   });
+  console.log(id, "ID");
 
   const checkout = () => {
     history.push("/checkout");
@@ -61,18 +66,32 @@ const DestinationDetailAtas = () => {
     <ProgressBar max={10} now={count} label={`${count} pax`} variant="danger" />
   );
 
+  //untuk fetching dan maping API
+  const { getTripId } = useSelector((state) => state.tripReducer);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getTripIdAsync(id)); //async byid
+  }, [dispatch]);
+
   return (
     <>
       <Header />
       <div>
         <div className="destinasiAtas">
-          <div className="bgImgDDetails" />
+          {/*<div className="bgImgDDetails"/>*/}
+          <img
+            className="bgImgDDetails"
+            src={getTripId && getTripId.thumbnail_pict}
+          />
           <div className="bagKanan">
             <div className="sblmDivider">
-              <p className="routerDAtas">Destinasi / Jawa Timur</p>
+              <p className="routerDAtas">{getTripId && getTripId.trip_name}</p>
               <hr className="solidDivider" />
             </div>
-            <h1 className="namaDestinasi">Gunung Bromo</h1>
+            <h1 className="namaDestinasi">
+              {getTripId && getTripId.trip_name}
+            </h1>
             <h5 className="ketNamaDestinasi">
               Minimum Keberangkatan 10 Orang, Syarat & Ketentuan Berlaku
             </h5>
@@ -89,7 +108,6 @@ const DestinationDetailAtas = () => {
               {quotaBar}
               <p className="ketBar">{count} dari 10 kuota sudah terisi</p>
             </div>
-            {/*<div className={styles.kalender}></div>*/}
             <div className="increDecreWBtn">
               <div className="increDecre">
                 <CounterContext.Provider
@@ -104,12 +122,11 @@ const DestinationDetailAtas = () => {
             </div>
           </div>
         </div>
-
+        {/* detinasi bawah */}
         <div className="nav">
           <ul className="nav-ul">
             <li className="nav-li">
               <a
-                // href="#"
                 className={`msg-${active.deperjalnan ? "active" : null}`}
                 onClick={handleDperjalanan}
               >
@@ -118,7 +135,6 @@ const DestinationDetailAtas = () => {
             </li>
             <li className="nav-li">
               <a
-                // href=""
                 className={`msg-${active.sdk ? "active" : null}`}
                 onClick={handleSdk}
               >
@@ -127,7 +143,6 @@ const DestinationDetailAtas = () => {
             </li>
             <li className="nav-li">
               <a
-                // href=""
                 className={`msg-${active.galeri ? "active" : null}`}
                 onClick={handleGaleri}
               >

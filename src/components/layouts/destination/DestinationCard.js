@@ -1,38 +1,40 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import destinationsActions from "../../redux/actions/destinationsActions";
 import DestinationItem from "./DestinationItem";
 import styles from "../../styles/destinationCard.module.css";
 
-const DestinationCard = (props) => {
-  //   const destinations = useSelector(
-  //     (state) => state.destinationsReducer.destinations
-  //   );
-  //   const dispatch = useDispatch();
-  //   useEffect(() => {
-  //     dispatch(destinationsActions.getDestinations());
-  //   }, [dispatch]);
+import { getTripAsync } from "../../redux/actions/tripActions";
 
-  const destinations = useSelector(
-    (state) => state.destinationsReducer.destinations
-  );
+const DestinationCard = (props) => {
+  const filteredCategory = useSelector((state) => {
+    let category = [];
+    state.categoryReducer.getCategory.forEach((element) => {
+      category = [...category, ...element.Trips];
+    });
+    console.log(category, "category");
+    const filtered = category.filter((element) =>
+      state.categoryReducer.checkedCategory.includes(element.category_id)
+    );
+    console.log(filtered, "filtered");
+    return filtered.sort((a, b) => a.id - b.id);
+  });
+  console.log(filteredCategory, "filter");
+  //untuk fetching dan maping API
+
   const dispatch = useDispatch();
   useEffect(() => {
-    console.log(props, "coba");
-    dispatch(destinationsActions.getAllDestination(props.page));
-    console.log(destinations, "destinationCard");
-  }, [dispatch, props.page]);
+    dispatch(getTripAsync());
+  }, [dispatch]);
 
   return (
     <div className={styles.div__card}>
-      {/* {destinations &&
-        destinations.map((destination) => {
-          return (
-            <DestinationItem key={destination.id} destination={destination} />
-          );
-        })} */}
-      {destinations &&
-        destinations.map((destination) => {
+      {!filteredCategory.length && (
+        <div className={styles.div__pilihkategori}>
+          Silahkan Pilih Tema Perjalanan
+        </div>
+      )}
+      {filteredCategory &&
+        filteredCategory.map((destination) => {
           console.log(destination);
           return (
             <DestinationItem key={destination.id} destination={destination} />

@@ -1,8 +1,12 @@
 .div__card {
-  /* grid-column: 4;
-  grid-row: 2; */
   display: flex;
   flex-wrap: wrap;
-  /* position: absolute; */
-  /* outline: 2px solid blue; */
+}
+
+.div__pilihkategori {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 77px 500px 0 0;
+  font-size: 25px;
 }

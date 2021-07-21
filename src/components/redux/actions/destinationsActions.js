@@ -4,6 +4,9 @@ import destinationsDispatchers from "./dispatchers/destinationDispatchers";
 const url = "https://api.themoviedb.org/3/movie/";
 const apiKey = "26b6f99577e56d992ffe47051578e1ac";
 
+const urlAllTrip =
+  "https://fp-open-trip.herokuapp.com/api/ot/trip/all?page=0&limit=9";
+
 const destinationsActions = {
   getPopularDestinations: () => {
     return async (dispatch) => {

@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styles from "../../styles/Payment.css";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import { useHistory } from "react-router";
 import Header from "../Header";
 import Footer from "../Footer";
 
+import { getBankAsync } from "../../redux/actions/bankActions";
+
 const Payment = () => {
+  const [bankSet, setBankSet] = useState("");
   const history = useHistory();
   const oreceived = () => {
     history.push("/oreceived");
   };
+
+  //untuk fetching dan maping API
+  const { getBank } = useSelector((state) => state.bankReducer);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getBankAsync());
+  }, [dispatch]);
   return (
     <>
       <Header />
@@ -57,10 +69,15 @@ const Payment = () => {
               className="selBankType"
               id="dropdown-basic-button"
               title="Pilih Bank"
+              // eventKey={bankSet}
+              onChange={(e) => setBankSet(e.target.value)}
             >
-              <Dropdown.Item href="#/action-1">Mandiri</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Bank Jago</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Bank S hayt</Dropdown.Item>
+              {getBank &&
+                getBank.map((type) => (
+                  <Dropdown.Item href="#/action-1">
+                    {type.bank_name}
+                  </Dropdown.Item>
+                ))}
             </DropdownButton>
           </div>
           <p className="payKet2">
