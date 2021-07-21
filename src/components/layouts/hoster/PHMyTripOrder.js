@@ -1,253 +1,252 @@
-import React from "react";
+import React, { useState } from "react";
 import logo1 from "../../assets/picture/logo.png";
 import notificon from "../../assets/picture/notificon.png";
 import photoprofile from "../../assets/picture/photoprofile.png";
-import photogaleri5 from "../../assets/picture/photoprofile.png";
-import photogaleri6 from "../../assets/picture/photoprofile.png";
-import photogaleri7 from "../../assets/picture/photoprofile.png";
-import photogaleri8 from "../../assets/picture/photoprofile.png";
+import photogaleri5 from "../../assets/picture/photogaleri.png";
+import photogaleri6 from "../../assets/picture/photogaleri.png";
+import photogaleri7 from "../../assets/picture/photogaleri.png";
+import photogaleri8 from "../../assets/picture/photogaleri.png";
 import sorticon1 from "../../assets/picture/sorticon1.png";
 import filtericon1 from "../../assets/picture/filtericon1.png";
-import "../../styles/PHMyTripOrder.css";
+import styles from "../../styles/PHMyTripOrder.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HosterNav from "./HosterNav";
 
 function PHMyTripOrder() {
+  const [page, setPage] = useState(1);
   return (
-    <div className="tableboxbackgorund">
-      <nav class="navbar navbar-light bg-light">
-        <img className="logo1" src={logo1} alt="logo1" />
-        <img className="notificon" src={notificon} alt="notificon" />
-        <hr className="garisvertical" width="1" size="40" />
-        <p className="namajones" marginRight="300px">
+    <div className={styles.tableboxbackgorund}>
+      <nav className="navbar navbar-light bg-light">
+        <img className={styles.logo1} src={logo1} alt="logo1" />
+        <img className={styles.notificon} src={notificon} alt="notificon" />
+        <hr className={styles.garisvertical} width="1" size="40" />
+        <p className={styles.namajones} marginRight="300px">
           Jones Ferdinand
         </p>
         <img
           src={photoprofile}
-          class="rounded-circle"
+          className={styles.rounded_circle}
           alt="photoprofile "
           width="42"
           height="42"
         ></img>
       </nav>
       <HosterNav />
-      <div className="tableboxpage">
-        <p className="order">Order</p>
+      <div className={styles.tableboxpage}>
+        <p className={styles.order}>Order</p>
 
-        <img className="sorticon1" src={sorticon1} alt="sorticon1" />
-        <p className="sort1">Sort</p>
-        <img className="filtericon1" src={filtericon1} alt="filtericon1" />
-        <p className="filter1">Filter</p>
+        <img className={styles.sorticon1} src={sorticon1} alt="sorticon1" />
+        <p className={styles.sort1}>Sort</p>
+        <img
+          className={styles.filtericon1}
+          src={filtericon1}
+          alt="filtericon1"
+        />
+        <p className={styles.filter1}>Filter</p>
 
-        <label class="dropdown">
-          <div class="dd-button">Action</div>
-
-          <input type="checkbox" class="dd-input" id="test" />
-
-          <ul class="dd-menu">
-            <li>Bulk Action</li>
-            <li>Set to Completed</li>
-            <li>Set to Cancel</li>
-          </ul>
+        <label className="dropdown">
+          <select className={styles.action}>
+            <option>Action</option>
+            <option>Bulk Action</option>
+            <option>Set to Completed</option>
+            <option>Set to Cancel</option>
+          </select>
         </label>
 
-        <button class="button13"> Apply</button>
+        <button className={styles.button13}> Apply</button>
 
-        <nav class="navbar navbar-light ">
-          <div class="container-fluid">
-            <form class="d-flex">
-              <input
-                class="form-control5 me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
+        <div className={styles.searchbutton}>
+          <div className="input-group mb-3">
+            <span className="input-group-text" id="basic-addon1">
+              Search
+            </span>
+
+            <input
+              type="text"
+              className="form-control"
+              placeholder=""
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            ></input>
           </div>
-        </nav>
 
-        <table class="table ">
-          <thead>
-            <tr className="tablerow2">
-              <th className="ordercode" scope="col">
+          <div className={styles.table}>
+            <div className={styles.tablerow2}>
+              <div className={styles.ordercode} scope="col">
                 Order Code
-              </th>
-              <th className="tripdetail2" scope="col">
+              </div>
+              <div className={styles.tripdetail2} scope="col">
                 Trip
-              </th>
+              </div>
 
-              <th className="orderdate" scope="col">
+              <div className={styles.orderdate} scope="col">
                 Order Date
-              </th>
-              <th className="status" scope="col">
+              </div>
+              <div className={styles.status} scope="col">
                 Status
-              </th>
-              <th className="price" scope="col">
+              </div>
+              <div className={styles.price} scope="col">
                 Price
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <div class="form-check1">
-                <input
-                  class="form-check-input1"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  #898 Ahmad Subekti
-                </label>
               </div>
-              <img
-                src={photogaleri5}
-                class="rounded-circle"
-                className="photogaleri5"
-                alt="photogaleri5 "
-                width="60"
-                height="60"
-                position="absolute"
-              ></img>
-              <p className="bromotrip2">Bromo Trip</p>
-              <br />
-              <p className="tanggal5">May 26,2019</p>
-              <p className="p9">06.30PM</p>
-              <p className="biaya5">Rp 1.200.000</p>
-              <button class="button14"> COMPLETED</button>
-            </tr>
-            <hr className="garis5" />
+              <hr className={styles.garisrow1a} />
 
-            <tr>
-              <div class="form-check2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  #234 Carrisa Melinda
-                </label>
+              <div className={styles.tablerow3}>
+                <div className="form-check1">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck1"
+                  ></input>
+                  <label className="form-check-label" for="exampleCheck1">
+                    #898 Ahmad Subekti
+                  </label>
+                </div>
+
+                <img
+                  src={photogaleri5}
+                  className={styles.photogaleri5}
+                  alt="photogaleri5"
+                  width="45"
+                  height="45"
+                ></img>
+                <p className={styles.bromotrip2}>Bromo Trip</p>
+                <br />
+                <p className={styles.tanggal5}>May 26,2019</p>
+                <p className={styles.p9}>06.30PM</p>
+                <p className={styles.biaya5}>Rp 1.200.000</p>
+                <button className={styles.button14}> COMPLETED</button>
               </div>
-              <img
-                src={photogaleri6}
-                class="rounded-circle"
-                className="photogaleri6"
-                alt="photogaleri6 "
-                width="60"
-                height="60"
-                position="absolute"
-              ></img>
-              <p className="semeru2">Semeru Open Trip</p>
-              <br />
-              <p className="tanggal6">May 26,2019</p>
-              <p className="p10">08.00AM</p>
-              <p className="biaya6">Rp 3.000.000</p>
-              <button class="button15"> CANCELED</button>
-            </tr>
-            <hr className="garis6" />
+              <hr className={styles.garis5} />
 
-            <tr>
-              <div class="form-check3">
-                <input
-                  class="form-check-input1"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  #4354 Jane Doe
-                </label>
+              <div className={styles.tablerow4}>
+                <div className="form-check1">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck"
+                  ></input>
+                  <label className="form-check-label" for="flexCheckChecked">
+                    #234 Carrisa Melinda
+                  </label>
+                </div>
+                <img
+                  src={photogaleri6}
+                  className={styles.photogaleri6}
+                  alt="photogaleri6"
+                  width="45"
+                  height="45"
+                ></img>
+                <p className={styles.semeru2}>Semeru Open Trip</p>
+                <br />
+                <p className={styles.tanggal6}>May 26,2019</p>
+                <p className={styles.p10}>08.00AM</p>
+                <p className={styles.biaya6}>Rp 3.000.000</p>
+                <button className={styles.button15}> CANCELED</button>
               </div>
-              <img
-                src={photogaleri7}
-                class="rounded-circle"
-                className="photogaleri7"
-                alt="photogaleri7 "
-                width="60"
-                height="60"
-                position="absolute"
-              ></img>
-              <p className="gunungsumbing2">Gunung Sumbing</p>
-              <br />
-              <p className="tanggal7">May 26,2019</p>
-              <p className="p11">07.30PM</p>
-              <p className="biaya7">Rp 2.500.000</p>
-              <button class="button16"> PENDING PAYMENT</button>
-            </tr>
-            <hr className="garis7" />
+              <hr className={styles.garis6} />
 
-            <tr>
-              <div class="form-check4">
-                <input
-                  class="form-check-input1"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  #54584 Kiki Mela
-                </label>
+              <div className={styles.tablerow5}>
+                <div className="form-check1">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck"
+                  ></input>
+                  <label className="form-check-label" for="flexCheckDefault">
+                    #4354 Jane Doe
+                  </label>
+                </div>
+                <img
+                  src={photogaleri7}
+                  className={styles.photogaleri7}
+                  alt="photogaleri7"
+                  width="45"
+                  height="45"
+                ></img>
+                <p className={styles.gunungsumbing2}>Gunung Sumbing</p>
+                <br />
+                <p className={styles.tanggal7}>May 26,2019</p>
+                <p className={styles.p11}>07.30PM</p>
+                <p className={styles.biaya7}>Rp 2.500.000</p>
+                <button className={styles.button16}> PENDING PAYMENT</button>
               </div>
-              <img
-                src={photogaleri8}
-                class="rounded-circle"
-                className="photogaleri8"
-                alt="photogaleri8 "
-                width="60"
-                height="60"
-                position="absolute"
-              ></img>
-              <p className="bukitpergasingan2">Bukit Pergasingan</p>
-              <br />
-              <p className="tanggal8">May 25,2019</p>
-              <p className="p12">04.00PM</p>
-              <p className="biaya8">Rp 5.000.000</p>
-              <button class="button17"> COMPLETED</button>
-            </tr>
-            <hr className="garis8" />
-          </tbody>
-        </table>
+              <hr className={styles.garis7} />
 
-        <p className="p13">Rows per page</p>
-        <select class="selectpicker">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-        </select>
+              <div className={styles.tablerow8}>
+                <div className="form-check1">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck"
+                  ></input>
+                  <label className="form-check-label" for="flexCheckDefault">
+                    #54584 Kiki Mela
+                  </label>
+                </div>
+                <img
+                  src={photogaleri8}
+                  className={styles.photogaleri8}
+                  alt="photogaleri8"
+                  width="45"
+                  height="45"
+                ></img>
+                <p className={styles.bukitpergasingan2}>Bukit Pergasingan</p>
+                <br />
+                <p className={styles.tanggal8}>May 25,2019</p>
+                <p className={styles.p12}>04.00PM</p>
+                <p className={styles.biaya8}>Rp 5.000.000</p>
+                <button className={styles.button17}> COMPLETED</button>
+              </div>
+              <hr className={styles.garis8} />
 
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">
-                1
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">
-                2
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">
-                3
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+              <p className={styles.p13}>Rows per page</p>
+              <select className={styles.selectpicker}>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+              <div className={styles.pagination1}>
+                <nav aria-label="Page navigation example">
+                  <ul className="pagination">
+                    <li className="page-item">
+                      <span
+                        className="page-link"
+                        onClick={() => setPage(page - 1 > 0 ? page - 1 : 1)}
+                      >
+                        Previous
+                      </span>
+                    </li>
+                    <li className="page-item">
+                      <span className="page-link" onClick={() => setPage(1)}>
+                        1
+                      </span>
+                    </li>
+                    <li className="page-item">
+                      <span className="page-link" onClick={() => setPage(2)}>
+                        2
+                      </span>
+                    </li>
+                    <li className="page-item">
+                      <span className="page-link" onClick={() => setPage(3)}>
+                        3
+                      </span>
+                    </li>
+                    <li className="page-item">
+                      <span
+                        className="page-link"
+                        onClick={() => setPage(page + 1)}
+                      >
+                        Next
+                      </span>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

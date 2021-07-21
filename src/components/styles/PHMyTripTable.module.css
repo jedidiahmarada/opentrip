@@ -1,65 +1,63 @@
 .logo1 {
-  max-width: 200px;
-  max-height: 50px;
-  margin-left: 80px;
-  padding: 0.5px;
+  /* max-width: 20px; */
+  max-height: 30px;
+  display: flex;
+  margin: 20px;
 }
 
 .notificon {
-  width: 20px;
-  height: 20px;
-  top: 22px;
-  right: 300px;
-  position: absolute;
+  width: 30px;
+  height: 30px;
+  justify-content: space-between;
+  position: relative;
+  left: 600px;
 }
 
 .tableboxbackgorund {
   background-color: #e5e5e5;
-  height: 1200px;
+  height: 1300px;
 }
 
 .garisvertical {
-  position: absolute;
   border-left: 1.4px solid #808080;
-  right: 280px;
-  margin-top: 15px;
-  height: 30px;
+  justify-content: space-between;
+  position: relative;
+  left: 380px;
 }
 
 .namajones {
-  position: absolute;
   font-size: 14px;
-  right: 150px;
-  margin-top: 10px;
+  justify-content: space-between;
+  position: relative;
+  left: 160px;
+  margin: 1px;
 }
 
-.rounded-circle {
-  position: absolute;
-  right: 70px;
-  margin-top: 0px;
+.rounded_circle {
+  justify-content: space-between;
+  position: relative;
+  right: 50px;
+  border-radius: 50%;
 }
 
 .tableboxpage {
-  position: absolute;
-  right: 50px;
-  top: 120px;
-  bottom: 0px;
+  position: relative;
   background: #ffffff;
   border: 1px solid #dfe0eb;
   box-sizing: border-box;
   border-radius: 8px;
   width: 900px;
-  height: 800px;
+  height: 900px;
   padding: 10px;
+  margin-top: -320px;
+  margin-left: 500px;
 }
 
 .mytrip {
-  position: absolute;
-  left: 95px;
-  top: 30px;
   font-weight: bold;
   font-size: 24px;
   color: #4a4a4a;
+  padding: 25px 40px;
 }
 
 .button {
@@ -72,136 +70,171 @@
   display: flex;
   font-size: 15px;
   font-weight: 600;
-  margin: 4px 2px;
+  margin: -80px 150px;
   cursor: pointer;
   border-radius: 6px;
-  margin-left: 200px;
-  margin-top: 17px;
 }
 
 .sorticon1 {
-  width: 15px;
-  height: 15px;
-  margin-left: 700px;
-  margin-top: -70px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin: 50px 620px;
 }
 
 .sort1 {
-  position: absolute;
-  right: 140px;
-  top: 40px;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.2px;
   color: #4b506d;
+  margin: -73px 645px;
 }
 
 .filtericon1 {
-  width: 15px;
-  height: 15px;
-  margin-left: 780px;
-  margin-top: -117px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin: 50px 730px;
 }
 
 .filter1 {
-  position: absolute;
-  right: 50px;
-  top: 40px;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.2px;
   color: #4b506d;
+  margin: -73px 753px;
 }
 
 .table {
-  border-collapse: collapse;
-  border-spacing: 0 30px;
-  margin-top: auto;
+  /* border-collapse: collapse; */
+  /* border-spacing: 0 30px; */
   text-align: center;
-  table-layout: fixed;
+  /* table-layout: fixed; */
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 120px 0px;
 }
 
-td {
+/* td {
   height: 90px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-}
+} */
 
 .tablerow1 {
-  position: inline-block;
+  position: relative;
   font-size: 14px;
-  margin-left: 0;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.2px;
   color: #9fa2b4;
-  width: 140px;
+  width: 100%;
   text-align: center;
-  border-spacing: 0 500px;
+  justify-content: space-between;
 }
 
 .tripdetail {
-  width: 255px;
-  position: absolute;
-  left: 8px;
+  width: 15%;
+  position: relative;
+  text-align: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+  margin: 5px 15px;
 }
 
 .quota {
-  width: 150px;
-  position: absolute;
-  left: 260px;
+  width: 12%;
+  position: relative;
+  text-align: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+  margin: -26px 195px;
 }
 
 .datetrip {
-  width: 150px;
-  position: absolute;
-  left: 360px;
+  width: 12%;
+  position: relative;
+  text-align: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+  margin: 5px 270px;
 }
 
 .price {
-  width: 150px;
-  position: absolute;
-  left: 480px;
+  width: 12%;
+  position: relative;
+  text-align: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+  margin: -24px 375px;
 }
 
 .status {
-  width: 170px;
-  position: absolute;
-  left: 600px;
+  width: 12%;
+  position: relative;
+  text-align: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+  margin: 5px 510px;
 }
 
 .action {
-  width: 150px;
-  position: absolute;
-  left: 740px;
+  width: 12%;
+  position: relative;
+  text-align: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+  margin: -25px 620px;
+}
+
+.namelist {
+  width: 12%;
+  position: relative;
+  text-align: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+  margin: 5px 730px;
+}
+.garisrow1 {
+  position: relative;
+  margin: 10px 40px;
+  justify-content: baseline;
+  color: #9fa2b4;
+  width: 92%;
+  padding: 1px;
+}
+
+.tablerow2,
+.tablerow3,
+.tablerow4,
+.tablerow5 {
+  justify-content: space-between;
 }
 
 .photogaleri1 {
-  position: absolute;
-  border-radius: 30px;
-  left: 85px;
-  margin-top: 75px;
+  border-radius: 50% !important;
+  margin-left: -750px;
+  margin-top: 50px;
+  justify-content: space-between;
 }
 
 .bromotrip {
-  position: absolute;
-  left: 140px;
-  top: 190px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.2px;
   color: #252733;
+  margin-top: -40px;
+  margin-left: -600px;
 }
 
 .p1 {
-  position: absolute;
-  left: 140px;
-  top: 210px;
+  margin-top: -40px;
+  margin-left: -572px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -211,9 +244,8 @@ td {
 }
 
 .besarquota {
-  position: absolute;
-  left: 310px;
-  top: 190px;
+  margin-top: -50px;
+  margin-left: -390px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -222,9 +254,8 @@ td {
 }
 
 .tanggal {
-  position: absolute;
-  left: 395px;
-  top: 190px;
+  margin-top: -37px;
+  margin-left: -205px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -233,9 +264,8 @@ td {
 }
 
 .p2 {
-  position: absolute;
-  left: 395px;
-  top: 210px;
+  margin-top: -19px;
+  margin-left: -240px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -245,9 +275,8 @@ td {
 }
 
 .biaya {
-  position: absolute;
-  left: 510px;
-  top: 190px;
+  margin-top: -50px;
+  margin-left: 35px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -256,20 +285,13 @@ td {
 }
 
 .button1 {
-  margin-left: 640px;
-  margin-top: 65px;
+  margin-left: 540px;
+  margin-top: -38px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 12px;
-
-  position: absolute;
-  width: 89px;
-  height: 14px;
+  justify-content: space-between;
+  padding: 3px 10px;
   font-size: 11px;
   background-color: #2bf14b !important;
-
   color: white;
   font-weight: 600;
   border: 1px solid #2bf14b;
@@ -278,18 +300,12 @@ td {
 }
 
 .button2 {
-  margin-left: 760px;
-  margin-top: 40px;
-
+  margin-left: 650px;
+  margin-top: -50px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
+  justify-content: space-between;
+  padding: 5px 23px;
 
-  position: absolute;
-  width: 98px;
-  height: 37px;
   font-size: 14px;
   background: rgba(255, 56, 92, 0.15) !important;
   font-size: 14px;
@@ -301,21 +317,13 @@ td {
 }
 
 .button3 {
-  margin-left: 760px;
-  margin-top: 80px;
-
+  margin-left: 650px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-
-  position: absolute;
-  width: 98px;
-  height: 37px;
+  justify-content: space-between;
+  padding: 5px 14px;
   font-size: 14px;
   background-color: rgba(255, 56, 92, 0.15);
-
   font-size: 14px;
   color: #ff385c;
   font-weight: 600;
@@ -324,32 +332,41 @@ td {
   border-radius: 6px;
 }
 
+.namamember1 {
+  justify-content: space-between;
+  margin: -50px 750px;
+  display: flex;
+  font-size: 12px;
+  color: #ff385c;
+  width: 100%;
+}
+
 .garis1 {
-  margin-top: 140px;
+  width: 92%;
+  padding: 1px;
+  margin: 110px 40px;
 }
 
 .photogaleri2 {
-  position: absolute;
-  border-radius: 30px;
-  left: 85px;
-  margin-top: 0px;
+  border-radius: 50% !important;
+  margin-left: -750px;
+  margin-top: -60px;
+  justify-content: space-between;
 }
 
 .semerutrip {
-  position: absolute;
-  left: 140px;
-  top: 300px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.2px;
   color: #252733;
+  margin-top: -55px;
+  margin-left: -600px;
 }
 
 .p3 {
-  position: absolute;
-  left: 140px;
-  top: 320px;
+  margin-top: -40px;
+  margin-left: -580px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -359,9 +376,8 @@ td {
 }
 
 .besarquota2 {
-  position: absolute;
-  left: 310px;
-  top: 300px;
+  margin-top: -50px;
+  margin-left: -380px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -370,9 +386,8 @@ td {
 }
 
 .tanggal2 {
-  position: absolute;
-  left: 395px;
-  top: 300px;
+  margin-top: -39px;
+  margin-left: -205px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -381,9 +396,8 @@ td {
 }
 
 .p4 {
-  position: absolute;
-  left: 395px;
-  top: 320px;
+  margin-top: -19px;
+  margin-left: -240px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -393,9 +407,8 @@ td {
 }
 
 .biaya2 {
-  position: absolute;
-  left: 510px;
-  top: 300px;
+  margin-top: -50px;
+  margin-left: 35px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -404,37 +417,26 @@ td {
 }
 
 .button4 {
-  position: absolute;
-  margin-left: 640px;
-  margin-top: 0px;
+  margin-left: 540px;
+  margin-top: -38px;
   display: flex;
-  /* flex-direction: row; */
-  justify-content: center;
-  align-items: center;
-  padding: 5px 12px;
-
-  width: 89px;
-  height: 14px;
+  justify-content: space-between;
+  padding: 2px 26px;
   font-size: 11px;
   background: #ff385c !important;
   border: 1px solid #ff385c;
   border-radius: 100px;
   color: white;
+  font-weight: 600;
 }
 
 .button5 {
-  margin-left: 760px;
-  margin-top: -20px;
-
+  margin-left: 650px;
+  margin-top: -50px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
+  justify-content: space-between;
+  padding: 5px 23px;
 
-  position: absolute;
-  width: 98px;
-  height: 37px;
   font-size: 14px;
   background: rgba(255, 56, 92, 0.15) !important;
   font-size: 14px;
@@ -446,21 +448,13 @@ td {
 }
 
 .button6 {
-  margin-left: 760px;
-  margin-top: 20px;
-
+  margin-left: 650px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-
-  position: absolute;
-  width: 98px;
-  height: 37px;
+  justify-content: space-between;
+  padding: 5px 14px;
   font-size: 14px;
   background-color: rgba(255, 56, 92, 0.15);
-
   font-size: 14px;
   color: #ff385c;
   font-weight: 600;
@@ -468,34 +462,41 @@ td {
   box-sizing: border-box;
   border-radius: 6px;
 }
+.namamember2 {
+  justify-content: space-between;
+  margin: -50px 750px;
+  display: flex;
+  font-size: 12px;
+  color: #ff385c;
+  width: 100%;
+}
 
 .garis2 {
-  margin-top: 80px;
-  size: 0.2px;
+  width: 92%;
+  padding: 1px;
+  margin: 110px 40px;
 }
 
 .photogaleri3 {
-  position: absolute;
-  border-radius: 30px;
-  left: 85px;
-  margin-top: 0px;
+  border-radius: 50% !important;
+  margin-left: -750px;
+  margin-top: -50px;
+  justify-content: space-between;
 }
 
 .gunungsumbing {
-  position: absolute;
-  left: 140px;
-  top: 420px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.2px;
   color: #252733;
+  margin-top: -50px;
+  margin-left: -565px;
 }
 
 .p5 {
-  position: absolute;
-  left: 140px;
-  top: 440px;
+  margin-top: -40px;
+  margin-left: -579px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -505,9 +506,8 @@ td {
 }
 
 .besarquota3 {
-  position: absolute;
-  left: 310px;
-  top: 420px;
+  margin-top: -50px;
+  margin-left: -380px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -516,9 +516,8 @@ td {
 }
 
 .tanggal3 {
-  position: absolute;
-  left: 395px;
-  top: 420px;
+  margin-top: -37px;
+  margin-left: -205px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -527,21 +526,18 @@ td {
 }
 
 .p6 {
-  position: absolute;
-  left: 395px;
-  top: 440px;
+  margin-top: -19px;
+  margin-left: -240px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
   letter-spacing: 0.1px;
   color: #c5c7cd;
 }
 
 .biaya3 {
-  position: absolute;
-  left: 510px;
-  top: 420px;
+  margin-top: -50px;
+  margin-left: 35px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -550,20 +546,13 @@ td {
 }
 
 .button7 {
-  margin-left: 640px;
-  margin-top: 0px;
+  margin-left: 540px;
+  margin-top: -38px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 12px;
-
-  position: absolute;
-  width: 89px;
-  height: 14px;
+  justify-content: space-between;
+  padding: 3px 10px;
   font-size: 11px;
   background-color: #2bf14b !important;
-
   color: white;
   font-weight: 600;
   border: 1px solid #2bf14b;
@@ -572,18 +561,12 @@ td {
 }
 
 .button8 {
-  margin-left: 760px;
-  margin-top: -20px;
-
+  margin-left: 650px;
+  margin-top: -50px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
+  justify-content: space-between;
+  padding: 5px 23px;
 
-  position: absolute;
-  width: 98px;
-  height: 37px;
   font-size: 14px;
   background: rgba(255, 56, 92, 0.15) !important;
   font-size: 14px;
@@ -595,21 +578,13 @@ td {
 }
 
 .button9 {
-  margin-left: 760px;
-  margin-top: 20px;
-
+  margin-left: 650px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-
-  position: absolute;
-  width: 98px;
-  height: 37px;
+  justify-content: space-between;
+  padding: 5px 14px;
   font-size: 14px;
   background-color: rgba(255, 56, 92, 0.15);
-
   font-size: 14px;
   color: #ff385c;
   font-weight: 600;
@@ -617,34 +592,41 @@ td {
   box-sizing: border-box;
   border-radius: 6px;
 }
+.namamember3 {
+  justify-content: space-between;
+  margin: -50px 750px;
+  display: flex;
+  font-size: 12px;
+  color: #ff385c;
+  width: 100%;
+}
 
 .garis3 {
-  margin-top: 80px;
-  size: 0.2px;
+  width: 92%;
+  padding: 1px;
+  margin: 110px 40px;
 }
 
 .photogaleri4 {
-  position: absolute;
-  border-radius: 30px;
-  left: 85px;
-  margin-top: 0px;
+  border-radius: 50% !important;
+  margin-left: -750px;
+  margin-top: -50px;
+  justify-content: space-between;
 }
 
 .bukitpergasingan {
-  position: absolute;
-  left: 140px;
-  top: 540px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.2px;
   color: #252733;
+  margin-top: -50px;
+  margin-left: -560px;
 }
 
 .p7 {
-  position: absolute;
-  left: 140px;
-  top: 560px;
+  margin-top: -40px;
+  margin-left: -579px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -654,9 +636,8 @@ td {
 }
 
 .besarquota4 {
-  position: absolute;
-  left: 310px;
-  top: 540px;
+  margin-top: -50px;
+  margin-left: -375px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -665,9 +646,8 @@ td {
 }
 
 .tanggal4 {
-  position: absolute;
-  left: 395px;
-  top: 540px;
+  margin-top: -37px;
+  margin-left: -205px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -676,9 +656,8 @@ td {
 }
 
 .p8 {
-  position: absolute;
-  left: 395px;
-  top: 560px;
+  margin-top: -19px;
+  margin-left: -240px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -688,9 +667,8 @@ td {
 }
 
 .biaya4 {
-  position: absolute;
-  left: 510px;
-  top: 540px;
+  margin-top: -50px;
+  margin-left: 35px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -699,20 +677,13 @@ td {
 }
 
 .button10 {
-  margin-left: 640px;
-  margin-top: 0px;
+  margin-left: 540px;
+  margin-top: -38px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 12px;
-
-  position: absolute;
-  width: 89px;
-  height: 14px;
+  justify-content: space-between;
+  padding: 3px 10px;
   font-size: 11px;
   background-color: #2bf14b !important;
-
   color: white;
   font-weight: 600;
   border: 1px solid #2bf14b;
@@ -721,18 +692,12 @@ td {
 }
 
 .button11 {
-  margin-left: 760px;
-  margin-top: -20px;
-
+  margin-left: 650px;
+  margin-top: -50px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
+  justify-content: space-between;
+  padding: 5px 23px;
 
-  position: absolute;
-  width: 98px;
-  height: 37px;
   font-size: 14px;
   background: rgba(255, 56, 92, 0.15) !important;
   font-size: 14px;
@@ -744,21 +709,13 @@ td {
 }
 
 .button12 {
-  margin-left: 760px;
-  margin-top: 20px;
-
+  margin-left: 650px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-
-  position: absolute;
-  width: 98px;
-  height: 37px;
+  justify-content: space-between;
+  padding: 5px 14px;
   font-size: 14px;
   background-color: rgba(255, 56, 92, 0.15);
-
   font-size: 14px;
   color: #ff385c;
   font-weight: 600;
@@ -767,35 +724,41 @@ td {
   border-radius: 6px;
 }
 
+.namamember4 {
+  justify-content: space-between;
+  margin: -50px 750px;
+  display: flex;
+  font-size: 12px;
+  color: #ff385c;
+  width: 100%;
+}
+
 .garis4 {
-  margin-top: 80px;
-  size: 0.2px;
+  width: 92%;
+  padding: 1px;
+  margin: 110px 40px;
 }
 
 .p9 {
-  position: absolute;
-
-  right: 350px;
-  top: 700px;
-
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-
   letter-spacing: 0.3px;
-
   color: #9fa2b4;
+  margin: -80px 0px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .selectpicker {
   width: 27px;
   height: 25px;
   font-size: 12px;
-  margin-left: 550px;
-  margin-top: 20px;
+  margin-top: 58px;
+  margin-left: 140px;
+  justify-content: space-between;
 }
 
-.pagination {
-  margin-left: 680px;
-  margin-top: -30px;
+.pagination1 {
+  margin: -30px 600px;
 }
