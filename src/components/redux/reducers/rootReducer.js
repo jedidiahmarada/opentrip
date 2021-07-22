@@ -2,7 +2,6 @@ import { combineReducers } from "redux";
 import travRegisReducer from "./travRegisReducer";
 import hostRegisReducer from "./hostRegisReducer";
 import loginReducer from "./loginReducer";
-import destinationsReducer from "./destinationsReducer";
 import bankReducer from "./bankReducer";
 import tripReducer from "./tripReducer";
 import categoryReducer from "./categoryReducer";
@@ -14,7 +13,6 @@ const rootReducer = combineReducers({
   bankReducer,
   tripReducer,
   categoryReducer,
-  destinationsReducer,
 });
 
 export default rootReducer;
