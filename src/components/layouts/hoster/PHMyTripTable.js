@@ -14,6 +14,7 @@ import HosterNav from "./HosterNav";
 
 function PHMyTripTable() {
   const [page, setPage] = useState(1);
+  const [rows, setRows] = useState([1, 2, 3, 4, 5]);
   return (
     <div className={styles.tableboxbackgorund}>
       <nav className="navbar navbar-light bg-light">
@@ -68,7 +69,8 @@ function PHMyTripTable() {
               Name list
             </div>
             <hr className={styles.garisrow1} />
-
+          </div>
+          {rows.map((item, i) => (
             <div className={styles.tablerow2}>
               <img
                 src={photogaleri1}
@@ -90,15 +92,111 @@ function PHMyTripTable() {
               <a className={styles.namamember1} href="">
                 Nama Member
               </a>
+              {/* <hr className={styles.garis1} /> */}
+            </div>
+          ))}
+        </div>
+        <div style={{ paddingLeft: "30%", width: "70%" }}>
+          <p className={styles.p9}>Rows per page</p>
+          <select className={styles.selectpicker}>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+
+          <div className={styles.pagination1}>
+            <nav aria-label="Page navigation example">
+              <ul className="pagination">
+                <li className="page-item">
+                  <span
+                    className="page-link"
+                    onClick={() => setPage(page - 1 > 0 ? page - 1 : 1)}
+                  >
+                    Previous
+                  </span>
+                </li>
+                <li className="page-item">
+                  <span className="page-link" onClick={() => setPage(1)}>
+                    1
+                  </span>
+                </li>
+                <li className="page-item">
+                  <span className="page-link" onClick={() => setPage(2)}>
+                    2
+                  </span>
+                </li>
+                <li className="page-item">
+                  <span className="page-link" onClick={() => setPage(3)}>
+                    3
+                  </span>
+                </li>
+                <li className="page-item">
+                  <span className="page-link" onClick={() => setPage(page + 1)}>
+                    Next
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        {/* <div className={styles.table}>
+          <div className={styles.tablerow1}>
+            <div className={styles.tripdetail} scope='col'>
+              Trip Details
+            </div>
+            <div className={styles.quota} scope='col'>
+              Quota
+            </div>
+            <div className={styles.datetrip} scope='col'>
+              Date Trip
+            </div>
+            <div className={styles.price} scope='col'>
+              Price
+            </div>
+            <div className={styles.status} scope='col'>
+              Status
+            </div>
+            <div className={styles.action} scope='col'>
+              Action
+            </div>
+            <div className={styles.namelist} scope='col'>
+              Name list
+            </div>
+            <hr className={styles.garisrow1} />
+
+            <div className={styles.tablerow2}>
+              <img
+                src={photogaleri1}
+                className={styles.photogaleri1}
+                alt='photogaleri1 '
+                width='50'
+                height='50'
+              ></img>
+              <p className={styles.bromotrip}>Bromo Trip</p>
+              <br />
+              <p className={styles.p1}>updated 1day ago</p>
+              <p className={styles.besarquota}>5/10</p>
+              <p className={styles.tanggal}>May 26,2019</p>
+              <p className={styles.p2}>06.30PM</p>
+              <p className={styles.biaya}>Rp 1.200.000</p>
+              <button className={styles.button1}> AVAILABLE</button>
+              <button className={styles.button2}> Edit</button>
+              <button className={styles.button3}> Delete</button>
+              <a className={styles.namamember1} href=''>
+                Nama Member
+              </a>
               <hr className={styles.garis1} />
 
               <div className={styles.tablerow3}>
                 <img
                   src={photogaleri2}
                   className={styles.photogaleri2}
-                  alt="photogaleri2 "
-                  width="50"
-                  height="50"
+                  alt='photogaleri2 '
+                  width='50'
+                  height='50'
                 ></img>
                 <p className={styles.semerutrip}>Semeru Trip</p>
                 <br />
@@ -110,7 +208,7 @@ function PHMyTripTable() {
                 <button className={styles.button4}> FULL</button>
                 <button className={styles.button5}> Edit</button>
                 <button className={styles.button6}> Delete</button>
-                <a className={styles.namamember2} href="">
+                <a className={styles.namamember2} href=''>
                   Nama Member
                 </a>
                 <hr className={styles.garis2} />
@@ -119,9 +217,9 @@ function PHMyTripTable() {
                   <img
                     src={photogaleri3}
                     className={styles.photogaleri3}
-                    alt="photogaleri3 "
-                    width="50"
-                    height="50"
+                    alt='photogaleri3 '
+                    width='50'
+                    height='50'
                   ></img>
                   <p className={styles.gunungsumbing}>Gunung Sumbing</p>
                   <br />
@@ -133,7 +231,7 @@ function PHMyTripTable() {
                   <button className={styles.button7}> AVAILABLE</button>
                   <button className={styles.button8}> Edit</button>
                   <button className={styles.button9}> Delete</button>
-                  <a className={styles.namamember3} href="">
+                  <a className={styles.namamember3} href=''>
                     Nama Member
                   </a>
                   <hr className={styles.garis3} />
@@ -142,9 +240,9 @@ function PHMyTripTable() {
                   <img
                     src={photogaleri4}
                     className={styles.photogaleri4}
-                    alt="photogaleri4"
-                    width="50"
-                    height="50"
+                    alt='photogaleri4'
+                    width='50'
+                    height='50'
                   ></img>
                   <p className={styles.bukitpergasingan}>Bukit Pergasingan</p>
                   <br />
@@ -156,7 +254,7 @@ function PHMyTripTable() {
                   <button className={styles.button10}> AVAILABLE</button>
                   <button className={styles.button11}> Edit</button>
                   <button className={styles.button12}> Delete</button>
-                  <a className={styles.namamember4} href="">
+                  <a className={styles.namamember4} href=''>
                     Nama Member
                   </a>
                   <hr className={styles.garis4} />
@@ -170,43 +268,43 @@ function PHMyTripTable() {
                   </select>
 
                   <div className={styles.pagination1}>
-                    <nav aria-label="Page navigation example">
-                      <ul className="pagination">
-                        <li className="page-item">
+                    <nav aria-label='Page navigation example'>
+                      <ul className='pagination'>
+                        <li className='page-item'>
                           <span
-                            className="page-link"
+                            className='page-link'
                             onClick={() => setPage(page - 1 > 0 ? page - 1 : 1)}
                           >
                             Previous
                           </span>
                         </li>
-                        <li className="page-item">
+                        <li className='page-item'>
                           <span
-                            className="page-link"
+                            className='page-link'
                             onClick={() => setPage(1)}
                           >
                             1
                           </span>
                         </li>
-                        <li className="page-item">
+                        <li className='page-item'>
                           <span
-                            className="page-link"
+                            className='page-link'
                             onClick={() => setPage(2)}
                           >
                             2
                           </span>
                         </li>
-                        <li className="page-item">
+                        <li className='page-item'>
                           <span
-                            className="page-link"
+                            className='page-link'
                             onClick={() => setPage(3)}
                           >
                             3
                           </span>
                         </li>
-                        <li className="page-item">
+                        <li className='page-item'>
                           <span
-                            className="page-link"
+                            className='page-link'
                             onClick={() => setPage(page + 1)}
                           >
                             Next
@@ -219,7 +317,7 @@ function PHMyTripTable() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

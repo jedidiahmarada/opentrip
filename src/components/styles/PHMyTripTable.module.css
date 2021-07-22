@@ -112,7 +112,7 @@
   /* border-spacing: 0 30px; */
   text-align: center;
   /* table-layout: fixed; */
-  display: flex;
+  /* display: flex; */
   position: relative;
   width: 100%;
   margin: 120px 0px;
@@ -213,6 +213,8 @@
 .tablerow4,
 .tablerow5 {
   justify-content: space-between;
+  height: 120px;
+  /* border-bottom: 2px solid #9fa2b4; */
 }
 
 .photogaleri1 {
@@ -344,7 +346,7 @@
 .garis1 {
   width: 92%;
   padding: 1px;
-  margin: 110px 40px;
+  margin: 40px 40px;
 }
 
 .photogaleri2 {
@@ -760,5 +762,5 @@
 }
 
 .pagination1 {
-  margin: -30px 600px;
+  margin: -30px 320px;
 }

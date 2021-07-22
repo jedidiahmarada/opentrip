@@ -678,6 +678,6 @@ select.selectpicker {
 
 .pagination1 {
   margin: -30px -30px;
-  display: flex;
-  position: relative;
+  /* display: flex;
+  position: relative; */
 }
