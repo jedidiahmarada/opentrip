@@ -144,3 +144,12 @@ export const getFilterCategoryService = async (queryParams) => {
   return response;
 };
 //=============================================
+
+//GET ALL ORDER
+export const getOrderService = async () => {
+  const url = `https://fp-open-trip.herokuapp.com/api/ot/order/all`;
+  const response = await axios.get(url);
+  console.log("response axios", response);
+  return response;
+};
+//============================================

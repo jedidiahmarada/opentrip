@@ -14,7 +14,6 @@ const Sdk = () => {
             Tiket Masuk dan Retribusi Desa Tempat wisata sesuai Program
           </li>
           <li className="li-sdk">Tour Leader dari Jakarta</li>
-          <li className="li-sdk"> className="li-sdk"Tour Leader dari Jakarta</li>
           <li className="li-sdk">Lokal Guide</li>
           <li className="li-sdk">
             Jeep di Bromo (Pananjakan 1, Lautan Pasir, Savana, Pasir Berbisik)

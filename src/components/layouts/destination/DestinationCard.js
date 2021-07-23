@@ -6,6 +6,7 @@ import styles from "../../styles/destinationCard.module.css";
 import { getTripAsync } from "../../redux/actions/tripActions";
 
 const DestinationCard = (props) => {
+  //FILTER
   const filteredCategory = useSelector((state) => {
     let category = [];
     state.categoryReducer.getCategory.forEach((element) => {
@@ -19,8 +20,9 @@ const DestinationCard = (props) => {
     return filtered.sort((a, b) => a.id - b.id);
   });
   console.log(filteredCategory, "filter");
-  //untuk fetching dan maping API
+  //================================================
 
+  //untuk fetching dan maping API
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getTripAsync());

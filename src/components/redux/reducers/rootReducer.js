@@ -5,6 +5,7 @@ import loginReducer from "./loginReducer";
 import bankReducer from "./bankReducer";
 import tripReducer from "./tripReducer";
 import categoryReducer from "./categoryReducer";
+import orderReducer from "./orderReducer";
 
 const rootReducer = combineReducers({
   hostRegisReducer,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   bankReducer,
   tripReducer,
   categoryReducer,
+  orderReducer,
 });
 
 export default rootReducer;
